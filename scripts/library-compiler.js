@@ -4,8 +4,8 @@ import { dirname, join } from 'node:path';
 export class LibraryCompiler {
     // #glossaryEntryAdjacentCharacters = `[\\s,\\.!\\-\\(\\)'"“”]`;
     #glossaryEntryAdjacentCharacters = `\\W`;
-    #glossaryEntryPreviousCharacters = `^|${this.#glossaryEntryAdjacentCharacters}`;
-    #glossaryEntryNextCharacters = `$|${this.#glossaryEntryAdjacentCharacters}`;
+    #glossaryEntryPreviousCharacters = `${this.#glossaryEntryAdjacentCharacters}|^`;
+    #glossaryEntryNextCharacters = `${this.#glossaryEntryAdjacentCharacters}|$`;
 
     constructor(inputFilePath, outputFilePath) {
         this.inputFilePath = inputFilePath;
@@ -103,10 +103,13 @@ export class LibraryCompiler {
     }
 
     #createRegExpForGlossaryEntry(glossaryEntry) {
+        const escape = text => text.replace(/[\\\^\$\.\*\+\?\(\)\[\]\{\}\|]/g, (...match) => `\\${match[1]}`);
+
         return RegExp(
-            `(${this.#glossaryEntryPreviousCharacters})(${[glossaryEntry.title, ...(glossaryEntry.aliases ?? [])].join(
-                '|'
-            )})(${this.#glossaryEntryNextCharacters})`,
+            `(${this.#glossaryEntryPreviousCharacters})(${[
+                escape(glossaryEntry.title),
+                ...(glossaryEntry.aliases?.map(alias => escape(alias)) ?? [])
+            ].join('|')})(${this.#glossaryEntryNextCharacters})`,
             'gi'
         );
     }
@@ -125,7 +128,7 @@ export class LibraryCompiler {
         for (const glossaryEntry of this.libraryJSON.glossary.entries) {
             result = result.replaceAll(
                 this.#createRegExpForGlossaryEntry(glossaryEntry),
-                (...match) => `${match[1]}$${match[2]}:${glossaryEntry.id}$${match[3]}`
+                (...match) => `${match[1]}$${match[2]}:${glossaryEntry.id}$${match[3] ?? ''}`
             );
         }
 

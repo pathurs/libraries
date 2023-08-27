@@ -52,7 +52,7 @@
             "description": "The Captain designates an additional person to act on their team’s behalf via a visible “A” on their uniform or body; this person is the Designated Alternate. The Designated Alternate may be a teammate, coach, or manager. A team may only have one Designated Alternate. If one has not been selected or has left the game, the Captain may designate a different Alternate by informing the Head Referee."
         },
         {
-            "id": "cown",
+            "id": "down",
             "title": "Down",
             "description": "A Skater is down when part of the Skater’s body or equipment (aside from skates) is touching the floor. A Skater whose only contact with the floor (aside from skates) is one hand is not considered down. Once down, a Skater is considered down until the Skater is standing, stepping, or skating."
         },
