@@ -17,7 +17,7 @@
                             "id": "timing",
                             "referenceId": "1.1",
                             "title": "Timing",
-                            "description": ""
+                            "description": "**A game lasts for 60 minutes of play, divided into two 30-minute periods with a halftime between them.** Periods are broken into $Jams:jam$, which are the basic unit of play for roller derby.\r\n\r\n**A $Jam:jam$ can last up to two minutes.** $Jams:jam$ may be called off prior to two minutes as part of gameplay, as described below. Each $Jam:jam$ starts with a single short whistle blast, and finishes at the end of a series of four short whistle blasts. At least 30 seconds must elapse between $Jams:jam$. More than 30 seconds may not elapse unless a timeout is called.\r\n\r\n**A period starts on the $Jam:jam$-Starting Whistle of the first $Jam:jam$ for that period.** The period clock does not $stop:stopped$ between $Jams:jam$ unless a timeout is called. If the period clock reaches zero before the next $Jam:jam$ has started, the period ends at that moment; otherwise, the period ends at the conclusion of the final $Jam:jam$ for the period.\r\n\r\nIf a $Jam:jam$ is called off due to officiating discretion (see Section 5.2) or there is an officiating error that potentially impacted the outcome (as in winner/loser) of the game, and there are less than 30 seconds remaining on the period clock at the end of the game (including when the period clock has expired), an additional $Jam:jam$ may be run at the discretion of the $Head Referee:head-referee$. This additional $Jam:jam$ will have the same form (Overtime or not; see Section 1.5.1) as the $Jam:jam$ that ended and be part of the same period.\r\n"
                         },
                         {
                             "id": "teams",
@@ -41,13 +41,33 @@
                                     "id": "official-reviews",
                                     "referenceId": "1.3.2",
                                     "title": "Official Reviews",
-                                    "description": ""
+                                    "description": "**Each team begins the period with one Official Review** which they may use during that period. An Official Review is a formal request made by a team’s Captain or Designated Alternate for Officials to review a specific officiating decision. The only officiating decisions that can be the subject of an Official Review are those made during the prior Jam, or during the lineup time preceding the prior Jam. The Head Referee investigates the review with other Officials, and uses the information gathered to render a decision on the item under review, as well as related decisions. The Head Referee then announces their findings and any changes that result from the review to both teams’ representatives. This decision is final and not reviewable.\r\n\r\nIf the Head Referee determines that an officiating error was made in relation to the situation under review, the team will retain the privilege to call an additional review later in the same period. The review can be retained in this manner only once per period.\r\n\r\nA team may also elect to use their Official Review as a Team Timeout. In this case, the review will not be retained. Penalized Captains or Designated Alternates cannot request an Official Review.\r\n\r\nOfficial Reviews (whether unused or retained) are not carried forward to the subsequent period.\r\n"
                                 },
                                 {
                                     "id": "official-timeouts",
                                     "referenceId": "1.3.3",
                                     "title": "Official Timeouts",
-                                    "description": ""
+                                    "description": "**Officials may take a timeout in order to ensure that the game is running smoothly and correctly.** If the prior Jam ended with less than 30 seconds on the period clock, the fact that the Officials called a timeout will not necessarily result in another Jam occurring in the same manner that a Team Timeout or Official Review would. Instead, the Officials must determine whether or not there is reason to hold another Jam for that period. If the Officials determine that there is no reason to hold another Jam, both teams must be given a chance to call a Team Timeout or Official Review (if they have any remaining). If they decline, the period will end.\r\n"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "game-information",
+                            "referenceId": "1.4",
+                            "title": "Game Information",
+                            "description": "**Critical game information must be displayed in a manner that is highly visible to Teams, Officials, and spectators.** This displayed critical game information is considered official, and must include, at a minimum:\r\n\r\n- The period clock\r\n- The $Jam:jam$ clock\r\n- The Official Score\r\n\r\nErrors in timing or score should be updated as quickly as possible. If an error persists for an extended period of time, it should be corrected only if the correction itself would have minimal impact on the game.\r\n"
+                        },
+                        {
+                            "id": "winning",
+                            "referenceId": "1.5",
+                            "title": "Winning",
+                            "description": "**The team with the most points at the end of the game wins.**\r\n",
+                            "sections": [
+                                {
+                                    "id": "overtime",
+                                    "referenceId": "1.5.1",
+                                    "title": "Overtime",
+                                    "description": "**If the game ends with the score tied, the second period will be extended by at least one additional $Jam:jam$.** This Overtime $Jam:jam$ is like any other $Jam:jam$, with two exceptions:\r\n\r\n- No $Lead Jammer:lead-jammer$ is declared\r\n- Both $Jammers:jammer$ begin scoring on their first $trip:trip-through-the-pack$ through the $Pack:pack$ (each $Jammer:jammer$ is $in position:in-position$ to $lap:lapping$ the opposing $Blockers:blocker$ on their first $earned pass:earned-pass$ of those $Blockers:blocker$)\r\n\r\nMore $Jams:jam$ will be added in this manner until a $Jam:jam$ ends with the score no longer tied.\r\n"
                                 }
                             ]
                         }

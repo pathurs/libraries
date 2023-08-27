@@ -1,0 +1,7 @@
+{
+    "id": "winning",
+    "referenceId": "1.5",
+    "title": "Winning",
+    "description": "markdown:./winning.md",
+    "sections": ["json:./overtime.json"]
+}
