@@ -1,10 +1,76 @@
 {
     "entries": [
         {
+            "id": "re-pass",
+            "title": "Re-Pass",
+            "description": "The act of passing an opponent who has already been passed during the current lap. Most relevant to a Jammer who ends up ahead of an opponent without “earning” the pass. Such a Jammer would not score a point on that opponent, but could re-pass that opponent, earning their second pass, in order to score that point.",
+            "aliases": ["repass"]
+        },
+        {
+            "id": "counter-block",
+            "title": "Counter-Block",
+            "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. Counter-blocking is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
+            "aliases": [
+                "counter-blocks",
+                "counter-blocked",
+                "counter-blocking",
+                "counter block",
+                "counter blocks",
+                "counter blocked",
+                "counter blocking"
+            ]
+        },
+        {
+            "id": "lead-jammer",
+            "title": "Lead Jammer",
+            "description": "The Lead Jammer is the first Jammer to establish superior position to the foremost in-play Blocker, having already earned a pass on all Blockers excluding those ahead of the Engagement Zone.",
+            "aliases": ["lead jammers"]
+        },
+        {
+            "id": "no-pack",
+            "title": "No Pack",
+            "description": "When there is not a group of Blockers (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of Blockers not skating within 10 ft (3.05 m) of each other."
+        },
+        {
+            "id": "star-pass",
+            "title": "Passing the Star / Star Pass",
+            "description": "The act of transferring Jammer status, which is accomplished by the Jammer handing their helmet cover (the Star) to the Pivot.",
+            "aliases": [
+                "pass the star",
+                "passes the star",
+                "passed the star",
+                "passing the star",
+                "star pass",
+                "star passing",
+                "star passes",
+                "star-pass",
+                "star-passing",
+                "star-passes"
+            ]
+        },
+        {
+            "id": "pack-skater",
+            "title": "Pack Skater",
+            "description": "Any Blocker who is part of a legally defined Pack.",
+            "aliases": ["pack skaters"]
+        },
+        {
+            "id": "pivot-blocker",
+            "title": "Pivot Blocker (Pivot)",
+            "description": "A Blocker with extra abilities and responsibilities, commonly referred to as the Pivot (see Section 2.2.3).",
+            "aliases": ["pivot blocker", "pivot"]
+        },
+        {
+            "id": "earned-pass",
+            "title": "Pass/Earned Pass",
+            "description": "See Section 2.5",
+            "aliases": ["pass", "passes", "passed", "passing", "earned pass", "earned passes"]
+        },
+        {
             "id": "actively-absorbing",
             "title": "Actively Absorbing",
             "description": "Any movement toward oncoming contact intended only to protect the recipient of the contact.",
-            "aliases": ["Actively Absorb"]
+            "aliases": ["Actively Absorb", "Actively Absorbs", "Actively Absorbed"]
         },
         {
             "id": "ahead",
@@ -14,13 +80,14 @@
         {
             "id": "apex-jump",
             "title": "Apex Jump",
-            "description": "An attempt to legally shorten the distance travelled around the curve of the track by leaping over the track boundary and landing back in bounds."
+            "description": "An attempt to legally shorten the distance travelled around the curve of the track by leaping over the track boundary and landing back in bounds.",
+            "aliases": ["apex jumps", "apex jumped"]
         },
         {
             "id": "assist",
             "title": "Assist",
             "description": "Physically affecting a teammate. Common examples include a push or a whip.",
-            "aliases": ["assists"]
+            "aliases": ["assists", "assisted", "assisting"]
         },
         {
             "id": "behind",
@@ -46,15 +113,10 @@
             "aliases": ["captains"]
         },
         {
-            "id": "counter-block",
-            "title": "Counter-Block",
-            "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. Counter-blocking is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
-            "aliases": ["counter block", "counter blocking", "counter-blocking"]
-        },
-        {
             "id": "designated-alternate",
             "title": "Designated Alternate",
-            "description": "The Captain designates an additional person to act on their team’s behalf via a visible “A” on their uniform or body; this person is the Designated Alternate. The Designated Alternate may be a teammate, coach, or manager. A team may only have one Designated Alternate. If one has not been selected or has left the game, the Captain may designate a different Alternate by informing the Head Referee."
+            "description": "The Captain designates an additional person to act on their team’s behalf via a visible “A” on their uniform or body; this person is the Designated Alternate. The Designated Alternate may be a teammate, coach, or manager. A team may only have one Designated Alternate. If one has not been selected or has left the game, the Captain may designate a different Alternate by informing the Head Referee.",
+            "aliases": ["designated alternates"]
         },
         {
             "id": "down",
@@ -69,7 +131,8 @@
         {
             "id": "engaging",
             "title": "Engaging",
-            "description": "Any sort of interaction with another Skater on the track during a Jam (see also assist and blocking, Section 2.4)."
+            "description": "Any sort of interaction with another Skater on the track during a Jam (see also assist and blocking, Section 2.4).",
+            "aliases": ["engage", "engages", "engaged"]
         },
         {
             "id": "established-position",
@@ -80,18 +143,20 @@
         {
             "id": "exiting-the-track",
             "title": "Exiting the Track",
-            "description": "(Penalty Enforcement) Exiting the track to the outside in order to report to the Penalty Box."
+            "description": "(Penalty Enforcement) Exiting the track to the outside in order to report to the Penalty Box.",
+            "aliases": ["exit the track", "exits the track"]
         },
         {
             "id": "expulsion",
             "title": "Expulsion",
             "description": "Removal by the Head Referee of a Skater or Team Staff from the remainder of the game for a serious illegal action, such as physical violence or any action deemed by the Officials to cause an extraordinary physical threat to others.",
-            "aliases": ["expulsions"]
+            "aliases": ["expulsions", "expel", "expelled", "expelling"]
         },
         {
             "id": "falling-small",
             "title": "Falling Small",
-            "description": "A Skater is said to have “fallen small” if they fall with the arms and legs controlled, tucked into the body, and not flailing or sprawled."
+            "description": "A Skater is said to have “fallen small” if they fall with the arms and legs controlled, tucked into the body, and not flailing or sprawled.",
+            "aliases": ["falls small", "fell small"]
         },
         {
             "id": "forceful-contact",
@@ -102,7 +167,8 @@
         {
             "id": "fouling-out",
             "title": "Fouling Out",
-            "description": "Removal, by an Official, of a Skater from the remainder of the game for having seven penalties recorded for that Skater."
+            "description": "Removal, by an Official, of a Skater from the remainder of the game for having seven penalties recorded for that Skater.",
+            "aliases": ["fouls out", "fouled out"]
         },
         {
             "id": "governing-body",
@@ -114,7 +180,7 @@
             "id": "grasping",
             "title": "Grasping",
             "description": "Actively gripping something; for example, grabbing a teammate’s uniform or helmet cover, or holding hands. The grasping Skater’s arm, from the hand up to (but not including) the shoulder, is considered to be part of the “grasp.” The teammate is not considered part of the grasp, unless the teammate is independently grasping.",
-            "aliases": ["grasp"]
+            "aliases": ["grasp", "grasps", "grasped"]
         },
         {
             "id": "head-referee",
@@ -124,7 +190,8 @@
         {
             "id": "hips",
             "title": "Hips",
-            "description": "The laterally-projecting prominence of the pelvis or pelvic region from the waist to the thigh. The central point of this area determines a pass, regardless of the direction the Skater is facing."
+            "description": "The laterally-projecting prominence of the pelvis or pelvic region from the waist to the thigh. The central point of this area determines a pass, regardless of the direction the Skater is facing.",
+            "aliases": ["hip"]
         },
         {
             "id": "illegal-procedure",
@@ -141,7 +208,7 @@
             "id": "impeding",
             "title": "Impeding",
             "description": "Actions that restrict an opponent’s speed and/or trajectory in any direction on the track.",
-            "aliases": ["impede"]
+            "aliases": ["impede", "impedes", "impeded"]
         },
         {
             "id": "impenetrable",
@@ -198,13 +265,7 @@
             "id": "lapping",
             "title": "Lap/Lapping",
             "description": "One Skater has lapped an opponent if the Skater has passed the opponent twice in a row without the opponent having passed the lapping Skater in between. If a Jammer passes an opponent for the second time, but the second pass was not “earned,” the Jammer is still said to have lapped their opponent, and may earn a “re-pass” on said opponent to score the missed point.",
-            "aliases": ["Lap", "Lapping", "laps", "lapped"]
-        },
-        {
-            "id": "lead-jammer",
-            "title": "Lead Jammer",
-            "description": "The Lead Jammer is the first Jammer to establish superior position to the foremost in-play Blocker, having already earned a pass on all Blockers excluding those ahead of the Engagement Zone.",
-            "aliases": ["lead jammers"]
+            "aliases": ["lap", "laps", "lapped", "lapping"]
         },
         {
             "id": "linking",
@@ -216,11 +277,6 @@
             "id": "no-impact",
             "title": "No Impact",
             "description": "A violation of the rules of the game that has limited impact on safety or gameplay, and does not warrant a penalty."
-        },
-        {
-            "id": "no-pack",
-            "title": "No Pack",
-            "description": "When there is not a group of Blockers (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of Blockers not skating within 10 ft (3.05 m) of each other."
         },
         {
             "id": "not-on-the-track-point",
@@ -243,24 +299,8 @@
         {
             "id": "pack",
             "title": "Pack",
-            "description": "The largest group of in-bounds Blockers, skating or standing in proximity (within 10 ft [3.05 m]), containing members from both teams. The Jammers are independent of this definition."
-        },
-        {
-            "id": "pack-skater",
-            "title": "Pack Skater",
-            "description": "Any Blocker who is part of a legally defined Pack."
-        },
-        {
-            "id": "earned-pass",
-            "title": "Pass/Earned Pass",
-            "description": "See Section 2.5",
-            "aliases": ["pass"]
-        },
-        {
-            "id": "star-pass",
-            "title": "Passing the Star / Star Pass",
-            "description": "The act of transferring Jammer status, which is accomplished by the Jammer handing their helmet cover (the Star) to the Pivot.",
-            "aliases": ["star-pass"]
+            "description": "The largest group of in-bounds Blockers, skating or standing in proximity (within 10 ft [3.05 m]), containing members from both teams. The Jammers are independent of this definition.",
+            "aliases": ["packs"]
         },
         {
             "id": "penalty",
@@ -269,22 +309,16 @@
             "aliases": ["penalties"]
         },
         {
-            "id": "pivot-blocker",
-            "title": "Pivot Blocker (Pivot)",
-            "description": "A Blocker with extra abilities and responsibilities, commonly referred to as the Pivot (see Section 2.2.3).",
-            "aliases": ["pivot blocker", "pivot"]
-        },
-        {
             "id": "points-awarded-in-error",
             "title": "Points Awarded in Error",
             "description": "Points that have not been legally earned by a Jammer and have been awarded to the team incorrectly and/or erroneously by an Official or as the result of a technology malfunction.",
-            "aliases": ["points awarded-in-error"]
+            "aliases": ["point awarded in error", "points awarded-in-error", "point awarded-in-error"]
         },
         {
             "id": "points-denied-in-error",
             "title": "Points Denied in Error",
             "description": "Similar to points awarded in error, points denied in error are points that have been legally earned by a Jammer but have not been added to the Official Score due to delay, an error by an Official, or as the result of a technology malfunction.",
-            "aliases": ["points denied-in-error"]
+            "aliases": ["point denied in error", "points denied-in-error", "point denied-in-error"]
         },
         {
             "id": "positional-blocking",
@@ -293,9 +327,10 @@
             "aliases": [
                 "positional block",
                 "positional blocks",
-                "positionally blocking",
                 "positionally block",
-                "positionally blocks"
+                "positionally blocks",
+                "positionally blocked",
+                "positionally blocking"
             ]
         },
         {
@@ -304,28 +339,28 @@
             "description": "Skaters must wear helmet, mouthguard, wrist guards, elbow pads, and knee pads so long as they provide additional protection and the Skater is physically able to wear them. Skaters shall not be penalized if the equipment does not provide additional protection for the Skater."
         },
         {
-            "id": "re-pass",
-            "title": "Re-Pass",
-            "description": "The act of passing an opponent who has already been passed during the current lap. Most relevant to a Jammer who ends up ahead of an opponent without “earning” the pass. Such a Jammer would not score a point on that opponent, but could re-pass that opponent, earning their second pass, in order to score that point.",
-            "aliases": ["repass"]
-        },
-        {
             "id": "relative-position",
             "title": "Relative Position",
             "description": "A Skater’s location, when in bounds and upright, in relation to other Skaters involved in the action. Relative position is said to be “gained” or “lost” if said location changes in a way that gives or loses some advantage (for example, one Skater passing another, or being knocked down, out of bounds, or out of play). Relative position is only measured in the counterclockwise direction.",
-            "aliases": ["relative positions", "relatively positioned"]
+            "aliases": [
+                "relative positions",
+                "relatively position",
+                "relatively positions",
+                "relatively positioned",
+                "relatively positioning"
+            ]
         },
         {
             "id": "roster",
             "title": "Roster",
             "description": "The list of Skaters for a team, and their identifying numbers, who are eligible to play in the game.",
-            "aliases": ["rosters", "rostered"]
+            "aliases": ["rosters", "rostered", "rostering"]
         },
         {
             "id": "sitting",
             "title": "Sitting",
             "description": "A Skater whose buttocks are in full contact with the seat of a chair or bench.",
-            "aliases": ["sit", "seated"]
+            "aliases": ["sit", "sits", "seated"]
         },
         {
             "id": "skating-direction-of-travel",
@@ -336,24 +371,25 @@
             "id": "standing",
             "title": "Standing",
             "description": "A Skater holding their body weight on their skates, such that they are not down and it is obvious to Officials, Skaters, and spectators that they are not sitting.",
-            "aliases": ["stand"]
+            "aliases": ["stand", "stands", "standed"]
         },
         {
             "id": "stopped",
             "title": "Stopped",
-            "description": "A Skater not making any directional movement with their skates."
+            "description": "A Skater not making any directional movement with their skates.",
+            "aliases": ["stop", "stops", "stopping"]
         },
         {
             "id": "straddling",
             "title": "Straddling",
             "description": "A Skater is straddling when they are simultaneously touching the floor on or between the track boundary lines and beyond the track boundary. Touching the floor beyond the track boundary with only one arm or hand does not render a Skater straddling. Straddling Skaters are considered out of bounds, except where otherwise noted (see also in bounds).",
-            "aliases": ["straddle"]
+            "aliases": ["straddle", "straddles", "straddled"]
         },
         {
             "id": "substitution",
             "title": "Substitution",
             "description": "Replacing a Skater on the track or in the Penalty Box with a teammate.",
-            "aliases": ["substitute", "substitutes"]
+            "aliases": ["substitutions", "substitute", "substitutes", "substituted"]
         },
         {
             "id": "the-star",
@@ -377,7 +413,7 @@
             "id": "trip-through-the-pack",
             "title": "Trip Through the Pack",
             "description": "Jammers make trips through the Pack. Each trip represents an opportunity to score points on opponents. (See Section 3).",
-            "aliases": ["trip"]
+            "aliases": ["trips through the pack", "trip", "trips"]
         },
         {
             "id": "upright",

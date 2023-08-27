@@ -2,10 +2,9 @@ import { readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 
 export class LibraryCompiler {
-    // #glossaryEntryAdjacentCharacters = `[\\s,\\.!\\-\\(\\)'"“”]`;
-    #glossaryEntryAdjacentCharacters = `\\W`;
-    #glossaryEntryPreviousCharacters = `${this.#glossaryEntryAdjacentCharacters}|^`;
-    #glossaryEntryNextCharacters = `${this.#glossaryEntryAdjacentCharacters}|$`;
+    #glossaryEntryAdjacentCharacters = /[\s\,\.\!\-\(\)\'\"\“\”\’]/g;
+    #glossaryEntryPreviousCharacters = new RegExp(`${this.#glossaryEntryAdjacentCharacters.source}|^`);
+    #glossaryEntryNextCharacters = new RegExp(`${this.#glossaryEntryAdjacentCharacters.source}|$`);
 
     constructor(inputFilePath, outputFilePath) {
         this.inputFilePath = inputFilePath;
@@ -106,10 +105,10 @@ export class LibraryCompiler {
         const escape = text => text.replace(/[\\\^\$\.\*\+\?\(\)\[\]\{\}\|]/g, (...match) => `\\${match[1]}`);
 
         return RegExp(
-            `(${this.#glossaryEntryPreviousCharacters})(${[
+            `(${this.#glossaryEntryPreviousCharacters.source})(${[
                 escape(glossaryEntry.title),
                 ...(glossaryEntry.aliases?.map(alias => escape(alias)) ?? [])
-            ].join('|')})(${this.#glossaryEntryNextCharacters})`,
+            ].join('|')})(${this.#glossaryEntryNextCharacters.source})`,
             'gi'
         );
     }
