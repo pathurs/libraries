@@ -1,12 +1,12 @@
 {
     "title": "WFTDA Library",
-    "description": "The game of Flat Track Roller Derby is played on a flat, oval track. Play is broken up into two 30-minute periods, and within those periods, into units of play called “Jams,” which last up to two minutes. There are 30 seconds between each $Jam:jam$.\r\n\r\nDuring a $Jam:jam$, each team fields up to five Skaters. Four of these Skaters are called “Blockers” (together, the Blockers are called the “$Pack:pack$”), and one is called a “$Jammer:jammer$.” The $Jammer:jammer$ wears a helmet cover with a star on it.\r\n\r\nThe two $Jammers:jammer$ start each $Jam:jam$ $behind:behind$ the $Pack:pack$, and score a point for every opposing $Blocker:blocker$ they $lap:lapping$, each $lap:lapping$. Because they start $behind:behind$ the $Pack:pack$, they must get through the $Pack:pack$, then all the way around the track to be eligible to score points on opposing Blockers.\r\n\r\nRoller derby is a full-contact sport; however, Skaters cannot use their heads, elbows, forearms, hands, knees, lower legs, or feet to make contact to opponents. Skaters cannot make contact to opponents’ heads, backs, knees, lower legs, or feet.\r\n\r\nPlay that is unsafe or illegal may result in a Skater being assessed a $penalty:penalty$, which is served by $sitting:sitting$ in the $Penalty:penalty$ Box for 30 seconds of $Jam:jam$ time.\r\n\r\nThe team with the most points at the end of the game wins.\r\n\r\nA common $Jam:jam$ might go like this:\r\n\r\n1. Blockers line up $behind:behind$ the $Pivot:pivot-blocker$ Line and in front of the $Jammer:jammer$ Line.\r\n2. $Jammers:jammer$ line up $behind:behind$ the $Jammer:jammer$ Line.\r\n3. At the $Jam:jam$-Starting Whistle, the Blockers skate forward and compete for superior position. The $Jammers:jammer$ skate forward and try to get through the $Pack:pack$. Each $Blocker:blocker$ simultaneously tries to prevent the opposing $Jammer:jammer$ from getting past, and to help their own $Jammer:jammer$ get through.\r\n4. One $Jammer:jammer$ exits the $Pack:pack$ and is declared Lead $Jammer:jammer$, earning the right to end the $Jam:jam$ when they decide. This $Jammer:jammer$ races around the track to get into scoring position.\r\n5. The same $Jammer:jammer$ begins to work their way through the $Pack:pack$ for the second time, and the opposing $Jammer:jammer$ makes their way out of the $Pack:pack$ for the first time.\r\n6. As the second $Jammer:jammer$ to escape the $Pack:pack$ comes around into scoring position, the first $Jammer:jammer$ calls off the $Jam:jam$.\r\n7. The first $Jammer:jammer$ has scored points (up to four), and held their opponent at zero points. Meanwhile, the opposing $Jammer:jammer$ (by getting into scoring position) held the first $Jammer:jammer$ at only those points, as they could have scored more points on subsequent passes.",
+    "description": "The game of Flat Track Roller Derby is played on a flat, oval track. Play is broken up into two 30-minute periods, and within those periods, into units of play called “$Jams:jam$,” which last up to two minutes. There are 30 seconds between each $Jam:jam$.\r\n\r\nDuring a $Jam:jam$, each team fields up to five Skaters. Four of these Skaters are called “$Blockers:blocker$” (together, the $Blockers:blocker$ are called the “$Pack:pack$”), and one is called a “$Jammer:jammer$.” The $Jammer:jammer$ wears a helmet cover with a $star:the-star$ on it.\r\n\r\nThe two $Jammers:jammer$ start each $Jam:jam$ $behind:behind$ the $Pack:pack$, and score a point for every opposing $Blocker:blocker$ they $lap:lapping$, each $lap:lapping$. Because they start $behind:behind$ the $Pack:pack$, they must get through the $Pack:pack$, then all the way around the track to be eligible to score points on opposing $Blockers:blocker$.\r\n\r\nRoller derby is a full-contact sport; however, Skaters cannot use their heads, elbows, forearms, hands, knees, lower legs, or feet to make contact to opponents. Skaters cannot make contact to opponents’ heads, backs, knees, lower legs, or feet.\r\n\r\nPlay that is unsafe or illegal may result in a Skater being assessed a $penalty:penalty$, which is served by $sitting:sitting$ in the $Penalty:penalty$ Box for 30 seconds of $Jam:jam$ time.\r\n\r\nThe team with the most points at the end of the game wins.\r\n\r\nA common $Jam:jam$ might go like this:\r\n\r\n1. $Blockers:blocker$ line up $behind:behind$ the $Pivot:pivot-blocker$ Line and in front of the $Jammer:jammer$ Line.\r\n2. $Jammers:jammer$ line up $behind:behind$ the $Jammer:jammer$ Line.\r\n3. At the $Jam:jam$-Starting Whistle, the $Blockers:blocker$ skate forward and compete for superior position. The $Jammers:jammer$ skate forward and try to get through the $Pack:pack$. Each $Blocker:blocker$ simultaneously tries to prevent the opposing $Jammer:jammer$ from getting past, and to help their own $Jammer:jammer$ get through.\r\n4. One $Jammer:jammer$ exits the $Pack:pack$ and is declared Lead $Jammer:jammer$, earning the right to end the $Jam:jam$ when they decide. This $Jammer:jammer$ races around the track to get into scoring position.\r\n5. The same $Jammer:jammer$ begins to work their way through the $Pack:pack$ for the second time, and the opposing $Jammer:jammer$ makes their way out of the $Pack:pack$ for the first time.\r\n6. As the second $Jammer:jammer$ to escape the $Pack:pack$ comes around into scoring position, the first $Jammer:jammer$ calls off the $Jam:jam$.\r\n7. The first $Jammer:jammer$ has scored points (up to four), and held their opponent at zero points. Meanwhile, the opposing $Jammer:jammer$ (by getting into scoring position) held the first $Jammer:jammer$ at only those points, as they could have scored more points on subsequent passes.",
     "reference": "https://static.wftda.com/rules/wftda-rules.pdf",
     "documents": [
         {
             "id": "rules",
             "title": "Rules",
-            "description": "The game of Flat Track Roller Derby is played on a flat, oval track. Play is broken up into two 30-minute periods, and within those periods, into units of play called “Jams,” which last up to two minutes. There are 30 seconds between each $Jam:jam$.\r\n\r\nDuring a $Jam:jam$, each team fields up to five Skaters. Four of these Skaters are called “Blockers” (together, the Blockers are called the “$Pack:pack$”), and one is called a “$Jammer:jammer$.” The $Jammer:jammer$ wears a helmet cover with a star on it.\r\n\r\nThe two $Jammers:jammer$ start each $Jam:jam$ $behind:behind$ the $Pack:pack$, and score a point for every opposing $Blocker:blocker$ they $lap:lapping$, each $lap:lapping$. Because they start $behind:behind$ the $Pack:pack$, they must get through the $Pack:pack$, then all the way around the track to be eligible to score points on opposing Blockers.\r\n\r\nRoller derby is a full-contact sport; however, Skaters cannot use their heads, elbows, forearms, hands, knees, lower legs, or feet to make contact to opponents. Skaters cannot make contact to opponents’ heads, backs, knees, lower legs, or feet.\r\n\r\nPlay that is unsafe or illegal may result in a Skater being assessed a $penalty:penalty$, which is served by $sitting:sitting$ in the $Penalty:penalty$ Box for 30 seconds of $Jam:jam$ time.\r\n\r\nThe team with the most points at the end of the game wins.\r\n\r\nA common $Jam:jam$ might go like this:\r\n\r\n1. Blockers line up $behind:behind$ the $Pivot:pivot-blocker$ Line and in front of the $Jammer:jammer$ Line.\r\n2. $Jammers:jammer$ line up $behind:behind$ the $Jammer:jammer$ Line.\r\n3. At the $Jam:jam$-Starting Whistle, the Blockers skate forward and compete for superior position. The $Jammers:jammer$ skate forward and try to get through the $Pack:pack$. Each $Blocker:blocker$ simultaneously tries to prevent the opposing $Jammer:jammer$ from getting past, and to help their own $Jammer:jammer$ get through.\r\n4. One $Jammer:jammer$ exits the $Pack:pack$ and is declared Lead $Jammer:jammer$, earning the right to end the $Jam:jam$ when they decide. This $Jammer:jammer$ races around the track to get into scoring position.\r\n5. The same $Jammer:jammer$ begins to work their way through the $Pack:pack$ for the second time, and the opposing $Jammer:jammer$ makes their way out of the $Pack:pack$ for the first time.\r\n6. As the second $Jammer:jammer$ to escape the $Pack:pack$ comes around into scoring position, the first $Jammer:jammer$ calls off the $Jam:jam$.\r\n7. The first $Jammer:jammer$ has scored points (up to four), and held their opponent at zero points. Meanwhile, the opposing $Jammer:jammer$ (by getting into scoring position) held the first $Jammer:jammer$ at only those points, as they could have scored more points on subsequent passes.\r\n",
+            "description": "The game of Flat Track Roller Derby is played on a flat, oval track. Play is broken up into two 30-minute periods, and within those periods, into units of play called “$Jams:jam$,” which last up to two minutes. There are 30 seconds between each $Jam:jam$.\r\n\r\nDuring a $Jam:jam$, each team fields up to five Skaters. Four of these Skaters are called “$Blockers:blocker$” (together, the $Blockers:blocker$ are called the “$Pack:pack$”), and one is called a “$Jammer:jammer$.” The $Jammer:jammer$ wears a helmet cover with a $star:the-star$ on it.\r\n\r\nThe two $Jammers:jammer$ start each $Jam:jam$ $behind:behind$ the $Pack:pack$, and score a point for every opposing $Blocker:blocker$ they $lap:lapping$, each $lap:lapping$. Because they start $behind:behind$ the $Pack:pack$, they must get through the $Pack:pack$, then all the way around the track to be eligible to score points on opposing $Blockers:blocker$.\r\n\r\nRoller derby is a full-contact sport; however, Skaters cannot use their heads, elbows, forearms, hands, knees, lower legs, or feet to make contact to opponents. Skaters cannot make contact to opponents’ heads, backs, knees, lower legs, or feet.\r\n\r\nPlay that is unsafe or illegal may result in a Skater being assessed a $penalty:penalty$, which is served by $sitting:sitting$ in the $Penalty:penalty$ Box for 30 seconds of $Jam:jam$ time.\r\n\r\nThe team with the most points at the end of the game wins.\r\n\r\nA common $Jam:jam$ might go like this:\r\n\r\n1. $Blockers:blocker$ line up $behind:behind$ the $Pivot:pivot-blocker$ Line and in front of the $Jammer:jammer$ Line.\r\n2. $Jammers:jammer$ line up $behind:behind$ the $Jammer:jammer$ Line.\r\n3. At the $Jam:jam$-Starting Whistle, the $Blockers:blocker$ skate forward and compete for superior position. The $Jammers:jammer$ skate forward and try to get through the $Pack:pack$. Each $Blocker:blocker$ simultaneously tries to prevent the opposing $Jammer:jammer$ from getting past, and to help their own $Jammer:jammer$ get through.\r\n4. One $Jammer:jammer$ exits the $Pack:pack$ and is declared Lead $Jammer:jammer$, earning the right to end the $Jam:jam$ when they decide. This $Jammer:jammer$ races around the track to get into scoring position.\r\n5. The same $Jammer:jammer$ begins to work their way through the $Pack:pack$ for the second time, and the opposing $Jammer:jammer$ makes their way out of the $Pack:pack$ for the first time.\r\n6. As the second $Jammer:jammer$ to escape the $Pack:pack$ comes around into scoring position, the first $Jammer:jammer$ calls off the $Jam:jam$.\r\n7. The first $Jammer:jammer$ has scored points (up to four), and held their opponent at zero points. Meanwhile, the opposing $Jammer:jammer$ (by getting into scoring position) held the first $Jammer:jammer$ at only those points, as they could have scored more points on subsequent passes.\r\n",
             "sections": [
                 {
                     "id": "game-parameters-and-safety",
@@ -23,13 +23,13 @@
                             "id": "teams",
                             "referenceId": "1.2",
                             "title": "Teams",
-                            "description": "**A team is comprised of Skaters, who must be uniquely identified by a $roster:roster$ number.** Each team must have a jersey of the same base color, such that uniform colors of the two teams playing are of high contrast. $Roster:roster$ numbers must be clearly displayed on a Skater’s back and upper arm areas. Each team must have helmet covers to clearly indicate who their $Jammer:jammer$ and $Pivot:pivot-blocker$ are. The $Jammer:jammer$ and $Pivot:pivot-blocker$ helmet covers for the two teams must be easy to differentiate.\r\n\r\n**Skaters must wear quad-style roller skates and $protective gear:protective-gear$ during play.** Inline skates are not permitted. $Protective gear:protective-gear$ may not be removed during play. $Protective gear:protective-gear$ may not impair or interfere with the safety or play of other Skaters, support staff, or Officials.\r\n\r\n**Skaters who are injured during play may return to play as long as they are no longer apparently injured or bleeding.** A Skater whose injury alters the flow of the game (examples include a $Jam:jam$ being called off, a period clock stoppage, or a substitute being seated in the $Penalty:penalty$ Box) may not participate during the following three Jams (extending into the following period if necessary). A Skater whose injury alters the flow of the game more than once in a period may not participate as a Skater for the rest of that period. The $Head Referee:head-referee$ may also declare that a team has forfeited the game if that team has five or fewer Skaters eligible to participate, or refuses to field Skaters on the track to continue play.\r\n"
+                            "description": "**A team is comprised of Skaters, who must be uniquely identified by a $roster:roster$ number.** Each team must have a jersey of the same base color, such that uniform colors of the two teams playing are of high contrast. $Roster:roster$ numbers must be clearly displayed on a Skater’s back and upper arm areas. Each team must have helmet covers to clearly indicate who their $Jammer:jammer$ and $Pivot:pivot-blocker$ are. The $Jammer:jammer$ and $Pivot:pivot-blocker$ helmet covers for the two teams must be easy to differentiate.\r\n\r\n**Skaters must wear quad-style roller skates and $protective gear:protective-gear$ during play.** Inline skates are not permitted. $Protective gear:protective-gear$ may not be removed during play. $Protective gear:protective-gear$ may not impair or interfere with the safety or play of other Skaters, support staff, or Officials.\r\n\r\n**Skaters who are injured during play may return to play as long as they are no longer apparently injured or bleeding.** A Skater whose injury alters the flow of the game (examples include a $Jam:jam$ being called off, a period clock stoppage, or a $substitute:substitution$ being $seated:sitting$ in the $Penalty:penalty$ Box) may not participate during the following three $Jams:jam$ (extending into the following period if necessary). A Skater whose injury alters the flow of the game more than once in a period may not participate as a Skater for the rest of that period. The $Head Referee:head-referee$ may also declare that a team has forfeited the game if that team has five or fewer Skaters eligible to participate, or refuses to field Skaters on the track to continue play.\r\n"
                         },
                         {
                             "id": "timeouts",
                             "referenceId": "1.3",
                             "title": "Timeouts",
-                            "description": "**Teams and Officials may stop the period clock by calling a timeout.** Timeouts may only be called between Jams, though Officials may end a $Jam:jam$ in order to call an Official Timeout. The beginning of a timeout is marked by four short whistle blasts, and the end of a timeout is marked by a long rolling whistle, after which the next $Jam:jam$ begins as soon as possible if there is time remaining on the period clock. At most, 30 seconds may $pass:earned-pass$ before the next $Jam:jam$ begins. The period clock starts again at the $Jam:jam$-Starting Whistle.\r\n\r\nThere are three types of timeouts.\r\n",
+                            "description": "**Teams and Officials may stop the period clock by calling a timeout.** Timeouts may only be called between $Jams:jam$, though Officials may end a $Jam:jam$ in order to call an Official Timeout. The beginning of a timeout is marked by four short whistle blasts, and the end of a timeout is marked by a long rolling whistle, after which the next $Jam:jam$ begins as soon as possible if there is time remaining on the period clock. At most, 30 seconds may $pass:earned-pass$ before the next $Jam:jam$ begins. The period clock starts again at the $Jam:jam$-Starting Whistle.\r\n\r\nThere are three types of timeouts.\r\n",
                             "section": [
                                 {
                                     "id": "team-timeouts",
@@ -92,7 +92,10 @@
             {
                 "id": "assist",
                 "title": "Assist",
-                "description": "Physically affecting a teammate. Common examples include a push or a whip."
+                "description": "Physically affecting a teammate. Common examples include a push or a whip.",
+                "aliases": [
+                    "assists"
+                ]
             },
             {
                 "id": "behind",
@@ -102,22 +105,36 @@
             {
                 "id": "blocker",
                 "title": "Blocker",
-                "description": "The positional Skaters who form the $Pack:pack$. Up to four Blockers from each team may skate, per $Jam:jam$. One $Blocker:blocker$ per $Jam:jam$, for each team, may be a $Pivot:pivot-blocker$ $Blocker:blocker$."
+                "description": "The positional Skaters who form the $Pack:pack$. Up to four $Blockers:blocker$ from each team may skate, per $Jam:jam$. One $Blocker:blocker$ per $Jam:jam$, for each team, may be a $Pivot:pivot-blocker$ $Blocker:blocker$.",
+                "aliases": [
+                    "Blockers"
+                ]
             },
             {
                 "id": "blocking-zones",
                 "title": "Blocking Zones",
-                "description": "Areas of the body that may be used to hit an opponent when performing a block."
+                "description": "Areas of the body that may be used to hit an opponent when performing a block.",
+                "aliases": [
+                    "blocking zone"
+                ]
             },
             {
                 "id": "captain",
                 "title": "Captain",
-                "description": "The Skater identified, via a visible “C” on their body or clothing, to speak on the team’s behalf. If one has not been selected or has left the game, the team may determine one at any time by informing the $Head Referee:head-referee$, and must determine one if necessary (for example, if a $penalty:penalty$ is to be assessed to a $Captain:captain$, the team must determine a $Captain:captain$)."
+                "description": "The Skater identified, via a visible “C” on their body or clothing, to speak on the team’s behalf. If one has not been selected or has left the game, the team may determine one at any time by informing the $Head Referee:head-referee$, and must determine one if necessary (for example, if a $penalty:penalty$ is to be assessed to a $Captain:captain$, the team must determine a $Captain:captain$).",
+                "aliases": [
+                    "captains"
+                ]
             },
             {
                 "id": "counter-block",
                 "title": "Counter-Block",
-                "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. Counter-blocking is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately."
+                "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. $Counter-blocking:counter-block$ is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
+                "aliases": [
+                    "counter block",
+                    "counter blocking",
+                    "counter-blocking"
+                ]
             },
             {
                 "id": "designated-alternate",
@@ -132,7 +149,7 @@
             {
                 "id": "engagement-zone",
                 "title": "Engagement Zone",
-                "description": "The zone in which Blockers are $in play:in-play$ and may legally engage and be engaged. The $Engagement Zone:engagement-zone$ extends from 20 ft (6.10 m) $behind:behind$ the rearmost $Pack:pack$ Skater to 20 ft (6.10 m) in front of the foremost $Pack:pack$ Skater, between the inside and outside track boundaries."
+                "description": "The zone in which $Blockers:blocker$ are $in play:in-play$ and may legally engage and be engaged. The $Engagement Zone:engagement-zone$ extends from 20 ft (6.10 m) $behind:behind$ the rearmost $Pack:pack$ Skater to 20 ft (6.10 m) in front of the foremost $Pack:pack$ Skater, between the inside and outside track boundaries."
             },
             {
                 "id": "engaging",
@@ -142,7 +159,10 @@
             {
                 "id": "established-position",
                 "title": "Established Position",
-                "description": "Where a Skater is physically; an area of the track where the Skater has secured their place. Examples include up, $in bounds:in-bounds$, $down:down$, $out of bounds:out-of-bounds$, $in play:in-play$, and $out of play:out-of-play$."
+                "description": "Where a Skater is physically; an area of the track where the Skater has secured their place. Examples include up, $in bounds:in-bounds$, $down:down$, $out of bounds:out-of-bounds$, $in play:in-play$, and $out of play:out-of-play$.",
+                "aliases": [
+                    "established positions"
+                ]
             },
             {
                 "id": "exiting-the-track",
@@ -152,7 +172,10 @@
             {
                 "id": "expulsion",
                 "title": "Expulsion",
-                "description": "Removal by the $Head Referee:head-referee$ of a Skater or Team Staff from the remainder of the game for a serious illegal action, such as physical violence or any action deemed by the Officials to cause an extraordinary physical threat to others."
+                "description": "Removal by the $Head Referee:head-referee$ of a Skater or Team Staff from the remainder of the game for a serious illegal action, such as physical violence or any action deemed by the Officials to cause an extraordinary physical threat to others.",
+                "aliases": [
+                    "expulsions"
+                ]
             },
             {
                 "id": "falling-small",
@@ -162,22 +185,31 @@
             {
                 "id": "forceful-contact",
                 "title": "Forceful Contact",
-                "description": "Abrupt contact (such as hitting or striking) with a significant amount of strength and energy or any contact that either has the potential to harm the recipient or significantly alter their position, balance, speed, trajectory, etc. (regardless of whether that potential is actualized)."
+                "description": "Abrupt contact (such as hitting or striking) with a significant amount of strength and energy or any contact that either has the potential to harm the recipient or significantly alter their position, balance, speed, trajectory, etc. (regardless of whether that potential is actualized).",
+                "aliases": [
+                    "forceful contacts"
+                ]
             },
             {
                 "id": "fouling-out",
                 "title": "Fouling Out",
-                "description": "Removal, by an Official, of a Skater from the remainder of the game for having seven penalties recorded for that Skater."
+                "description": "Removal, by an Official, of a Skater from the remainder of the game for having seven $penalties:penalty$ recorded for that Skater."
             },
             {
                 "id": "governing-body",
                 "title": "Governing Body",
-                "description": "The organization responsible for the sanctioning of the game; or in an unsanctioned game, the organization responsible for determining the terms of the game, such as a tournament, local league, or other person(s) serving in that role."
+                "description": "The organization responsible for the sanctioning of the game; or in an unsanctioned game, the organization responsible for determining the terms of the game, such as a tournament, local league, or other person(s) serving in that role.",
+                "aliases": [
+                    "governing bodies"
+                ]
             },
             {
                 "id": "grasping",
                 "title": "Grasping",
-                "description": "Actively gripping something; for example, grabbing a teammate’s uniform or helmet cover, or holding hands. The $grasping:grasping$ Skater’s arm, from the hand up to (but not including) the shoulder, is considered to be part of the “grasp.” The teammate is not considered part of the grasp, unless the teammate is independently $grasping:grasping$."
+                "description": "Actively gripping something; for example, grabbing a teammate’s uniform or helmet cover, or holding hands. The $grasping:grasping$ Skater’s arm, from the hand up to (but not including) the shoulder, is considered to be part of the “$grasp:grasping$.” The teammate is not considered part of the $grasp:grasping$, unless the teammate is independently $grasping:grasping$.",
+                "aliases": [
+                    "grasp"
+                ]
             },
             {
                 "id": "head-referee",
@@ -192,7 +224,10 @@
             {
                 "id": "illegal-procedure",
                 "title": "Illegal Procedure",
-                "description": "Any technical (non-contact) infraction that violates the rules."
+                "description": "Any technical (non-contact) infraction that violates the rules.",
+                "aliases": [
+                    "illegal procedures"
+                ]
             },
             {
                 "id": "immediately",
@@ -202,12 +237,15 @@
             {
                 "id": "impeding",
                 "title": "Impeding",
-                "description": "Actions that restrict an opponent’s speed and/or trajectory in any direction on the track."
+                "description": "Actions that restrict an opponent’s speed and/or trajectory in any direction on the track.",
+                "aliases": [
+                    "impede"
+                ]
             },
             {
                 "id": "impenetrable",
                 "title": "Impenetrable",
-                "description": "A wall is considered to be $impenetrable:impenetrable$ from a certain direction when, to achieve a $pass:earned-pass$ on one or more of the Skaters who comprise the wall, an opponent would need to physically break bones or joints. The parts that would need to be physically broken in order to $pass:earned-pass$ are considered the “$impenetrable:impenetrable$” parts. For example, if two teammates are skating forward with their arms around each other’s backs, the arms constitute an $impenetrable:impenetrable$ wall, so that an opponent could not $pass:earned-pass$ between the pair without breaking one of those Blockers’ arms."
+                "description": "A wall is considered to be $impenetrable:impenetrable$ from a certain direction when, to achieve a $pass:earned-pass$ on one or more of the Skaters who comprise the wall, an opponent would need to physically break bones or joints. The parts that would need to be physically broken in order to $pass:earned-pass$ are considered the “$impenetrable:impenetrable$” parts. For example, if two teammates are skating forward with their arms around each other’s backs, the arms constitute an $impenetrable:impenetrable$ wall, so that an opponent could not $pass:earned-pass$ between the pair without breaking one of those $Blockers:blocker$’ arms."
             },
             {
                 "id": "in-bounds",
@@ -217,22 +255,34 @@
             {
                 "id": "in-play",
                 "title": "In Play",
-                "description": "A $Blocker:blocker$ is $in play:in-play$ when they are $in bounds:in-bounds$ and $upright:upright$ within the $Engagement Zone:engagement-zone$. $Jammers:jammer$ who are $in bounds:in-bounds$ and $upright:upright$ are always $in play:in-play$."
+                "description": "A $Blocker:blocker$ is $in play:in-play$ when they are $in bounds:in-bounds$ and $upright:upright$ within the $Engagement Zone:engagement-zone$. $Jammers:jammer$ who are $in bounds:in-bounds$ and $upright:upright$ are always $in play:in-play$.",
+                "aliases": [
+                    "in-play"
+                ]
             },
             {
                 "id": "in-position",
                 "title": "In Position",
-                "description": "A Skater is $in position:in-position$ when they are on the track, $in bounds:in-bounds$, and in the designated area for their position when the $Jam:jam$-Starting Whistle is blown."
+                "description": "A Skater is $in position:in-position$ when they are on the track, $in bounds:in-bounds$, and in the designated area for their position when the $Jam:jam$-Starting Whistle is blown.",
+                "aliases": [
+                    "in-position"
+                ]
             },
             {
                 "id": "in-queue",
                 "title": "In Queue",
-                "description": "Actively skating while having a $penalty:penalty$ pending, usually after having been waved back to the track due to the $Penalty:penalty$ Box being full, or having been assessed a $penalty:penalty$ while being the only $Blocker:blocker$ on the track."
+                "description": "Actively skating while having a $penalty:penalty$ pending, usually after having been waved back to the track due to the $Penalty:penalty$ Box being full, or having been assessed a $penalty:penalty$ while being the only $Blocker:blocker$ on the track.",
+                "aliases": [
+                    "in-queue"
+                ]
             },
             {
                 "id": "initiator",
                 "title": "Initiator",
-                "description": "The Skater who is responsible for contact happening to an opponent (initiating a block) or teammate (initiating an $assist:assist$). A Skater can also initiate their own $assist:assist$ by taking a whip off of a teammate’s body, or initiate a $counter-block:counter-block$ in response to an opponent’s block. The $initiator:initiator$ of a block or $assist:assist$ is always responsible for the legality of the contact.\n\nAfter a $counter-block:counter-block$, continued engagement by the counter-blocking skater should be considered a new action, with the skater responsible for the continued contact considered the $initiator:initiator$. The legality of this action should be judged separately from the initial block and $counter-block:counter-block$."
+                "description": "The Skater who is responsible for contact happening to an opponent (initiating a block) or teammate (initiating an $assist:assist$). A Skater can also initiate their own $assist:assist$ by taking a whip off of a teammate’s body, or initiate a $counter-block:counter-block$ in response to an opponent’s block. The $initiator:initiator$ of a block or $assist:assist$ is always responsible for the legality of the contact.\n\nAfter a $counter-block:counter-block$, continued engagement by the $counter-blocking:counter-block$ skater should be considered a new action, with the skater responsible for the continued contact considered the $initiator:initiator$. The legality of this action should be judged separately from the initial block and $counter-block:counter-block$.",
+                "aliases": [
+                    "initiators"
+                ]
             },
             {
                 "id": "insubordination",
@@ -242,7 +292,10 @@
             {
                 "id": "jam",
                 "title": "Jam",
-                "description": "The basic unit of play for the game. A $Jam:jam$ can last up to two minutes."
+                "description": "The basic unit of play for the game. A $Jam:jam$ can last up to two minutes.",
+                "aliases": [
+                    "jams"
+                ]
             },
             {
                 "id": "jammer",
@@ -255,21 +308,29 @@
             {
                 "id": "lapping",
                 "title": "Lap/Lapping",
-                "description": "One Skater has lapped an opponent if the Skater has passed the opponent twice in a row without the opponent having passed the $lapping:lapping$ Skater in between. If a $Jammer:jammer$ passes an opponent for the second time, but the second $pass:earned-pass$ was not “earned,” the $Jammer:jammer$ is still said to have lapped their opponent, and may earn a “re-$pass:earned-pass$” on said opponent to score the missed point.",
+                "description": "One Skater has $lapped:lapping$ an opponent if the Skater has passed the opponent twice in a row without the opponent having passed the $lapping:lapping$ Skater in between. If a $Jammer:jammer$ passes an opponent for the second time, but the second $pass:earned-pass$ was not “earned,” the $Jammer:jammer$ is still said to have $lapped:lapping$ their opponent, and may earn a “re-$pass:earned-pass$” on said opponent to score the missed point.",
                 "aliases": [
                     "Lap",
-                    "Lapping"
+                    "Lapping",
+                    "laps",
+                    "lapped"
                 ]
             },
             {
                 "id": "lead-jammer",
                 "title": "Lead Jammer",
-                "description": "The Lead $Jammer:jammer$ is the first $Jammer:jammer$ to establish superior position to the foremost in-play $Blocker:blocker$, having already earned a $pass:earned-pass$ on all Blockers excluding those $ahead:ahead$ of the $Engagement Zone:engagement-zone$."
+                "description": "The Lead $Jammer:jammer$ is the first $Jammer:jammer$ to establish superior position to the foremost $in-play:in-play$ $Blocker:blocker$, having already earned a $pass:earned-pass$ on all $Blockers:blocker$ excluding those $ahead:ahead$ of the $Engagement Zone:engagement-zone$.",
+                "aliases": [
+                    "lead jammers"
+                ]
             },
             {
                 "id": "linking",
                 "title": "Linking",
-                "description": "Interlocking of arms via crooking of an elbow. Both Skaters’ arms, up to (but not including) the shoulder are considered to be part of the link."
+                "description": "Interlocking of arms via crooking of an elbow. Both Skaters’ arms, up to (but not including) the shoulder are considered to be part of the $link:linking$.",
+                "aliases": [
+                    "link"
+                ]
             },
             {
                 "id": "no-impact",
@@ -279,14 +340,16 @@
             {
                 "id": "no-pack",
                 "title": "No Pack",
-                "description": "When there is not a group of Blockers (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of Blockers not skating within 10 ft (3.05 m) of each other."
+                "description": "When there is not a group of $Blockers:blocker$ (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of $Blockers:blocker$ not skating within 10 ft (3.05 m) of each other."
             },
             {
                 "id": "not-on-the-track-point",
                 "title": "Not-On-the-Track (NOTT) Point",
-                "description": "A point given for an opponent who is not on the track (such as Skaters in the $Penalty:penalty$ Box) that the $Jammer:jammer$ earns $immediately:immediately$ upon earning a $pass:earned-pass$ on any opposing $Blocker:blocker$, per trip through the $Pack:pack$.",
+                "description": "A point given for an opponent who is not on the track (such as Skaters in the $Penalty:penalty$ Box) that the $Jammer:jammer$ earns $immediately:immediately$ upon earning a $pass:earned-pass$ on any opposing $Blocker:blocker$, per $trip:trip-through-the-pack$ through the $Pack:pack$.",
                 "aliases": [
-                    "NOTT"
+                    "NOTT point",
+                    "not-on-the-track point",
+                    "not on the track point"
                 ]
             },
             {
@@ -300,7 +363,7 @@
             {
                 "id": "out-of-play",
                 "title": "Out of Play",
-                "description": "A $Blocker:blocker$ who is $in bounds:in-bounds$, but positioned outside of the $Engagement Zone:engagement-zone$. If $no $Pack:pack$:no-$pack:pack$$ is defined, all Blockers are $out of play:out-of-play$. When a $Jammer:jammer$ is $out of bounds:out-of-bounds$, they are $out of play:out-of-play$.",
+                "description": "A $Blocker:blocker$ who is $in bounds:in-bounds$, but positioned outside of the $Engagement Zone:engagement-zone$. If $no $Pack:pack$:no-$pack:pack$$ is defined, all $Blockers:blocker$ are $out of play:out-of-play$. When a $Jammer:jammer$ is $out of bounds:out-of-bounds$, they are $out of play:out-of-play$.",
                 "aliases": [
                     "out-of-play"
                 ]
@@ -308,7 +371,7 @@
             {
                 "id": "pack",
                 "title": "Pack",
-                "description": "The largest group of in-bounds Blockers, skating or $standing:standing$ in proximity (within 10 ft [3.05 m]), containing members from both teams. The $Jammers:jammer$ are independent of this definition."
+                "description": "The largest group of in-bounds $Blockers:blocker$, skating or $standing:standing$ in proximity (within 10 ft [3.05 m]), containing members from both teams. The $Jammers:jammer$ are independent of this definition."
             },
             {
                 "id": "pack-skater",
@@ -326,12 +389,18 @@
             {
                 "id": "star-pass",
                 "title": "Passing the Star / Star Pass",
-                "description": "The act of transferring $Jammer:jammer$ status, which is accomplished by the $Jammer:jammer$ handing their helmet cover ($the Star:the-star$) to the $Pivot:pivot-blocker$."
+                "description": "The act of transferring $Jammer:jammer$ status, which is accomplished by the $Jammer:jammer$ handing their helmet cover ($the Star:the-star$) to the $Pivot:pivot-blocker$.",
+                "aliases": [
+                    "star-pass"
+                ]
             },
             {
                 "id": "penalty",
                 "title": "Penalty",
-                "description": "A violation of the rules of the game requiring the Skater to serve time in the $Penalty:penalty$ Box, or the specific punishment of serving time in the $Penalty:penalty$ Box due to the commission of such a violation."
+                "description": "A violation of the rules of the game requiring the Skater to serve time in the $Penalty:penalty$ Box, or the specific punishment of serving time in the $Penalty:penalty$ Box due to the commission of such a violation.",
+                "aliases": [
+                    "penalties"
+                ]
             },
             {
                 "id": "pivot-blocker",
@@ -345,17 +414,30 @@
             {
                 "id": "points-awarded-in-error",
                 "title": "Points Awarded in Error",
-                "description": "Points that have not been legally earned by a $Jammer:jammer$ and have been awarded to the team incorrectly and/or erroneously by an Official or as the result of a technology malfunction."
+                "description": "Points that have not been legally earned by a $Jammer:jammer$ and have been awarded to the team incorrectly and/or erroneously by an Official or as the result of a technology malfunction.",
+                "aliases": [
+                    "points awarded-in-error"
+                ]
             },
             {
                 "id": "points-denied-in-error",
                 "title": "Points Denied in Error",
-                "description": "Similar to $points awarded in error:points-awarded-in-error$, $points denied in error:points-denied-in-error$ are points that have been legally earned by a $Jammer:jammer$ but have not been added to the Official Score due to delay, an error by an Official, or as the result of a technology malfunction."
+                "description": "Similar to $points awarded in error:points-awarded-in-error$, $points denied in error:points-denied-in-error$ are points that have been legally earned by a $Jammer:jammer$ but have not been added to the Official Score due to delay, an error by an Official, or as the result of a technology malfunction.",
+                "aliases": [
+                    "points denied-in-error"
+                ]
             },
             {
                 "id": "positional-blocking",
                 "title": "Positional Blocking",
-                "description": "Blocking without contact; positioning oneself so as to impede an opponent’s movement on the track. $Positional blocking:positional-blocking$ need not be intentional."
+                "description": "Blocking without contact; positioning oneself so as to $impede:impeding$ an opponent’s movement on the track. $Positional blocking:positional-blocking$ need not be intentional.",
+                "aliases": [
+                    "positional block",
+                    "positional blocks",
+                    "positionally blocking",
+                    "positionally block",
+                    "positionally blocks"
+                ]
             },
             {
                 "id": "protective-gear",
@@ -365,22 +447,37 @@
             {
                 "id": "re-pass",
                 "title": "Re-Pass",
-                "description": "The act of passing an opponent who has already been passed during the current $lap:lapping$. Most relevant to a $Jammer:jammer$ who ends up $ahead:ahead$ of an opponent without “earning” the $pass:earned-pass$. Such a $Jammer:jammer$ would not score a point on that opponent, but could re-$pass:earned-pass$ that opponent, earning their second $pass:earned-pass$, in order to score that point."
+                "description": "The act of passing an opponent who has already been passed during the current $lap:lapping$. Most relevant to a $Jammer:jammer$ who ends up $ahead:ahead$ of an opponent without “earning” the $pass:earned-pass$. Such a $Jammer:jammer$ would not score a point on that opponent, but could re-$pass:earned-pass$ that opponent, earning their second $pass:earned-pass$, in order to score that point.",
+                "aliases": [
+                    "repass"
+                ]
             },
             {
                 "id": "relative-position",
                 "title": "Relative Position",
-                "description": "A Skater’s location, when $in bounds:in-bounds$ and $upright:upright$, in relation to other Skaters involved in the action. $Relative position:relative-position$ is said to be “gained” or “lost” if said location changes in a way that gives or loses some advantage (for example, one Skater passing another, or being knocked $down:down$, $out of bounds:out-of-bounds$, or $out of play:out-of-play$). $Relative position:relative-position$ is only measured in the counterclockwise direction."
+                "description": "A Skater’s location, when $in bounds:in-bounds$ and $upright:upright$, in relation to other Skaters involved in the action. $Relative position:relative-position$ is said to be “gained” or “lost” if said location changes in a way that gives or loses some advantage (for example, one Skater passing another, or being knocked $down:down$, $out of bounds:out-of-bounds$, or $out of play:out-of-play$). $Relative position:relative-position$ is only measured in the counterclockwise direction.",
+                "aliases": [
+                    "relative positions",
+                    "relatively positioned"
+                ]
             },
             {
                 "id": "roster",
                 "title": "Roster",
-                "description": "The list of Skaters for a team, and their identifying numbers, who are eligible to play in the game."
+                "description": "The list of Skaters for a team, and their identifying numbers, who are eligible to play in the game.",
+                "aliases": [
+                    "rosters",
+                    "rostered"
+                ]
             },
             {
                 "id": "sitting",
                 "title": "Sitting",
-                "description": "A Skater whose buttocks are in full contact with the seat of a chair or bench."
+                "description": "A Skater whose buttocks are in full contact with the seat of a chair or bench.",
+                "aliases": [
+                    "sit",
+                    "seated"
+                ]
             },
             {
                 "id": "skating-direction-of-travel",
@@ -390,7 +487,10 @@
             {
                 "id": "standing",
                 "title": "Standing",
-                "description": "A Skater holding their body weight on their skates, such that they are not $down:down$ and it is obvious to Officials, Skaters, and spectators that they are not $sitting:sitting$."
+                "description": "A Skater holding their body weight on their skates, such that they are not $down:down$ and it is obvious to Officials, Skaters, and spectators that they are not $sitting:sitting$.",
+                "aliases": [
+                    "stand"
+                ]
             },
             {
                 "id": "stopped",
@@ -400,32 +500,51 @@
             {
                 "id": "straddling",
                 "title": "Straddling",
-                "description": "A Skater is $straddling:straddling$ when they are simultaneously touching the floor on or between the track boundary lines and beyond the track boundary. Touching the floor beyond the track boundary with only one arm or hand does not render a Skater $straddling:straddling$. $Straddling:straddling$ Skaters are considered $out of bounds:out-of-bounds$, except where otherwise noted (see also $in bounds:in-bounds$)."
+                "description": "A Skater is $straddling:straddling$ when they are simultaneously touching the floor on or between the track boundary lines and beyond the track boundary. Touching the floor beyond the track boundary with only one arm or hand does not render a Skater $straddling:straddling$. $Straddling:straddling$ Skaters are considered $out of bounds:out-of-bounds$, except where otherwise noted (see also $in bounds:in-bounds$).",
+                "aliases": [
+                    "straddle"
+                ]
             },
             {
                 "id": "substitution",
                 "title": "Substitution",
-                "description": "Replacing a Skater on the track or in the $Penalty:penalty$ Box with a teammate."
+                "description": "Replacing a Skater on the track or in the $Penalty:penalty$ Box with a teammate.",
+                "aliases": [
+                    "substitute",
+                    "substitutes"
+                ]
             },
             {
                 "id": "the-star",
                 "title": "The Star",
-                "description": "The $Jammer:jammer$ helmet cover, which has two stars on it, one on each side."
+                "description": "The $Jammer:jammer$ helmet cover, which has two stars on it, one on each side.",
+                "aliases": [
+                    "star"
+                ]
             },
             {
                 "id": "the-stripe",
                 "title": "The Stripe",
-                "description": "The $Pivot:pivot-blocker$ helmet cover, which has one long stripe $down:down$ the middle of it."
+                "description": "The $Pivot:pivot-blocker$ helmet cover, which has one long $stripe:the-stripe$ $down:down$ the middle of it.",
+                "aliases": [
+                    "stripe"
+                ]
             },
             {
                 "id": "target-zones",
                 "title": "Target Zones",
-                "description": "Areas of the body on an opponent that a Skater makes contact to when blocking."
+                "description": "Areas of the body on an opponent that a Skater makes contact to when blocking.",
+                "aliases": [
+                    "target zone"
+                ]
             },
             {
                 "id": "trip-through-the-pack",
                 "title": "Trip Through the Pack",
-                "description": "$Jammers:jammer$ make trips through the $Pack:pack$. Each trip represents an opportunity to score points on opponents. (See Section 3)."
+                "description": "$Jammers:jammer$ make trips through the $Pack:pack$. Each $trip:trip-through-the-pack$ represents an opportunity to score points on opponents. (See Section 3).",
+                "aliases": [
+                    "trip"
+                ]
             },
             {
                 "id": "upright",
@@ -435,7 +554,10 @@
             {
                 "id": "warning",
                 "title": "Warning",
-                "description": "A formal verbal indication from the Official that play is currently or is about to be improper, so that a Skater can take corrective action."
+                "description": "A formal verbal indication from the Official that play is currently or is about to be improper, so that a Skater can take corrective action.",
+                "aliases": [
+                    "warn"
+                ]
             }
         ]
     }
