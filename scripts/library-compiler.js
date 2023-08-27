@@ -142,24 +142,38 @@ export class LibraryCompiler {
             return;
         }
 
-        const augment = (object, property) => {
+        const mutate = (object, property) => {
             if (typeof object === 'object' && object != null && typeof object[property] === 'string') {
                 object[property] = this.#compileGlossaryLinks(object[property]);
             }
         };
 
-        augment(this.libraryJSON, 'description');
+        const mutateSections = sections => {
+            if (!Array.isArray(sections)) {
+                return;
+            }
+
+            for (const section of sections) {
+                mutate(section, 'description');
+
+                mutateSections(section.sections);
+            }
+        };
+
+        mutate(this.libraryJSON, 'description');
 
         for (const document of this.libraryJSON.documents) {
-            augment(document, 'description');
+            mutate(document, 'description');
 
             if (this.libraryJSON.documents == null || this.libraryJSON.documents.length === 0) {
                 return;
             }
+
+            mutateSections(document.sections);
         }
 
         for (const glossaryEntry of this.libraryJSON.glossary.entries) {
-            augment(glossaryEntry, 'description');
+            mutate(glossaryEntry, 'description');
         }
     }
 }
