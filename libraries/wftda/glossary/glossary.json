@@ -1,0 +1,20 @@
+{
+    "entries": [
+        {
+            "id": "actively-absorbing",
+            "name": "Actively Absorbing",
+            "description": "Any movement toward oncoming contact intended only to protect the recipient of the contact."
+        },
+        {
+            "id": "ahead",
+            "name": "Ahead",
+            "description": "One thing (for example, a Skater, a line, the Pack) is “ahead” of another thing, in relation to the track, if it is nearer in the counterclockwise direction than the clockwise direction."
+        },
+        {
+            "id": "jammer",
+            "name": "Jammer",
+            "description": "The point scorer for a team.",
+            "aliases": ["Jammers"]
+        }
+    ]
+}

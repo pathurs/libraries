@@ -1,0 +1,7 @@
+{
+    "id": "timeouts",
+    "referenceId": "1.3",
+    "title": "Timeouts",
+    "description": "markdown:./timeouts.md",
+    "section": ["json:./team-timeouts.json", "json:./official-reviews.json", "json:./official-timeouts.json"]
+}

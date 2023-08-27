@@ -1,0 +1,12 @@
+{
+    "name": "libraries",
+    "version": "1.0.0",
+    "description": "Libraries for pathurs.com",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "compile-wftda": "node ./scripts/compile-library libraries/wftda/library.json dist/wftda-library.json"
+    },
+    "author": "",
+    "license": "MIT"
+}

@@ -1,0 +1,6 @@
+{
+    "id": "game-parameters-and-safety",
+    "referenceId": "1",
+    "title": "Game Parameters & Safety",
+    "sections": ["json:./timing.json", "json:./teams.json", "json:./timeouts.json"]
+}

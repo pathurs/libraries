@@ -1,0 +1,6 @@
+{
+    "id": "rules",
+    "title": "Rules",
+    "description": "markdown:./rules.md",
+    "sections": ["json:./game-parameters-and-safety/game-parameters-and-safety.json"]
+}

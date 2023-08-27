@@ -1,0 +1,5 @@
+{
+    "id": "casebook",
+    "title": "Casebook",
+    "sections": ["json:./game-parameters-and-safety.json"]
+}
