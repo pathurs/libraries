@@ -104,7 +104,7 @@ export class LibraryCompiler {
 
     #createRegExpForGlossaryEntry(glossaryEntry) {
         return RegExp(
-            `(${this.#glossaryEntryPreviousCharacters})(${[glossaryEntry.name, ...(glossaryEntry.aliases ?? [])].join(
+            `(${this.#glossaryEntryPreviousCharacters})(${[glossaryEntry.title, ...(glossaryEntry.aliases ?? [])].join(
                 '|'
             )})(${this.#glossaryEntryNextCharacters})`,
             'gi'
@@ -115,6 +115,7 @@ export class LibraryCompiler {
         if (text == null) {
             return undefined;
         }
+
         if (this.libraryJSON.glossary?.entries == null || this.libraryJSON.glossary?.entries.length === 0) {
             return;
         }
@@ -155,6 +156,10 @@ export class LibraryCompiler {
             if (this.libraryJSON.documents == null || this.libraryJSON.documents.length === 0) {
                 return;
             }
+        }
+
+        for (const glossaryEntry of this.libraryJSON.glossary.entries) {
+            augment(glossaryEntry, 'description');
         }
     }
 }
