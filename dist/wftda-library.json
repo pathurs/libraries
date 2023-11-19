@@ -67,7 +67,7 @@
                                     "id": "overtime",
                                     "referenceId": "1.5.1",
                                     "title": "Overtime",
-                                    "description": "**If the game ends with the score tied, the second period will be extended by at least one additional $Jam:jam$.** This Overtime $Jam:jam$ is like any other $Jam:jam$, with two exceptions:\r\n\r\n- No $Lead Jammer:lead-jammer$ is declared\r\n- Both $Jammers:jammer$ begin scoring on their first $trip:trip-through-the-pack$ through the $Pack:pack$ (each $Jammer:jammer$ is $in position:in-position$ to $lap:lapping$ the opposing $Blockers:blocker$ on their first $earned pass:earned-pass$ of those $Blockers:blocker$)\r\n\r\nMore $Jams:jam$ will be added in this manner until a $Jam:jam$ ends with the score no longer tied.\r\n"
+                                    "description": "**If the game ends with the score tied, the second period will be extended by at least one additional $Jam:jam$.** This Overtime $Jam:jam$ is like any other $Jam:jam$, with two exceptions:\r\n\r\n- No $Lead Jammer:lead-jammer$ is declared\r\n- Both $Jammers:jammer$ begin scoring on their first $trip through the Pack:trip-through-the-pack$ (each $Jammer:jammer$ is $in position:in-position$ to $lap:lapping$ the opposing $Blockers:blocker$ on their first $earned pass:earned-pass$ of those $Blockers:blocker$)\r\n\r\nMore $Jams:jam$ will be added in this manner until a $Jam:jam$ ends with the score no longer tied.\r\n"
                                 }
                             ]
                         }
@@ -92,39 +92,18 @@
     "glossary": {
         "entries": [
             {
-                "id": "re-pass",
-                "title": "Re-Pass",
-                "description": "The act of $passing:earned-pass$ an opponent who has already been $passed:earned-pass$ during the current $lap:lapping$. Most relevant to a $Jammer:jammer$ who ends up $ahead:ahead$ of an opponent without “earning” the $pass:earned-pass$. Such a $Jammer:jammer$ would not score a point on that opponent, but could $re-pass:re-pass$ that opponent, earning their second $pass:earned-pass$, in order to score that point.",
+                "id": "trip-through-the-pack",
+                "title": "Trip Through the Pack",
+                "description": "$Jammers:jammer$ make $trips through the Pack:trip-through-the-pack$. Each $trip:trip-through-the-pack$ represents an opportunity to score points on opponents. (See Section 3).",
                 "aliases": [
-                    "repass"
-                ]
-            },
-            {
-                "id": "counter-block",
-                "title": "Counter-Block",
-                "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. $Counter-blocking:counter-block$ is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
-                "aliases": [
-                    "counter-blocks",
-                    "counter-blocked",
-                    "counter-blocking",
-                    "counter block",
-                    "counter blocks",
-                    "counter blocked",
-                    "counter blocking"
-                ]
-            },
-            {
-                "id": "lead-jammer",
-                "title": "Lead Jammer",
-                "description": "The $Lead Jammer:lead-jammer$ is the first $Jammer:jammer$ to establish superior position to the foremost $in-play:in-play$ $Blocker:blocker$, having already earned a $pass:earned-pass$ on all $Blockers:blocker$ excluding those $ahead:ahead$ of the $Engagement Zone:engagement-zone$.",
-                "aliases": [
-                    "lead jammers"
-                ]
-            },
-            {
-                "id": "no-pack",
-                "title": "No Pack",
-                "description": "When there is not a group of $Blockers:blocker$ (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of $Blockers:blocker$ not skating within 10 ft (3.05 m) of each other."
+                    "trips through the pack",
+                    "trip",
+                    "trips"
+                ],
+                "conflicts": [
+                    "pack"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Trip Through the Pack|trips through the pack|trip|trips)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "star-pass",
@@ -141,15 +120,24 @@
                     "star-pass",
                     "star-passing",
                     "star-passes"
-                ]
+                ],
+                "conflicts": [
+                    "earned-pass",
+                    "the-star"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Passing the Star \\/ Star Pass|pass the star|passes the star|passed the star|passing the star|star pass|star passing|star passes|star-pass|star-passing|star-passes)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
-                "id": "pack-skater",
-                "title": "Pack Skater",
-                "description": "Any $Blocker:blocker$ who is part of a legally defined $Pack:pack$.",
+                "id": "re-pass",
+                "title": "Re-Pass",
+                "description": "The act of $passing:earned-pass$ an opponent who has already been $passed:earned-pass$ during the current $lap:lapping$. Most relevant to a $Jammer:jammer$ who ends up $ahead:ahead$ of an opponent without “earning” the $pass:earned-pass$. Such a $Jammer:jammer$ would not score a point on that opponent, but could $re-pass:re-pass$ that opponent, earning their second $pass:earned-pass$, in order to score that point.",
                 "aliases": [
-                    "pack skaters"
-                ]
+                    "repass"
+                ],
+                "conflicts": [
+                    "earned-pass"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Re-Pass|repass)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "pivot-blocker",
@@ -158,7 +146,145 @@
                 "aliases": [
                     "pivot blocker",
                     "pivot"
+                ],
+                "conflicts": [
+                    "blocker"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Pivot Blocker \\14Pivot\\20|pivot blocker|pivot)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "pack-skater",
+                "title": "Pack Skater",
+                "description": "Any $Blocker:blocker$ who is part of a legally defined $Pack:pack$.",
+                "aliases": [
+                    "pack skaters"
+                ],
+                "conflicts": [
+                    "pack"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Pack Skater|pack skaters)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "no-pack",
+                "title": "No Pack",
+                "description": "When there is not a group of $Blockers:blocker$ (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of $Blockers:blocker$ not skating within 10 ft (3.05 m) of each other.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(No Pack)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi",
+                "conflicts": [
+                    "pack"
                 ]
+            },
+            {
+                "id": "lead-jammer",
+                "title": "Lead Jammer",
+                "description": "The $Lead Jammer:lead-jammer$ is the first $Jammer:jammer$ to establish superior position to the foremost $in-play:in-play$ $Blocker:blocker$, having already earned a $pass:earned-pass$ on all $Blockers:blocker$ excluding those $ahead:ahead$ of the $Engagement Zone:engagement-zone$.",
+                "aliases": [
+                    "lead jammers"
+                ],
+                "conflicts": [
+                    "jammer"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Lead Jammer|lead jammers)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "actively-absorbing",
+                "title": "Actively Absorbing",
+                "description": "Any movement toward oncoming contact intended only to protect the recipient of the contact.",
+                "aliases": [
+                    "Actively Absorb",
+                    "Actively Absorbs",
+                    "Actively Absorbed"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Actively Absorbing|Actively Absorb|Actively Absorbs|Actively Absorbed)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "ahead",
+                "title": "Ahead",
+                "description": "One thing (for example, a Skater, a line, the $Pack:pack$) is “$ahead:ahead$” of another thing, in relation to the track, if it is nearer in the counterclockwise direction than the clockwise direction.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Ahead)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "apex-jump",
+                "title": "Apex Jump",
+                "description": "An attempt to legally shorten the distance travelled around the curve of the track by leaping over the track boundary and landing back $in bounds:in-bounds$.",
+                "aliases": [
+                    "apex jumps",
+                    "apex jumped"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Apex Jump|apex jumps|apex jumped)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "assist",
+                "title": "Assist",
+                "description": "Physically affecting a teammate. Common examples include a push or a whip.",
+                "aliases": [
+                    "assists",
+                    "assisted",
+                    "assisting"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Assist|assists|assisted|assisting)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "behind",
+                "title": "Behind",
+                "description": "One thing (for example, a Skater, a line, the $Pack:pack$) is “$behind:behind$” another thing, in relation to the track, if it is nearer in the clockwise direction than the counterclockwise direction.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Behind)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "blocker",
+                "title": "Blocker",
+                "description": "The positional Skaters who form the $Pack:pack$. Up to four $Blockers:blocker$ from each team may skate, per $Jam:jam$. One $Blocker:blocker$ per $Jam:jam$, for each team, may be a $Pivot Blocker:pivot-blocker$.",
+                "aliases": [
+                    "Blockers"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Blocker|Blockers)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "blocking-zones",
+                "title": "Blocking Zones",
+                "description": "Areas of the body that may be used to hit an opponent when performing a block.",
+                "aliases": [
+                    "blocking zone"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Blocking Zones|blocking zone)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "captain",
+                "title": "Captain",
+                "description": "The Skater identified, via a visible “C” on their body or clothing, to speak on the team’s behalf. If one has not been selected or has left the game, the team may determine one at any time by informing the $Head Referee:head-referee$, and must determine one if necessary (for example, if a $penalty:penalty$ is to be assessed to a $Captain:captain$, the team must determine a $Captain:captain$).",
+                "aliases": [
+                    "captains"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Captain|captains)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "counter-block",
+                "title": "Counter-Block",
+                "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. $Counter-blocking:counter-block$ is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
+                "aliases": [
+                    "counter-blocks",
+                    "counter-blocked",
+                    "counter-blocking",
+                    "counter block",
+                    "counter blocks",
+                    "counter blocked",
+                    "counter blocking"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Counter-Block|counter-blocks|counter-blocked|counter-blocking|counter block|counter blocks|counter blocked|counter blocking)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "designated-alternate",
+                "title": "Designated Alternate",
+                "description": "The $Captain:captain$ designates an additional person to act on their team’s behalf via a visible “A” on their uniform or body; this person is the $Designated Alternate:designated-alternate$. The $Designated Alternate:designated-alternate$ may be a teammate, coach, or manager. A team may only have one $Designated Alternate:designated-alternate$. If one has not been selected or has left the game, the $Captain:captain$ may designate a different Alternate by informing the $Head Referee:head-referee$.",
+                "aliases": [
+                    "designated alternates"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Designated Alternate|designated alternates)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "down",
+                "title": "Down",
+                "description": "A Skater is $down:down$ when part of the Skater’s body or equipment (aside from skates) is touching the floor. A Skater whose only contact with the floor (aside from skates) is one hand is not considered $down:down$. Once $down:down$, a Skater is considered $down:down$ until the Skater is $standing:standing$, stepping, or skating.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Down)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "earned-pass",
@@ -171,88 +297,14 @@
                     "passing",
                     "earned pass",
                     "earned passes"
-                ]
-            },
-            {
-                "id": "actively-absorbing",
-                "title": "Actively Absorbing",
-                "description": "Any movement toward oncoming contact intended only to protect the recipient of the contact.",
-                "aliases": [
-                    "Actively Absorb",
-                    "Actively Absorbs",
-                    "Actively Absorbed"
-                ]
-            },
-            {
-                "id": "ahead",
-                "title": "Ahead",
-                "description": "One thing (for example, a Skater, a line, the $Pack:pack$) is “$ahead:ahead$” of another thing, in relation to the track, if it is nearer in the counterclockwise direction than the clockwise direction."
-            },
-            {
-                "id": "apex-jump",
-                "title": "Apex Jump",
-                "description": "An attempt to legally shorten the distance travelled around the curve of the track by leaping over the track boundary and landing back $in bounds:in-bounds$.",
-                "aliases": [
-                    "apex jumps",
-                    "apex jumped"
-                ]
-            },
-            {
-                "id": "assist",
-                "title": "Assist",
-                "description": "Physically affecting a teammate. Common examples include a push or a whip.",
-                "aliases": [
-                    "assists",
-                    "assisted",
-                    "assisting"
-                ]
-            },
-            {
-                "id": "behind",
-                "title": "Behind",
-                "description": "One thing (for example, a Skater, a line, the $Pack:pack$) is “$behind:behind$” another thing, in relation to the track, if it is nearer in the clockwise direction than the counterclockwise direction."
-            },
-            {
-                "id": "blocker",
-                "title": "Blocker",
-                "description": "The positional Skaters who form the $Pack:pack$. Up to four $Blockers:blocker$ from each team may skate, per $Jam:jam$. One $Blocker:blocker$ per $Jam:jam$, for each team, may be a $Pivot Blocker:pivot-blocker$.",
-                "aliases": [
-                    "Blockers"
-                ]
-            },
-            {
-                "id": "blocking-zones",
-                "title": "Blocking Zones",
-                "description": "Areas of the body that may be used to hit an opponent when performing a block.",
-                "aliases": [
-                    "blocking zone"
-                ]
-            },
-            {
-                "id": "captain",
-                "title": "Captain",
-                "description": "The Skater identified, via a visible “C” on their body or clothing, to speak on the team’s behalf. If one has not been selected or has left the game, the team may determine one at any time by informing the $Head Referee:head-referee$, and must determine one if necessary (for example, if a $penalty:penalty$ is to be assessed to a $Captain:captain$, the team must determine a $Captain:captain$).",
-                "aliases": [
-                    "captains"
-                ]
-            },
-            {
-                "id": "designated-alternate",
-                "title": "Designated Alternate",
-                "description": "The $Captain:captain$ designates an additional person to act on their team’s behalf via a visible “A” on their uniform or body; this person is the $Designated Alternate:designated-alternate$. The $Designated Alternate:designated-alternate$ may be a teammate, coach, or manager. A team may only have one $Designated Alternate:designated-alternate$. If one has not been selected or has left the game, the $Captain:captain$ may designate a different Alternate by informing the $Head Referee:head-referee$.",
-                "aliases": [
-                    "designated alternates"
-                ]
-            },
-            {
-                "id": "down",
-                "title": "Down",
-                "description": "A Skater is $down:down$ when part of the Skater’s body or equipment (aside from skates) is touching the floor. A Skater whose only contact with the floor (aside from skates) is one hand is not considered $down:down$. Once $down:down$, a Skater is considered $down:down$ until the Skater is $standing:standing$, stepping, or skating."
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Pass\\/Earned Pass|pass|passes|passed|passing|earned pass|earned passes)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "engagement-zone",
                 "title": "Engagement Zone",
-                "description": "The zone in which $Blockers:blocker$ are $in play:in-play$ and may legally $engage:engaging$ and be $engaged:engaging$. The $Engagement Zone:engagement-zone$ extends from 20 ft (6.10 m) $behind:behind$ the rearmost $Pack Skater:pack-skater$ to 20 ft (6.10 m) in front of the foremost $Pack Skater:pack-skater$, between the inside and outside track boundaries."
+                "description": "The zone in which $Blockers:blocker$ are $in play:in-play$ and may legally $engage:engaging$ and be $engaged:engaging$. The $Engagement Zone:engagement-zone$ extends from 20 ft (6.10 m) $behind:behind$ the rearmost $Pack Skater:pack-skater$ to 20 ft (6.10 m) in front of the foremost $Pack Skater:pack-skater$, between the inside and outside track boundaries.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Engagement Zone)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "engaging",
@@ -262,7 +314,8 @@
                     "engage",
                     "engages",
                     "engaged"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Engaging|engage|engages|engaged)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "established-position",
@@ -270,7 +323,8 @@
                 "description": "Where a Skater is physically; an area of the track where the Skater has secured their place. Examples include up, $in bounds:in-bounds$, $down:down$, $out of bounds:out-of-bounds$, $in play:in-play$, and $out of play:out-of-play$.",
                 "aliases": [
                     "established positions"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Established Position|established positions)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "exiting-the-track",
@@ -279,7 +333,8 @@
                 "aliases": [
                     "exit the track",
                     "exits the track"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Exiting the Track|exit the track|exits the track)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "expulsion",
@@ -290,7 +345,8 @@
                     "expel",
                     "expelled",
                     "expelling"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Expulsion|expulsions|expel|expelled|expelling)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "falling-small",
@@ -299,7 +355,8 @@
                 "aliases": [
                     "falls small",
                     "fell small"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Falling Small|falls small|fell small)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "forceful-contact",
@@ -307,7 +364,8 @@
                 "description": "Abrupt contact (such as hitting or striking) with a significant amount of strength and energy or any contact that either has the potential to harm the recipient or significantly alter their position, balance, speed, trajectory, etc. (regardless of whether that potential is actualized).",
                 "aliases": [
                     "forceful contacts"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Forceful Contact|forceful contacts)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "fouling-out",
@@ -316,7 +374,8 @@
                 "aliases": [
                     "fouls out",
                     "fouled out"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Fouling Out|fouls out|fouled out)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "governing-body",
@@ -324,7 +383,8 @@
                 "description": "The organization responsible for the sanctioning of the game; or in an unsanctioned game, the organization responsible for determining the terms of the game, such as a tournament, local league, or other person(s) serving in that role.",
                 "aliases": [
                     "governing bodies"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Governing Body|governing bodies)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "grasping",
@@ -334,12 +394,14 @@
                     "grasp",
                     "grasps",
                     "grasped"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Grasping|grasp|grasps|grasped)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "head-referee",
                 "title": "Head Referee",
-                "description": "One Referee will be designated the $Head Referee:head-referee$. The $Head Referee:head-referee$ is the ultimate authority of the game."
+                "description": "One Referee will be designated the $Head Referee:head-referee$. The $Head Referee:head-referee$ is the ultimate authority of the game.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Head Referee)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "hips",
@@ -347,7 +409,8 @@
                 "description": "The laterally-projecting prominence of the pelvis or pelvic region from the waist to the thigh. The central point of this area determines a $pass:earned-pass$, regardless of the direction the Skater is facing.",
                 "aliases": [
                     "hip"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Hips|hip)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "illegal-procedure",
@@ -355,12 +418,14 @@
                 "description": "Any technical (non-contact) infraction that violates the rules.",
                 "aliases": [
                     "illegal procedures"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Illegal Procedure|illegal procedures)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "immediately",
                 "title": "Immediately",
-                "description": "The first legal opportunity in which someone may complete an action."
+                "description": "The first legal opportunity in which someone may complete an action.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Immediately)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "impeding",
@@ -370,17 +435,20 @@
                     "impede",
                     "impedes",
                     "impeded"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Impeding|impede|impedes|impeded)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "impenetrable",
                 "title": "Impenetrable",
-                "description": "A wall is considered to be $impenetrable:impenetrable$ from a certain direction when, to achieve a $pass:earned-pass$ on one or more of the Skaters who comprise the wall, an opponent would need to physically break bones or joints. The parts that would need to be physically broken in order to $pass:earned-pass$ are considered the “$impenetrable:impenetrable$” parts. For example, if two teammates are skating forward with their arms around each other’s backs, the arms constitute an $impenetrable:impenetrable$ wall, so that an opponent could not $pass:earned-pass$ between the pair without breaking one of those $Blockers:blocker$’ arms."
+                "description": "A wall is considered to be $impenetrable:impenetrable$ from a certain direction when, to achieve a $pass:earned-pass$ on one or more of the Skaters who comprise the wall, an opponent would need to physically break bones or joints. The parts that would need to be physically broken in order to $pass:earned-pass$ are considered the “$impenetrable:impenetrable$” parts. For example, if two teammates are skating forward with their arms around each other’s backs, the arms constitute an $impenetrable:impenetrable$ wall, so that an opponent could not $pass:earned-pass$ between the pair without breaking one of those $Blockers:blocker$’ arms.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Impenetrable)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "in-bounds",
                 "title": "In Bounds",
-                "description": "A Skater is $in bounds:in-bounds$ if the only points at which they are touching the floor are on or in between the track boundary lines. Once touching beyond the track boundary, a Skater is considered to be $in bounds:in-bounds$ again once all parts of the Skater that are touching the floor are on or between the track boundary lines. A Skater who touches the floor beyond the track boundary with only one arm or hand is still considered $in bounds:in-bounds$ (see also $out of bounds:out-of-bounds$, $straddling:straddling$)."
+                "description": "A Skater is $in bounds:in-bounds$ if the only points at which they are touching the floor are on or in between the track boundary lines. Once touching beyond the track boundary, a Skater is considered to be $in bounds:in-bounds$ again once all parts of the Skater that are touching the floor are on or between the track boundary lines. A Skater who touches the floor beyond the track boundary with only one arm or hand is still considered $in bounds:in-bounds$ (see also $out of bounds:out-of-bounds$, $straddling:straddling$).",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(In Bounds)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "in-play",
@@ -388,7 +456,8 @@
                 "description": "A $Blocker:blocker$ is $in play:in-play$ when they are $in bounds:in-bounds$ and $upright:upright$ within the $Engagement Zone:engagement-zone$. $Jammers:jammer$ who are $in bounds:in-bounds$ and $upright:upright$ are always $in play:in-play$.",
                 "aliases": [
                     "in-play"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(In Play|in-play)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "in-position",
@@ -396,7 +465,8 @@
                 "description": "A Skater is $in position:in-position$ when they are on the track, $in bounds:in-bounds$, and in the designated area for their position when the $Jam:jam$-Starting Whistle is blown.",
                 "aliases": [
                     "in-position"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(In Position|in-position)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "in-queue",
@@ -404,7 +474,8 @@
                 "description": "Actively skating while having a $penalty:penalty$ pending, usually after having been waved back to the track due to the $Penalty:penalty$ Box being full, or having been assessed a $penalty:penalty$ while being the only $Blocker:blocker$ on the track.",
                 "aliases": [
                     "in-queue"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(In Queue|in-queue)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "initiator",
@@ -412,12 +483,14 @@
                 "description": "The Skater who is responsible for contact happening to an opponent (initiating a block) or teammate (initiating an $assist:assist$). A Skater can also initiate their own $assist:assist$ by taking a whip off of a teammate’s body, or initiate a $counter-block:counter-block$ in response to an opponent’s block. The $initiator:initiator$ of a block or $assist:assist$ is always responsible for the legality of the contact.\n\nAfter a $counter-block:counter-block$, continued engagement by the $counter-blocking:counter-block$ skater should be considered a new action, with the skater responsible for the continued contact considered the $initiator:initiator$. The legality of this action should be judged separately from the initial block and $counter-block:counter-block$.",
                 "aliases": [
                     "initiators"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Initiator|initiators)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "insubordination",
                 "title": "Insubordination",
-                "description": "Willfully or neglectfully failing to comply with an Official’s orders. Wrongful or improper behavior motivated by intentional disregard for the rules."
+                "description": "Willfully or neglectfully failing to comply with an Official’s orders. Wrongful or improper behavior motivated by intentional disregard for the rules.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Insubordination)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "jam",
@@ -425,7 +498,8 @@
                 "description": "The basic unit of play for the game. A $Jam:jam$ can last up to two minutes.",
                 "aliases": [
                     "jams"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Jam|jams)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "jammer",
@@ -433,7 +507,8 @@
                 "description": "The point scorer for a team.",
                 "aliases": [
                     "Jammers"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Jammer|Jammers)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "lapping",
@@ -444,7 +519,8 @@
                     "laps",
                     "lapped",
                     "lapping"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Lap\\/Lapping|lap|laps|lapped|lapping)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "linking",
@@ -452,22 +528,25 @@
                 "description": "Interlocking of arms via crooking of an elbow. Both Skaters’ arms, up to (but not including) the shoulder are considered to be part of the $link:linking$.",
                 "aliases": [
                     "link"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Linking|link)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "no-impact",
                 "title": "No Impact",
-                "description": "A violation of the rules of the game that has limited impact on safety or gameplay, and does not warrant a $penalty:penalty$."
+                "description": "A violation of the rules of the game that has limited impact on safety or gameplay, and does not warrant a $penalty:penalty$.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(No Impact)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "not-on-the-track-point",
                 "title": "Not-On-the-Track (NOTT) Point",
-                "description": "A point given for an opponent who is not on the track (such as Skaters in the $Penalty:penalty$ Box) that the $Jammer:jammer$ earns $immediately:immediately$ upon earning a $pass:earned-pass$ on any opposing $Blocker:blocker$, per $trip:trip-through-the-pack$ through the $Pack:pack$.",
+                "description": "A point given for an opponent who is not on the track (such as Skaters in the $Penalty:penalty$ Box) that the $Jammer:jammer$ earns $immediately:immediately$ upon earning a $pass:earned-pass$ on any opposing $Blocker:blocker$, per $trip through the Pack:trip-through-the-pack$.",
                 "aliases": [
                     "NOTT point",
                     "not-on-the-track point",
                     "not on the track point"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Not-On-the-Track \\17NOTT\\22 Point|NOTT point|not-on-the-track point|not on the track point)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "out-of-bounds",
@@ -475,7 +554,8 @@
                 "description": "A Skater is $out of bounds:out-of-bounds$ when part of the Skater’s body or equipment is touching the floor beyond the track boundary. One arm or hand touching the floor beyond the track boundary does not render a Skater $out of bounds:out-of-bounds$ (see also $in bounds:in-bounds$, $straddling:straddling$).",
                 "aliases": [
                     "out-of-bounds"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Out of Bounds|out-of-bounds)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "out-of-play",
@@ -483,7 +563,8 @@
                 "description": "A $Blocker:blocker$ who is $in bounds:in-bounds$, but positioned outside of the $Engagement Zone:engagement-zone$. If $no Pack:no-pack$ is defined, all $Blockers:blocker$ are $out of play:out-of-play$. When a $Jammer:jammer$ is $out of bounds:out-of-bounds$, they are $out of play:out-of-play$.",
                 "aliases": [
                     "out-of-play"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Out of Play|out-of-play)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "pack",
@@ -491,7 +572,8 @@
                 "description": "The largest group of in-bounds $Blockers:blocker$, skating or $standing:standing$ in proximity (within 10 ft [3.05 m]), containing members from both teams. The $Jammers:jammer$ are independent of this definition.",
                 "aliases": [
                     "packs"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Pack|packs)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "penalty",
@@ -499,7 +581,8 @@
                 "description": "A violation of the rules of the game requiring the Skater to serve time in the $Penalty:penalty$ Box, or the specific punishment of serving time in the $Penalty:penalty$ Box due to the commission of such a violation.",
                 "aliases": [
                     "penalties"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Penalty|penalties)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "points-awarded-in-error",
@@ -509,7 +592,8 @@
                     "point awarded in error",
                     "points awarded-in-error",
                     "point awarded-in-error"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Points Awarded in Error|point awarded in error|points awarded-in-error|point awarded-in-error)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "points-denied-in-error",
@@ -519,7 +603,8 @@
                     "point denied in error",
                     "points denied-in-error",
                     "point denied-in-error"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Points Denied in Error|point denied in error|points denied-in-error|point denied-in-error)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "positional-blocking",
@@ -532,12 +617,14 @@
                     "positionally blocks",
                     "positionally blocked",
                     "positionally blocking"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Positional Blocking|positional block|positional blocks|positionally block|positionally blocks|positionally blocked|positionally blocking)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "protective-gear",
                 "title": "Protective Gear",
-                "description": "Skaters must wear helmet, mouthguard, wrist guards, elbow pads, and knee pads so long as they provide additional protection and the Skater is physically able to wear them. Skaters shall not be penalized if the equipment does not provide additional protection for the Skater."
+                "description": "Skaters must wear helmet, mouthguard, wrist guards, elbow pads, and knee pads so long as they provide additional protection and the Skater is physically able to wear them. Skaters shall not be penalized if the equipment does not provide additional protection for the Skater.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Protective Gear)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "relative-position",
@@ -549,7 +636,8 @@
                     "relatively positions",
                     "relatively positioned",
                     "relatively positioning"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Relative Position|relative positions|relatively position|relatively positions|relatively positioned|relatively positioning)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "roster",
@@ -559,7 +647,8 @@
                     "rosters",
                     "rostered",
                     "rostering"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Roster|rosters|rostered|rostering)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "sitting",
@@ -569,12 +658,14 @@
                     "sit",
                     "sits",
                     "seated"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Sitting|sit|sits|seated)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "skating-direction-of-travel",
                 "title": "Skating – Direction of Travel",
-                "description": "A Skater’s direction of travel (for example, counterclockwise, lateral, or clockwise) is measured by the skates moving relative to a line perpendicular to the inside track boundary. If the skates are moving in opposite directions, direction of travel is determined by the $hips:hips$."
+                "description": "A Skater’s direction of travel (for example, counterclockwise, lateral, or clockwise) is measured by the skates moving relative to a line perpendicular to the inside track boundary. If the skates are moving in opposite directions, direction of travel is determined by the $hips:hips$.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Skating – Direction of Travel)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "standing",
@@ -584,7 +675,8 @@
                     "stand",
                     "stands",
                     "standed"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Standing|stand|stands|standed)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "stopped",
@@ -594,7 +686,8 @@
                     "stop",
                     "stops",
                     "stopping"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Stopped|stop|stops|stopping)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "straddling",
@@ -604,7 +697,8 @@
                     "straddle",
                     "straddles",
                     "straddled"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Straddling|straddle|straddles|straddled)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "substitution",
@@ -615,23 +709,8 @@
                     "substitute",
                     "substitutes",
                     "substituted"
-                ]
-            },
-            {
-                "id": "the-star",
-                "title": "The Star",
-                "description": "The $Jammer:jammer$ helmet cover, which has two stars on it, one on each side.",
-                "aliases": [
-                    "star"
-                ]
-            },
-            {
-                "id": "the-stripe",
-                "title": "The Stripe",
-                "description": "The $Pivot:pivot-blocker$ helmet cover, which has one long $stripe:the-stripe$ $down:down$ the middle of it.",
-                "aliases": [
-                    "stripe"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Substitution|substitutions|substitute|substitutes|substituted)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "target-zones",
@@ -639,22 +718,32 @@
                 "description": "Areas of the body on an opponent that a Skater makes contact to when blocking.",
                 "aliases": [
                     "target zone"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Target Zones|target zone)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
-                "id": "trip-through-the-pack",
-                "title": "Trip Through the Pack",
-                "description": "$Jammers:jammer$ make $trips:trip-through-the-pack$ through the $Pack:pack$. Each $trip:trip-through-the-pack$ represents an opportunity to score points on opponents. (See Section 3).",
+                "id": "the-star",
+                "title": "The Star",
+                "description": "The $Jammer:jammer$ helmet cover, which has two stars on it, one on each side.",
                 "aliases": [
-                    "trips through the pack",
-                    "trip",
-                    "trips"
-                ]
+                    "star"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(The Star|star)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+            },
+            {
+                "id": "the-stripe",
+                "title": "The Stripe",
+                "description": "The $Pivot:pivot-blocker$ helmet cover, which has one long $stripe:the-stripe$ $down:down$ the middle of it.",
+                "aliases": [
+                    "stripe"
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(The Stripe|stripe)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "upright",
                 "title": "Upright",
-                "description": "Any Skater who is not considered $down:down$."
+                "description": "Any Skater who is not considered $down:down$.",
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Upright)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             },
             {
                 "id": "warning",
@@ -662,7 +751,8 @@
                 "description": "A formal verbal indication from the Official that play is currently or is about to be improper, so that a Skater can take corrective action.",
                 "aliases": [
                     "warn"
-                ]
+                ],
+                "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Warning|warn)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
             }
         ]
     }

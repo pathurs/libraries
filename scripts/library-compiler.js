@@ -1,3 +1,4 @@
+import { compareBooleans, compareStringsBy } from '@colonise/utilities';
 import { readFile, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 
@@ -16,13 +17,20 @@ export class LibraryCompiler {
 
         this.libraryJSON = await this.#readJSONFileAndResolveFiles(this.inputFilePath);
 
-        console.log('Generating glossary links...');
+        console.log('Parsing Glossary');
+
+        this.libraryJSON.glossary = this.#parseGlossary(this.libraryJSON.glossary);
+
+        console.log('Generating Glossary links...');
 
         this.#deepCompileGlossaryLinks();
 
         console.log('Writing to output...');
 
-        await writeFile(this.outputFilePath, JSON.stringify(this.libraryJSON, undefined, 4));
+        await writeFile(
+            this.outputFilePath,
+            JSON.stringify(this.libraryJSON, (key, value) => (value instanceof RegExp ? value.toString() : value), 4)
+        );
 
         console.log('Done!');
     }
@@ -101,6 +109,37 @@ export class LibraryCompiler {
         return await this.#resolveFiles(fileJSON, filePath);
     }
 
+    #parseGlossary(rawGlossary) {
+        const newGlossary = {
+            entries: [...(rawGlossary.entries ?? [])]
+        };
+
+        for (const entry of newGlossary.entries) {
+            entry.regExp = this.#createRegExpForGlossaryEntry(entry);
+
+            for (const otherEntry of newGlossary.entries) {
+                if (entry === otherEntry) {
+                    continue;
+                }
+
+                const hasConflict = [otherEntry.id, ...(otherEntry.aliases ?? [])].some(idOrAlias =>
+                    entry.regExp.test(idOrAlias)
+                );
+
+                if (hasConflict) {
+                    otherEntry.conflicts ??= [];
+                    otherEntry.conflicts.push(entry.id);
+                }
+            }
+        }
+
+        newGlossary.entries.sort(compareStringsBy(entry => entry.id));
+
+        newGlossary.entries.sort((entryA, entryB) => compareBooleans(entryA.conflicts?.includes(entryB.id)));
+
+        return newGlossary;
+    }
+
     #createRegExpForGlossaryEntry(glossaryEntry) {
         const escape = text => text.replace(/[\\\^\$\.\*\+\?\(\)\[\]\{\}\|]/g, (...match) => `\\${match[1]}`);
 
@@ -126,7 +165,7 @@ export class LibraryCompiler {
 
         for (const glossaryEntry of this.libraryJSON.glossary.entries) {
             result = result.replaceAll(
-                this.#createRegExpForGlossaryEntry(glossaryEntry),
+                glossaryEntry.regExp,
                 (...match) => `${match[1]}$${match[2]}:${glossaryEntry.id}$${match[3] ?? ''}`
             );
         }

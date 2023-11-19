@@ -1,72 +1,6 @@
 {
     "entries": [
         {
-            "id": "re-pass",
-            "title": "Re-Pass",
-            "description": "The act of passing an opponent who has already been passed during the current lap. Most relevant to a Jammer who ends up ahead of an opponent without “earning” the pass. Such a Jammer would not score a point on that opponent, but could re-pass that opponent, earning their second pass, in order to score that point.",
-            "aliases": ["repass"]
-        },
-        {
-            "id": "counter-block",
-            "title": "Counter-Block",
-            "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. Counter-blocking is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
-            "aliases": [
-                "counter-blocks",
-                "counter-blocked",
-                "counter-blocking",
-                "counter block",
-                "counter blocks",
-                "counter blocked",
-                "counter blocking"
-            ]
-        },
-        {
-            "id": "lead-jammer",
-            "title": "Lead Jammer",
-            "description": "The Lead Jammer is the first Jammer to establish superior position to the foremost in-play Blocker, having already earned a pass on all Blockers excluding those ahead of the Engagement Zone.",
-            "aliases": ["lead jammers"]
-        },
-        {
-            "id": "no-pack",
-            "title": "No Pack",
-            "description": "When there is not a group of Blockers (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of Blockers not skating within 10 ft (3.05 m) of each other."
-        },
-        {
-            "id": "star-pass",
-            "title": "Passing the Star / Star Pass",
-            "description": "The act of transferring Jammer status, which is accomplished by the Jammer handing their helmet cover (the Star) to the Pivot.",
-            "aliases": [
-                "pass the star",
-                "passes the star",
-                "passed the star",
-                "passing the star",
-                "star pass",
-                "star passing",
-                "star passes",
-                "star-pass",
-                "star-passing",
-                "star-passes"
-            ]
-        },
-        {
-            "id": "pack-skater",
-            "title": "Pack Skater",
-            "description": "Any Blocker who is part of a legally defined Pack.",
-            "aliases": ["pack skaters"]
-        },
-        {
-            "id": "pivot-blocker",
-            "title": "Pivot Blocker (Pivot)",
-            "description": "A Blocker with extra abilities and responsibilities, commonly referred to as the Pivot (see Section 2.2.3).",
-            "aliases": ["pivot blocker", "pivot"]
-        },
-        {
-            "id": "earned-pass",
-            "title": "Pass/Earned Pass",
-            "description": "See Section 2.5",
-            "aliases": ["pass", "passes", "passed", "passing", "earned pass", "earned passes"]
-        },
-        {
             "id": "actively-absorbing",
             "title": "Actively Absorbing",
             "description": "Any movement toward oncoming contact intended only to protect the recipient of the contact.",
@@ -113,6 +47,20 @@
             "aliases": ["captains"]
         },
         {
+            "id": "counter-block",
+            "title": "Counter-Block",
+            "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. Counter-blocking is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
+            "aliases": [
+                "counter-blocks",
+                "counter-blocked",
+                "counter-blocking",
+                "counter block",
+                "counter blocks",
+                "counter blocked",
+                "counter blocking"
+            ]
+        },
+        {
             "id": "designated-alternate",
             "title": "Designated Alternate",
             "description": "The Captain designates an additional person to act on their team’s behalf via a visible “A” on their uniform or body; this person is the Designated Alternate. The Designated Alternate may be a teammate, coach, or manager. A team may only have one Designated Alternate. If one has not been selected or has left the game, the Captain may designate a different Alternate by informing the Head Referee.",
@@ -122,6 +70,12 @@
             "id": "down",
             "title": "Down",
             "description": "A Skater is down when part of the Skater’s body or equipment (aside from skates) is touching the floor. A Skater whose only contact with the floor (aside from skates) is one hand is not considered down. Once down, a Skater is considered down until the Skater is standing, stepping, or skating."
+        },
+        {
+            "id": "earned-pass",
+            "title": "Pass/Earned Pass",
+            "description": "See Section 2.5",
+            "aliases": ["pass", "passes", "passed", "passing", "earned pass", "earned passes"]
         },
         {
             "id": "engagement-zone",
@@ -268,6 +222,12 @@
             "aliases": ["lap", "laps", "lapped", "lapping"]
         },
         {
+            "id": "lead-jammer",
+            "title": "Lead Jammer",
+            "description": "The Lead Jammer is the first Jammer to establish superior position to the foremost in-play Blocker, having already earned a pass on all Blockers excluding those ahead of the Engagement Zone.",
+            "aliases": ["lead jammers"]
+        },
+        {
             "id": "linking",
             "title": "Linking",
             "description": "Interlocking of arms via crooking of an elbow. Both Skaters’ arms, up to (but not including) the shoulder are considered to be part of the link.",
@@ -277,6 +237,11 @@
             "id": "no-impact",
             "title": "No Impact",
             "description": "A violation of the rules of the game that has limited impact on safety or gameplay, and does not warrant a penalty."
+        },
+        {
+            "id": "no-pack",
+            "title": "No Pack",
+            "description": "When there is not a group of Blockers (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of Blockers not skating within 10 ft (3.05 m) of each other."
         },
         {
             "id": "not-on-the-track-point",
@@ -303,10 +268,22 @@
             "aliases": ["packs"]
         },
         {
+            "id": "pack-skater",
+            "title": "Pack Skater",
+            "description": "Any Blocker who is part of a legally defined Pack.",
+            "aliases": ["pack skaters"]
+        },
+        {
             "id": "penalty",
             "title": "Penalty",
             "description": "A violation of the rules of the game requiring the Skater to serve time in the Penalty Box, or the specific punishment of serving time in the Penalty Box due to the commission of such a violation.",
             "aliases": ["penalties"]
+        },
+        {
+            "id": "pivot-blocker",
+            "title": "Pivot Blocker (Pivot)",
+            "description": "A Blocker with extra abilities and responsibilities, commonly referred to as the Pivot (see Section 2.2.3).",
+            "aliases": ["pivot blocker", "pivot"]
         },
         {
             "id": "points-awarded-in-error",
@@ -337,6 +314,12 @@
             "id": "protective-gear",
             "title": "Protective Gear",
             "description": "Skaters must wear helmet, mouthguard, wrist guards, elbow pads, and knee pads so long as they provide additional protection and the Skater is physically able to wear them. Skaters shall not be penalized if the equipment does not provide additional protection for the Skater."
+        },
+        {
+            "id": "re-pass",
+            "title": "Re-Pass",
+            "description": "The act of passing an opponent who has already been passed during the current lap. Most relevant to a Jammer who ends up ahead of an opponent without “earning” the pass. Such a Jammer would not score a point on that opponent, but could re-pass that opponent, earning their second pass, in order to score that point.",
+            "aliases": ["repass"]
         },
         {
             "id": "relative-position",
@@ -374,6 +357,23 @@
             "aliases": ["stand", "stands", "standed"]
         },
         {
+            "id": "star-pass",
+            "title": "Passing the Star / Star Pass",
+            "description": "The act of transferring Jammer status, which is accomplished by the Jammer handing their helmet cover (the Star) to the Pivot.",
+            "aliases": [
+                "pass the star",
+                "passes the star",
+                "passed the star",
+                "passing the star",
+                "star pass",
+                "star passing",
+                "star passes",
+                "star-pass",
+                "star-passing",
+                "star-passes"
+            ]
+        },
+        {
             "id": "stopped",
             "title": "Stopped",
             "description": "A Skater not making any directional movement with their skates.",
@@ -392,6 +392,12 @@
             "aliases": ["substitutions", "substitute", "substitutes", "substituted"]
         },
         {
+            "id": "target-zones",
+            "title": "Target Zones",
+            "description": "Areas of the body on an opponent that a Skater makes contact to when blocking.",
+            "aliases": ["target zone"]
+        },
+        {
             "id": "the-star",
             "title": "The Star",
             "description": "The Jammer helmet cover, which has two stars on it, one on each side.",
@@ -402,12 +408,6 @@
             "title": "The Stripe",
             "description": "The Pivot helmet cover, which has one long stripe down the middle of it.",
             "aliases": ["stripe"]
-        },
-        {
-            "id": "target-zones",
-            "title": "Target Zones",
-            "description": "Areas of the body on an opponent that a Skater makes contact to when blocking.",
-            "aliases": ["target zone"]
         },
         {
             "id": "trip-through-the-pack",

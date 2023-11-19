@@ -8,5 +8,8 @@
         "compile-wftda": "node ./scripts/compile-library libraries/wftda/library.json dist/wftda-library.json"
     },
     "author": "",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "@colonise/utilities": "^8.0.0"
+    }
 }
