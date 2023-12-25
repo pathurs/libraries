@@ -5,7 +5,7 @@
     "sections": [
         {
             "id": "game-parameters-and-safety",
-            "path": "./rules/game-parameters-and-safety.json"
+            "jsonPath": "./rules/game-parameters-and-safety.json"
         }
     ],
     "fileCount": 7

@@ -124,7 +124,7 @@ export class LibraryCompiler {
             : children.map(child => {
                   return {
                       id: child.id,
-                      path: `./${parentId}/${child.id}.${extension}`,
+                      jsonPath: `./${parentId}/${child.id}.${extension}`,
                       ...(extras?.(child) ?? {})
                   };
               });
@@ -241,7 +241,6 @@ export class LibraryCompiler {
 
         return {
             jsonPath: './documents.json',
-            directoryPath: './documents',
             fileCount: totalFileCount
         };
     }
@@ -275,7 +274,6 @@ export class LibraryCompiler {
 
         return {
             jsonPath: './appendices.json',
-            directoryPath: './appendices',
             fileCount: totalFileCount
         };
     }
@@ -370,7 +368,6 @@ export class LibraryCompiler {
 
         return {
             jsonPath: './glossary.json',
-            directoryPath: './glossary',
             fileCount: totalFileCount
         };
     }

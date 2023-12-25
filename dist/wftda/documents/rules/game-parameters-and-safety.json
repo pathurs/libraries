@@ -5,23 +5,23 @@
     "sections": [
         {
             "id": "timing",
-            "path": "./game-parameters-and-safety/timing.json"
+            "jsonPath": "./game-parameters-and-safety/timing.json"
         },
         {
             "id": "teams",
-            "path": "./game-parameters-and-safety/teams.json"
+            "jsonPath": "./game-parameters-and-safety/teams.json"
         },
         {
             "id": "timeouts",
-            "path": "./game-parameters-and-safety/timeouts.json"
+            "jsonPath": "./game-parameters-and-safety/timeouts.json"
         },
         {
             "id": "game-information",
-            "path": "./game-parameters-and-safety/game-information.json"
+            "jsonPath": "./game-parameters-and-safety/game-information.json"
         },
         {
             "id": "winning",
-            "path": "./game-parameters-and-safety/winning.json"
+            "jsonPath": "./game-parameters-and-safety/winning.json"
         }
     ],
     "fileCount": 6

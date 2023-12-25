@@ -2,12 +2,12 @@
     "documents": [
         {
             "id": "rules",
-            "path": "./documents/rules.json",
+            "jsonPath": "./documents/rules.json",
             "fileCount": 7
         },
         {
             "id": "casebook",
-            "path": "./documents/casebook.json",
+            "jsonPath": "./documents/casebook.json",
             "fileCount": 1
         }
     ],

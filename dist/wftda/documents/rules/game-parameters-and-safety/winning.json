@@ -6,7 +6,7 @@
     "sections": [
         {
             "id": "overtime",
-            "path": "./winning/overtime.json"
+            "jsonPath": "./winning/overtime.json"
         }
     ],
     "fileCount": 1
