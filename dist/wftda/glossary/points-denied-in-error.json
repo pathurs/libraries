@@ -1,0 +1,10 @@
+{
+    "id": "points-denied-in-error",
+    "title": "Points Denied in Error",
+    "aliases": [
+        "point denied in error",
+        "points denied-in-error",
+        "point denied-in-error"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Points Denied in Error|point denied in error|points denied-in-error|point denied-in-error)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

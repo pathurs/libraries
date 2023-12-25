@@ -1,0 +1,13 @@
+{
+    "id": "earned-pass",
+    "title": "Pass/Earned Pass",
+    "aliases": [
+        "pass",
+        "passes",
+        "passed",
+        "passing",
+        "earned pass",
+        "earned passes"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Pass\\/Earned Pass|pass|passes|passed|passing|earned pass|earned passes)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

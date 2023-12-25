@@ -1,0 +1,5 @@
+{
+    "id": "protective-gear",
+    "title": "Protective Gear",
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Protective Gear)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

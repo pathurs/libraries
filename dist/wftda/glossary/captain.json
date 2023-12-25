@@ -1,0 +1,8 @@
+{
+    "id": "captain",
+    "title": "Captain",
+    "aliases": [
+        "captains"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Captain|captains)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

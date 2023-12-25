@@ -1,0 +1,8 @@
+{
+    "id": "lead-jammer",
+    "title": "Lead Jammer",
+    "aliases": [
+        "lead jammers"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Lead Jammer|lead jammers)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

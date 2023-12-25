@@ -1,0 +1,8 @@
+{
+    "id": "governing-body",
+    "title": "Governing Body",
+    "aliases": [
+        "governing bodies"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Governing Body|governing bodies)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

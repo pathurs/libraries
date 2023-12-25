@@ -1,0 +1,17 @@
+{
+    "id": "star-pass",
+    "title": "Passing the Star / Star Pass",
+    "aliases": [
+        "pass the star",
+        "passes the star",
+        "passed the star",
+        "passing the star",
+        "star pass",
+        "star passing",
+        "star passes",
+        "star-pass",
+        "star-passing",
+        "star-passes"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Passing the Star \\/ Star Pass|pass the star|passes the star|passed the star|passing the star|star pass|star passing|star passes|star-pass|star-passing|star-passes)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

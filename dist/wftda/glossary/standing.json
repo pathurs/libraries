@@ -1,0 +1,10 @@
+{
+    "id": "standing",
+    "title": "Standing",
+    "aliases": [
+        "stand",
+        "stands",
+        "standed"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Standing|stand|stands|standed)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

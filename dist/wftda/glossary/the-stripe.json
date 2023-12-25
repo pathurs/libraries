@@ -1,0 +1,8 @@
+{
+    "id": "the-stripe",
+    "title": "The Stripe",
+    "aliases": [
+        "stripe"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(The Stripe|stripe)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

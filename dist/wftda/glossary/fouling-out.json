@@ -1,0 +1,9 @@
+{
+    "id": "fouling-out",
+    "title": "Fouling Out",
+    "aliases": [
+        "fouls out",
+        "fouled out"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Fouling Out|fouls out|fouled out)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

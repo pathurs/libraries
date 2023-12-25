@@ -1,0 +1,9 @@
+{
+    "id": "pivot-blocker",
+    "title": "Pivot Blocker (Pivot)",
+    "aliases": [
+        "pivot blocker",
+        "pivot"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Pivot Blocker \\14Pivot\\20|pivot blocker|pivot)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

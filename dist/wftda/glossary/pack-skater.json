@@ -1,0 +1,8 @@
+{
+    "id": "pack-skater",
+    "title": "Pack Skater",
+    "aliases": [
+        "pack skaters"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Pack Skater|pack skaters)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

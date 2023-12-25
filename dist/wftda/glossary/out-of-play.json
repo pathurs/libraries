@@ -1,0 +1,8 @@
+{
+    "id": "out-of-play",
+    "title": "Out of Play",
+    "aliases": [
+        "out-of-play"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Out of Play|out-of-play)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

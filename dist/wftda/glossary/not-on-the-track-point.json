@@ -1,0 +1,10 @@
+{
+    "id": "not-on-the-track-point",
+    "title": "Not-On-the-Track (NOTT) Point",
+    "aliases": [
+        "NOTT point",
+        "not-on-the-track point",
+        "not on the track point"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Not-On-the-Track \\17NOTT\\22 Point|NOTT point|not-on-the-track point|not on the track point)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

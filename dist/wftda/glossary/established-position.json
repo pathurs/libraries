@@ -1,0 +1,8 @@
+{
+    "id": "established-position",
+    "title": "Established Position",
+    "aliases": [
+        "established positions"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Established Position|established positions)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

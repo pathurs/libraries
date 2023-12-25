@@ -1,0 +1,10 @@
+{
+    "id": "engaging",
+    "title": "Engaging",
+    "aliases": [
+        "engage",
+        "engages",
+        "engaged"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Engaging|engage|engages|engaged)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

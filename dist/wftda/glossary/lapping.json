@@ -1,0 +1,11 @@
+{
+    "id": "lapping",
+    "title": "Lap/Lapping",
+    "aliases": [
+        "lap",
+        "laps",
+        "lapped",
+        "lapping"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Lap\\/Lapping|lap|laps|lapped|lapping)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

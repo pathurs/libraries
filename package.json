@@ -5,7 +5,7 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "compile-wftda": "node ./scripts/compile-library libraries/wftda/library.json dist/wftda-library.json"
+        "compile-wftda": "node ./scripts/compile-library libraries/wftda/library.json dist/wftda"
     },
     "author": "",
     "license": "MIT",

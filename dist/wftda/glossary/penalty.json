@@ -1,0 +1,8 @@
+{
+    "id": "penalty",
+    "title": "Penalty",
+    "aliases": [
+        "penalties"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Penalty|penalties)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

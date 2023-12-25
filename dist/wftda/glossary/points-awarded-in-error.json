@@ -1,0 +1,10 @@
+{
+    "id": "points-awarded-in-error",
+    "title": "Points Awarded in Error",
+    "aliases": [
+        "point awarded in error",
+        "points awarded-in-error",
+        "point awarded-in-error"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Points Awarded in Error|point awarded in error|points awarded-in-error|point awarded-in-error)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

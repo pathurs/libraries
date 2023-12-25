@@ -1,0 +1,8 @@
+{
+    "id": "blocker",
+    "title": "Blocker",
+    "aliases": [
+        "Blockers"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Blocker|Blockers)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

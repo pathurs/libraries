@@ -1,0 +1,8 @@
+{
+    "id": "illegal-procedure",
+    "title": "Illegal Procedure",
+    "aliases": [
+        "illegal procedures"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Illegal Procedure|illegal procedures)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

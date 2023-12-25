@@ -1,0 +1,10 @@
+{
+    "id": "roster",
+    "title": "Roster",
+    "aliases": [
+        "rosters",
+        "rostered",
+        "rostering"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Roster|rosters|rostered|rostering)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

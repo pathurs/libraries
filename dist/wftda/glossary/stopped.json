@@ -1,0 +1,10 @@
+{
+    "id": "stopped",
+    "title": "Stopped",
+    "aliases": [
+        "stop",
+        "stops",
+        "stopping"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Stopped|stop|stops|stopping)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

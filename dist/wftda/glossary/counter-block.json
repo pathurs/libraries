@@ -1,0 +1,14 @@
+{
+    "id": "counter-block",
+    "title": "Counter-Block",
+    "aliases": [
+        "counter-blocks",
+        "counter-blocked",
+        "counter-blocking",
+        "counter block",
+        "counter blocks",
+        "counter blocked",
+        "counter blocking"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Counter-Block|counter-blocks|counter-blocked|counter-blocking|counter block|counter blocks|counter blocked|counter blocking)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

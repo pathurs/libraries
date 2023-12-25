@@ -1,0 +1,8 @@
+{
+    "id": "in-position",
+    "title": "In Position",
+    "aliases": [
+        "in-position"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(In Position|in-position)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

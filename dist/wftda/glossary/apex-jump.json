@@ -1,0 +1,9 @@
+{
+    "id": "apex-jump",
+    "title": "Apex Jump",
+    "aliases": [
+        "apex jumps",
+        "apex jumped"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Apex Jump|apex jumps|apex jumped)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

@@ -1,0 +1,10 @@
+{
+    "id": "straddling",
+    "title": "Straddling",
+    "aliases": [
+        "straddle",
+        "straddles",
+        "straddled"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Straddling|straddle|straddles|straddled)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

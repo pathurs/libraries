@@ -1,0 +1,11 @@
+{
+    "id": "expulsion",
+    "title": "Expulsion",
+    "aliases": [
+        "expulsions",
+        "expel",
+        "expelled",
+        "expelling"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Expulsion|expulsions|expel|expelled|expelling)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

@@ -1,0 +1,12 @@
+{
+    "id": "relative-position",
+    "title": "Relative Position",
+    "aliases": [
+        "relative positions",
+        "relatively position",
+        "relatively positions",
+        "relatively positioned",
+        "relatively positioning"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Relative Position|relative positions|relatively position|relatively positions|relatively positioned|relatively positioning)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

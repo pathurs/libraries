@@ -1,0 +1,5 @@
+{
+    "id": "engagement-zone",
+    "title": "Engagement Zone",
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Engagement Zone)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

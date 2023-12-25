@@ -1,0 +1,8 @@
+{
+    "id": "designated-alternate",
+    "title": "Designated Alternate",
+    "aliases": [
+        "designated alternates"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Designated Alternate|designated alternates)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

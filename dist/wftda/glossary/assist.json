@@ -1,0 +1,10 @@
+{
+    "id": "assist",
+    "title": "Assist",
+    "aliases": [
+        "assists",
+        "assisted",
+        "assisting"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Assist|assists|assisted|assisting)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

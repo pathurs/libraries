@@ -1,0 +1,9 @@
+{
+    "id": "falling-small",
+    "title": "Falling Small",
+    "aliases": [
+        "falls small",
+        "fell small"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Falling Small|falls small|fell small)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

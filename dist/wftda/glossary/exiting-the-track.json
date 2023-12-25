@@ -1,0 +1,9 @@
+{
+    "id": "exiting-the-track",
+    "title": "Exiting the Track",
+    "aliases": [
+        "exit the track",
+        "exits the track"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Exiting the Track|exit the track|exits the track)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

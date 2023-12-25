@@ -1,0 +1,5 @@
+{
+    "id": "skating-direction-of-travel",
+    "title": "Skating – Direction of Travel",
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Skating – Direction of Travel)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

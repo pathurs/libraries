@@ -1,0 +1,11 @@
+{
+    "id": "substitution",
+    "title": "Substitution",
+    "aliases": [
+        "substitutions",
+        "substitute",
+        "substitutes",
+        "substituted"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Substitution|substitutions|substitute|substitutes|substituted)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

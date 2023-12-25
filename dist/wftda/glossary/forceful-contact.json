@@ -1,0 +1,8 @@
+{
+    "id": "forceful-contact",
+    "title": "Forceful Contact",
+    "aliases": [
+        "forceful contacts"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Forceful Contact|forceful contacts)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

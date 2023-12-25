@@ -1,0 +1,10 @@
+{
+    "id": "grasping",
+    "title": "Grasping",
+    "aliases": [
+        "grasp",
+        "grasps",
+        "grasped"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Grasping|grasp|grasps|grasped)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

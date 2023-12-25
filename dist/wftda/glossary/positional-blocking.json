@@ -1,0 +1,13 @@
+{
+    "id": "positional-blocking",
+    "title": "Positional Blocking",
+    "aliases": [
+        "positional block",
+        "positional blocks",
+        "positionally block",
+        "positionally blocks",
+        "positionally blocked",
+        "positionally blocking"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Positional Blocking|positional block|positional blocks|positionally block|positionally blocks|positionally blocked|positionally blocking)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

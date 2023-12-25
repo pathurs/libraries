@@ -1,11 +1,14 @@
 import { compareBooleans, compareStringsBy } from '@colonise/utilities';
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 
 export class LibraryCompiler {
     #glossaryEntryAdjacentCharacters = /[\s\,\.\!\-\(\)\'\"\“\”\’]/g;
     #glossaryEntryPreviousCharacters = new RegExp(`${this.#glossaryEntryAdjacentCharacters.source}|^`);
     #glossaryEntryNextCharacters = new RegExp(`${this.#glossaryEntryAdjacentCharacters.source}|$`);
+
+    #glossary = {};
+    #documents = [];
 
     constructor(inputFilePath, outputFilePath) {
         this.inputFilePath = inputFilePath;
@@ -17,9 +20,13 @@ export class LibraryCompiler {
 
         this.libraryJSON = await this.#readJSONFileAndResolveFiles(this.inputFilePath);
 
-        console.log('Parsing Glossary');
+        console.log('Parsing Glossary...');
 
-        this.libraryJSON.glossary = this.#parseGlossary(this.libraryJSON.glossary);
+        this.#glossary = this.#parseGlossary(this.libraryJSON.glossary);
+
+        console.log('Parsing Documents...');
+
+        this.#documents = this.#parseDocuments(this.libraryJSON.documents);
 
         console.log('Generating Glossary links...');
 
@@ -27,10 +34,7 @@ export class LibraryCompiler {
 
         console.log('Writing to output...');
 
-        await writeFile(
-            this.outputFilePath,
-            JSON.stringify(this.libraryJSON, (key, value) => (value instanceof RegExp ? value.toString() : value), 4)
-        );
+        await this.#generateOutput();
 
         console.log('Done!');
     }
@@ -140,6 +144,12 @@ export class LibraryCompiler {
         return newGlossary;
     }
 
+    #parseDocuments(rawDocuments) {
+        const newDocuments = [...(rawDocuments ?? [])];
+
+        return newDocuments;
+    }
+
     #createRegExpForGlossaryEntry(glossaryEntry) {
         const escape = text => text.replace(/[\\\^\$\.\*\+\?\(\)\[\]\{\}\|]/g, (...match) => `\\${match[1]}`);
 
@@ -157,13 +167,13 @@ export class LibraryCompiler {
             return undefined;
         }
 
-        if (this.libraryJSON.glossary?.entries == null || this.libraryJSON.glossary?.entries.length === 0) {
+        if (this.#glossary.entries.length === 0) {
             return;
         }
 
         let result = text;
 
-        for (const glossaryEntry of this.libraryJSON.glossary.entries) {
+        for (const glossaryEntry of this.#glossary.entries) {
             result = result.replaceAll(
                 glossaryEntry.regExp,
                 (...match) => `${match[1]}$${match[2]}:${glossaryEntry.id}$${match[3] ?? ''}`
@@ -174,12 +184,7 @@ export class LibraryCompiler {
     }
 
     #deepCompileGlossaryLinks() {
-        if (
-            this.libraryJSON.glossary?.entries == null ||
-            this.libraryJSON.glossary?.entries.length === 0 ||
-            this.libraryJSON.documents == null ||
-            this.libraryJSON.documents.length === 0
-        ) {
+        if (this.#glossary.entries.length === 0 || this.#documents.length === 0) {
             return;
         }
 
@@ -203,18 +208,86 @@ export class LibraryCompiler {
 
         mutate(this.libraryJSON, 'description');
 
-        for (const document of this.libraryJSON.documents) {
+        for (const document of this.#documents) {
             mutate(document, 'description');
 
-            if (this.libraryJSON.documents == null || this.libraryJSON.documents.length === 0) {
+            if (document.sections == null || document.sections.length === 0) {
                 return;
             }
 
             mutateSections(document.sections);
         }
 
-        for (const glossaryEntry of this.libraryJSON.glossary.entries) {
+        for (const glossaryEntry of this.#glossary.entries) {
             mutate(glossaryEntry, 'description');
+        }
+    }
+
+    #stringify(value) {
+        return JSON.stringify(value, (key, value) => (value instanceof RegExp ? value.toString() : value), 4);
+    }
+
+    async #generateOutput() {
+        await rm(this.outputFilePath, {
+            recursive: true,
+            force: true
+        });
+
+        await mkdir(this.outputFilePath, {
+            recursive: true
+        });
+
+        await writeFile(
+            `${this.outputFilePath}/library.json`,
+            this.#stringify({
+                title: this.libraryJSON.title,
+                description: this.libraryJSON.description,
+                reference: this.libraryJSON.reference
+            })
+        );
+
+        await writeFile(
+            `${this.outputFilePath}/glossary.json`,
+            this.#stringify(
+                this.#glossary.entries.reduce((accumulator, entry) => {
+                    return {
+                        ...accumulator,
+                        [entry.id]: `./glossary/${entry.id}.json`
+                    };
+                }, {})
+            )
+        );
+
+        await mkdir(`${this.outputFilePath}/glossary`);
+
+        for (const entry of this.#glossary.entries) {
+            await writeFile(
+                `${this.outputFilePath}/glossary/${entry.id}.json`,
+                this.#stringify({
+                    id: entry.id,
+                    title: entry.title,
+                    aliases: entry.aliases,
+                    regExp: entry.regExp
+                })
+            );
+        }
+
+        await writeFile(
+            `${this.outputFilePath}/documents.json`,
+            this.#stringify(
+                this.#documents.reduce((accumulator, document) => {
+                    return {
+                        ...accumulator,
+                        [document.id]: `./documents/${document.id}.json`
+                    };
+                }, {})
+            )
+        );
+
+        await mkdir(`${this.outputFilePath}/documents`);
+
+        for (const document of this.#documents) {
+            await writeFile(`${this.outputFilePath}/documents/${document.id}.json`, this.#stringify(document));
         }
     }
 }

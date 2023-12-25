@@ -1,0 +1,10 @@
+{
+    "id": "trip-through-the-pack",
+    "title": "Trip Through the Pack",
+    "aliases": [
+        "trips through the pack",
+        "trip",
+        "trips"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Trip Through the Pack|trips through the pack|trip|trips)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

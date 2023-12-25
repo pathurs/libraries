@@ -1,0 +1,4 @@
+{
+    "rules": "./documents/rules.json",
+    "casebook": "./documents/casebook.json"
+}

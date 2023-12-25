@@ -1,0 +1,8 @@
+{
+    "id": "initiator",
+    "title": "Initiator",
+    "aliases": [
+        "initiators"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Initiator|initiators)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

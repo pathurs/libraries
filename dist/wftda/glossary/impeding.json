@@ -1,0 +1,10 @@
+{
+    "id": "impeding",
+    "title": "Impeding",
+    "aliases": [
+        "impede",
+        "impedes",
+        "impeded"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Impeding|impede|impedes|impeded)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

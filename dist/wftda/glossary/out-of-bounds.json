@@ -1,0 +1,8 @@
+{
+    "id": "out-of-bounds",
+    "title": "Out of Bounds",
+    "aliases": [
+        "out-of-bounds"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Out of Bounds|out-of-bounds)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

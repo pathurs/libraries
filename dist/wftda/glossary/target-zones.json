@@ -1,0 +1,8 @@
+{
+    "id": "target-zones",
+    "title": "Target Zones",
+    "aliases": [
+        "target zone"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Target Zones|target zone)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

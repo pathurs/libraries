@@ -1,0 +1,10 @@
+{
+    "id": "actively-absorbing",
+    "title": "Actively Absorbing",
+    "aliases": [
+        "Actively Absorb",
+        "Actively Absorbs",
+        "Actively Absorbed"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Actively Absorbing|Actively Absorb|Actively Absorbs|Actively Absorbed)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

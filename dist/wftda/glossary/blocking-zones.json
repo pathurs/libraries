@@ -1,0 +1,8 @@
+{
+    "id": "blocking-zones",
+    "title": "Blocking Zones",
+    "aliases": [
+        "blocking zone"
+    ],
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Blocking Zones|blocking zone)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}

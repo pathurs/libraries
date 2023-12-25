@@ -1,0 +1,5 @@
+{
+    "id": "insubordination",
+    "title": "Insubordination",
+    "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Insubordination)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
+}
