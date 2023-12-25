@@ -2,71 +2,7 @@
     "id": "rules",
     "title": "Rules",
     "description": "The game of Flat Track Roller Derby is played on a flat, oval track. Play is broken up into two 30-minute periods, and within those periods, into units of play called “$Jams:jam$,” which last up to two minutes. There are 30 seconds between each $Jam:jam$.\r\n\r\nDuring a $Jam:jam$, each team fields up to five Skaters. Four of these Skaters are called “$Blockers:blocker$” (together, the $Blockers:blocker$ are called the “$Pack:pack$”), and one is called a “$Jammer:jammer$.” The $Jammer:jammer$ wears a helmet cover with a $star:the-star$ on it.\r\n\r\nThe two $Jammers:jammer$ start each $Jam:jam$ $behind:behind$ the $Pack:pack$, and score a point for every opposing $Blocker:blocker$ they $lap:lapping$, each $lap:lapping$. Because they start $behind:behind$ the $Pack:pack$, they must get through the $Pack:pack$, then all the way around the track to be eligible to score points on opposing $Blockers:blocker$.\r\n\r\nRoller derby is a full-contact sport; however, Skaters cannot use their heads, elbows, forearms, hands, knees, lower legs, or feet to make contact to opponents. Skaters cannot make contact to opponents’ heads, backs, knees, lower legs, or feet.\r\n\r\nPlay that is unsafe or illegal may result in a Skater being assessed a $penalty:penalty$, which is served by $sitting:sitting$ in the $Penalty:penalty$ Box for 30 seconds of $Jam:jam$ time.\r\n\r\nThe team with the most points at the end of the game wins.\r\n\r\nA common $Jam:jam$ might go like this:\r\n\r\n1. $Blockers:blocker$ line up $behind:behind$ the $Pivot:pivot-blocker$ Line and in front of the $Jammer:jammer$ Line.\r\n2. $Jammers:jammer$ line up $behind:behind$ the $Jammer:jammer$ Line.\r\n3. At the $Jam:jam$-Starting Whistle, the $Blockers:blocker$ skate forward and compete for superior position. The $Jammers:jammer$ skate forward and try to get through the $Pack:pack$. Each $Blocker:blocker$ simultaneously tries to prevent the opposing $Jammer:jammer$ from getting past, and to help their own $Jammer:jammer$ get through.\r\n4. One $Jammer:jammer$ exits the $Pack:pack$ and is declared $Lead Jammer:lead-jammer$, earning the right to end the $Jam:jam$ when they decide. This $Jammer:jammer$ races around the track to get into scoring position.\r\n5. The same $Jammer:jammer$ begins to work their way through the $Pack:pack$ for the second time, and the opposing $Jammer:jammer$ makes their way out of the $Pack:pack$ for the first time.\r\n6. As the second $Jammer:jammer$ to escape the $Pack:pack$ comes around into scoring position, the first $Jammer:jammer$ calls off the $Jam:jam$.\r\n7. The first $Jammer:jammer$ has scored points (up to four), and held their opponent at zero points. Meanwhile, the opposing $Jammer:jammer$ (by getting into scoring position) held the first $Jammer:jammer$ at only those points, as they could have scored more points on subsequent $passes:earned-pass$.\r\n",
-    "sections": [
-        {
-            "id": "game-parameters-and-safety",
-            "referenceId": "1",
-            "title": "Game Parameters & Safety",
-            "sections": [
-                {
-                    "id": "timing",
-                    "referenceId": "1.1",
-                    "title": "Timing",
-                    "description": "**A game lasts for 60 minutes of play, divided into two 30-minute periods with a halftime between them.** Periods are broken into $Jams:jam$, which are the basic unit of play for roller derby.\r\n\r\n**A $Jam:jam$ can last up to two minutes.** $Jams:jam$ may be called off prior to two minutes as part of gameplay, as described below. Each $Jam:jam$ starts with a single short whistle blast, and finishes at the end of a series of four short whistle blasts. At least 30 seconds must elapse between $Jams:jam$. More than 30 seconds may not elapse unless a timeout is called.\r\n\r\n**A period starts on the $Jam:jam$-Starting Whistle of the first $Jam:jam$ for that period.** The period clock does not $stop:stopped$ between $Jams:jam$ unless a timeout is called. If the period clock reaches zero before the next $Jam:jam$ has started, the period ends at that moment; otherwise, the period ends at the conclusion of the final $Jam:jam$ for the period.\r\n\r\nIf a $Jam:jam$ is called off due to officiating discretion (see Section 5.2) or there is an officiating error that potentially impacted the outcome (as in winner/loser) of the game, and there are less than 30 seconds remaining on the period clock at the end of the game (including when the period clock has expired), an additional $Jam:jam$ may be run at the discretion of the $Head Referee:head-referee$. This additional $Jam:jam$ will have the same form (Overtime or not; see Section 1.5.1) as the $Jam:jam$ that ended and be part of the same period.\r\n"
-                },
-                {
-                    "id": "teams",
-                    "referenceId": "1.2",
-                    "title": "Teams",
-                    "description": "**A team is comprised of Skaters, who must be uniquely identified by a $roster:roster$ number.** Each team must have a jersey of the same base color, such that uniform colors of the two teams playing are of high contrast. $Roster:roster$ numbers must be clearly displayed on a Skater’s back and upper arm areas. Each team must have helmet covers to clearly indicate who their $Jammer:jammer$ and $Pivot:pivot-blocker$ are. The $Jammer:jammer$ and $Pivot:pivot-blocker$ helmet covers for the two teams must be easy to differentiate.\r\n\r\n**Skaters must wear quad-style roller skates and $protective gear:protective-gear$ during play.** Inline skates are not permitted. $Protective gear:protective-gear$ may not be removed during play. $Protective gear:protective-gear$ may not impair or interfere with the safety or play of other Skaters, support staff, or Officials.\r\n\r\n**Skaters who are injured during play may return to play as long as they are no longer apparently injured or bleeding.** A Skater whose injury alters the flow of the game (examples include a $Jam:jam$ being called off, a period clock stoppage, or a $substitute:substitution$ being $seated:sitting$ in the $Penalty:penalty$ Box) may not participate during the following three $Jams:jam$ (extending into the following period if necessary). A Skater whose injury alters the flow of the game more than once in a period may not participate as a Skater for the rest of that period. The $Head Referee:head-referee$ may also declare that a team has forfeited the game if that team has five or fewer Skaters eligible to participate, or refuses to field Skaters on the track to continue play.\r\n"
-                },
-                {
-                    "id": "timeouts",
-                    "referenceId": "1.3",
-                    "title": "Timeouts",
-                    "description": "**Teams and Officials may {stop} the period clock by calling a timeout.** Timeouts may only be called between $Jams:jam$, though Officials may end a $Jam:jam$ in order to call an Official Timeout. The beginning of a timeout is marked by four short whistle blasts, and the end of a timeout is marked by a long rolling whistle, after which the next $Jam:jam$ begins as soon as possible if there is time remaining on the period clock. At most, 30 seconds may $pass:earned-pass$ before the next $Jam:jam$ begins. The period clock starts again at the $Jam:jam$-Starting Whistle.\r\n\r\nThere are three types of timeouts.\r\n",
-                    "section": [
-                        {
-                            "id": "team-timeouts",
-                            "referenceId": "1.3.1",
-                            "title": "Team Timeouts",
-                            "description": "**Each team has three timeouts that they can take during the game.** Team Timeouts may be requested only by the team’s Captain or Designated Alternate. Penalized Captains or Designated Alternates cannot request a Team Timeout. Team Timeouts last for 60 seconds.\r\n"
-                        },
-                        {
-                            "id": "official-reviews",
-                            "referenceId": "1.3.2",
-                            "title": "Official Reviews",
-                            "description": "**Each team begins the period with one Official Review** which they may use during that period. An Official Review is a formal request made by a team’s Captain or Designated Alternate for Officials to review a specific officiating decision. The only officiating decisions that can be the subject of an Official Review are those made during the prior Jam, or during the lineup time preceding the prior Jam. The Head Referee investigates the review with other Officials, and uses the information gathered to render a decision on the item under review, as well as related decisions. The Head Referee then announces their findings and any changes that result from the review to both teams’ representatives. This decision is final and not reviewable.\r\n\r\nIf the Head Referee determines that an officiating error was made in relation to the situation under review, the team will retain the privilege to call an additional review later in the same period. The review can be retained in this manner only once per period.\r\n\r\nA team may also elect to use their Official Review as a Team Timeout. In this case, the review will not be retained. Penalized Captains or Designated Alternates cannot request an Official Review.\r\n\r\nOfficial Reviews (whether unused or retained) are not carried forward to the subsequent period.\r\n"
-                        },
-                        {
-                            "id": "official-timeouts",
-                            "referenceId": "1.3.3",
-                            "title": "Official Timeouts",
-                            "description": "**Officials may take a timeout in order to ensure that the game is running smoothly and correctly.** If the prior Jam ended with less than 30 seconds on the period clock, the fact that the Officials called a timeout will not necessarily result in another Jam occurring in the same manner that a Team Timeout or Official Review would. Instead, the Officials must determine whether or not there is reason to hold another Jam for that period. If the Officials determine that there is no reason to hold another Jam, both teams must be given a chance to call a Team Timeout or Official Review (if they have any remaining). If they decline, the period will end.\r\n"
-                        }
-                    ]
-                },
-                {
-                    "id": "game-information",
-                    "referenceId": "1.4",
-                    "title": "Game Information",
-                    "description": "**Critical game information must be displayed in a manner that is highly visible to Teams, Officials, and spectators.** This displayed critical game information is considered official, and must include, at a minimum:\r\n\r\n- The period clock\r\n- The $Jam:jam$ clock\r\n- The Official Score\r\n\r\nErrors in timing or score should be updated as quickly as possible. If an error persists for an extended period of time, it should be corrected only if the correction itself would have minimal impact on the game.\r\n"
-                },
-                {
-                    "id": "winning",
-                    "referenceId": "1.5",
-                    "title": "Winning",
-                    "description": "**The team with the most points at the end of the game wins.**\r\n",
-                    "sections": [
-                        {
-                            "id": "overtime",
-                            "referenceId": "1.5.1",
-                            "title": "Overtime",
-                            "description": "**If the game ends with the score tied, the second period will be extended by at least one additional $Jam:jam$.** This Overtime $Jam:jam$ is like any other $Jam:jam$, with two exceptions:\r\n\r\n- No $Lead Jammer:lead-jammer$ is declared\r\n- Both $Jammers:jammer$ begin scoring on their first $trip through the Pack:trip-through-the-pack$ (each $Jammer:jammer$ is $in position:in-position$ to $lap:lapping$ the opposing $Blockers:blocker$ on their first $earned pass:earned-pass$ of those $Blockers:blocker$)\r\n\r\nMore $Jams:jam$ will be added in this manner until a $Jam:jam$ ends with the score no longer tied.\r\n"
-                        }
-                    ]
-                }
-            ]
-        }
-    ]
+    "sections": {
+        "game-parameters-and-safety": "./rules/game-parameters-and-safety.json"
+    }
 }

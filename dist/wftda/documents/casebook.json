@@ -1,12 +1,7 @@
 {
     "id": "casebook",
     "title": "Casebook",
-    "sections": [
-        {
-            "id": "game-parameters-and-safety",
-            "referenceId": "1",
-            "title": "Game Parameters & Safety",
-            "description": "No scenarios for Section 1"
-        }
-    ]
+    "sections": {
+        "game-parameters-and-safety": "./casebook/game-parameters-and-safety.json"
+    }
 }

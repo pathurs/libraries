@@ -34,7 +34,7 @@ export class LibraryCompiler {
 
         console.log('Writing to output...');
 
-        await this.#generateOutput();
+        await this.#writeOutput();
 
         console.log('Done!');
     }
@@ -162,6 +162,17 @@ export class LibraryCompiler {
         );
     }
 
+    #createPathDictionary(parentId, children, extension) {
+        return children === undefined || children.length === 0
+            ? undefined
+            : children.reduce((accumulator, child) => {
+                  return {
+                      ...accumulator,
+                      [child.id]: `./${parentId}/${child.id}.${extension}`
+                  };
+              }, {});
+    }
+
     #compileGlossaryLinks(text) {
         if (text == null) {
             return undefined;
@@ -227,16 +238,7 @@ export class LibraryCompiler {
         return JSON.stringify(value, (key, value) => (value instanceof RegExp ? value.toString() : value), 4);
     }
 
-    async #generateOutput() {
-        await rm(this.outputFilePath, {
-            recursive: true,
-            force: true
-        });
-
-        await mkdir(this.outputFilePath, {
-            recursive: true
-        });
-
+    async #writeLibraryOutput() {
         await writeFile(
             `${this.outputFilePath}/library.json`,
             this.#stringify({
@@ -245,20 +247,17 @@ export class LibraryCompiler {
                 reference: this.libraryJSON.reference
             })
         );
+    }
 
+    async #writeGlossaryOutput() {
         await writeFile(
             `${this.outputFilePath}/glossary.json`,
-            this.#stringify(
-                this.#glossary.entries.reduce((accumulator, entry) => {
-                    return {
-                        ...accumulator,
-                        [entry.id]: `./glossary/${entry.id}.json`
-                    };
-                }, {})
-            )
+            this.#stringify(this.#createPathDictionary('glossary', this.#glossary.entries, 'json'))
         );
 
-        await mkdir(`${this.outputFilePath}/glossary`);
+        await mkdir(`${this.outputFilePath}/glossary`, {
+            recursive: true
+        });
 
         for (const entry of this.#glossary.entries) {
             await writeFile(
@@ -271,23 +270,76 @@ export class LibraryCompiler {
                 })
             );
         }
+    }
 
+    async #writeSectionOutput(section, parentPath) {
         await writeFile(
-            `${this.outputFilePath}/documents.json`,
-            this.#stringify(
-                this.#documents.reduce((accumulator, document) => {
-                    return {
-                        ...accumulator,
-                        [document.id]: `./documents/${document.id}.json`
-                    };
-                }, {})
-            )
+            `${parentPath}/${section.id}.json`,
+            this.#stringify({
+                id: section.id,
+                refereneId: section.referenceId,
+                title: section.title,
+                description: section.description,
+                sections: this.#createPathDictionary(section.id, section.sections, 'json')
+            })
         );
 
-        await mkdir(`${this.outputFilePath}/documents`);
+        await this.#tryWriteSectionsOutput(section, parentPath);
+    }
+
+    async #tryWriteSectionsOutput(idAndSections, parentPath) {
+        const { id, sections } = idAndSections;
+
+        if (id !== undefined && sections !== undefined && sections.length > 0) {
+            const sectionsPath = `${parentPath}/${id}`;
+
+            await mkdir(sectionsPath, {
+                recursive: true
+            });
+
+            for (const section of sections) {
+                await this.#writeSectionOutput(section, sectionsPath);
+            }
+        }
+    }
+
+    async #writeDocumentsOutput() {
+        await writeFile(
+            `${this.outputFilePath}/documents.json`,
+            this.#stringify(this.#createPathDictionary('documents', this.#documents, 'json'))
+        );
+
+        await mkdir(`${this.outputFilePath}/documents`, {
+            recursive: true
+        });
 
         for (const document of this.#documents) {
-            await writeFile(`${this.outputFilePath}/documents/${document.id}.json`, this.#stringify(document));
+            await writeFile(
+                `${this.outputFilePath}/documents/${document.id}.json`,
+                this.#stringify({
+                    id: document.id,
+                    title: document.title,
+                    description: document.description,
+                    sections: this.#createPathDictionary(document.id, document.sections, 'json')
+                })
+            );
+
+            await this.#tryWriteSectionsOutput(document, `${this.outputFilePath}/documents`);
         }
+    }
+
+    async #writeOutput() {
+        await rm(this.outputFilePath, {
+            recursive: true,
+            force: true
+        });
+
+        await mkdir(`${this.outputFilePath}`, {
+            recursive: true
+        });
+
+        await this.#writeLibraryOutput();
+        await this.#writeGlossaryOutput();
+        await this.#writeDocumentsOutput();
     }
 }
