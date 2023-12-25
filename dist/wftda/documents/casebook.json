@@ -1,7 +1,11 @@
 {
     "id": "casebook",
     "title": "Casebook",
-    "sections": {
-        "game-parameters-and-safety": "./casebook/game-parameters-and-safety.json"
-    }
+    "sections": [
+        {
+            "id": "game-parameters-and-safety",
+            "path": "./casebook/game-parameters-and-safety.json"
+        }
+    ],
+    "fileCount": 1
 }

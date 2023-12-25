@@ -8,6 +8,7 @@ export class LibraryCompiler {
     #glossaryEntryNextCharacters = new RegExp(`${this.#glossaryEntryAdjacentCharacters.source}|$`);
 
     #glossary = {};
+    #appendices = {};
     #documents = [];
 
     constructor(inputFilePath, outputFilePath) {
@@ -20,13 +21,17 @@ export class LibraryCompiler {
 
         this.libraryJSON = await this.#readJSONFileAndResolveFiles(this.inputFilePath);
 
-        console.log('Parsing Glossary...');
-
-        this.#glossary = this.#parseGlossary(this.libraryJSON.glossary);
-
         console.log('Parsing Documents...');
 
         this.#documents = this.#parseDocuments(this.libraryJSON.documents);
+
+        console.log('Parsing Appendices...');
+
+        this.#glossary = this.#parseAppendices(this.libraryJSON.appendices);
+
+        console.log('Parsing Glossary...');
+
+        this.#glossary = this.#parseGlossary(this.libraryJSON.glossary);
 
         console.log('Generating Glossary links...');
 
@@ -113,6 +118,184 @@ export class LibraryCompiler {
         return await this.#resolveFiles(fileJSON, filePath);
     }
 
+    #createChildrenIdAndPathArray(parentId, children, extension, extras) {
+        return children === undefined || children.length === 0
+            ? undefined
+            : children.map(child => {
+                  return {
+                      id: child.id,
+                      path: `./${parentId}/${child.id}.${extension}`,
+                      ...(extras?.(child) ?? {})
+                  };
+              });
+    }
+
+    #stringify(value) {
+        return JSON.stringify(value, (key, value) => (value instanceof RegExp ? value.toString() : value), 4);
+    }
+
+    //#region Documents
+
+    #parseDocuments(rawDocuments) {
+        const newDocuments = [...(rawDocuments ?? [])];
+
+        return newDocuments;
+    }
+
+    async #writeDocumentSectionOutput(section, parentPath, previousTotalFileCount = 0) {
+        let totalFileCount = previousTotalFileCount;
+
+        const sectionsFileCount = await this.#tryWriteDocumentSectionsOutput(
+            section,
+            parentPath,
+            previousTotalFileCount
+        );
+
+        totalFileCount += sectionsFileCount;
+
+        await writeFile(
+            `${parentPath}/${section.id}.json`,
+            this.#stringify({
+                id: section.id,
+                refereneId: section.referenceId,
+                title: section.title,
+                description: section.description,
+                sections: this.#createChildrenIdAndPathArray(section.id, section.sections, 'json'),
+                fileCount: sectionsFileCount
+            })
+        );
+
+        totalFileCount += 1;
+
+        return totalFileCount;
+    }
+
+    async #tryWriteDocumentSectionsOutput(idAndSections, parentPath, previousTotalFileCount = 0) {
+        const { id, sections } = idAndSections;
+
+        let totalFileCount = previousTotalFileCount;
+
+        if (id !== undefined && sections !== undefined && sections.length > 0) {
+            const sectionsPath = `${parentPath}/${id}`;
+
+            await mkdir(sectionsPath, {
+                recursive: true
+            });
+
+            for (const section of sections) {
+                totalFileCount += await this.#writeDocumentSectionOutput(section, sectionsPath, previousTotalFileCount);
+            }
+        }
+
+        return totalFileCount;
+    }
+
+    async #writeDocumentsOutput() {
+        const directoryPath = `${this.outputFilePath}/documents`;
+        const jsonPath = `${this.outputFilePath}/documents.json`;
+
+        await mkdir(directoryPath, {
+            recursive: true
+        });
+
+        let totalFileCount = 0;
+        let documentFileCount = 0;
+        let documentSectionFileCountDictionary = {};
+
+        for (const document of this.#documents) {
+            const sectionsFileCount = await this.#tryWriteDocumentSectionsOutput(document, directoryPath);
+
+            totalFileCount += sectionsFileCount;
+
+            await writeFile(
+                `${directoryPath}/${document.id}.json`,
+                this.#stringify({
+                    id: document.id,
+                    title: document.title,
+                    description: document.description,
+                    sections: this.#createChildrenIdAndPathArray(document.id, document.sections, 'json'),
+                    fileCount: sectionsFileCount
+                })
+            );
+
+            documentSectionFileCountDictionary[document.id] = sectionsFileCount;
+
+            documentFileCount += 1;
+        }
+
+        totalFileCount += documentFileCount;
+
+        await writeFile(
+            jsonPath,
+            this.#stringify({
+                documents: this.#createChildrenIdAndPathArray('documents', this.#documents, 'json', document => {
+                    return {
+                        fileCount: documentSectionFileCountDictionary[document.id]
+                    };
+                }),
+                fileCount: totalFileCount
+            })
+        );
+
+        totalFileCount += 1;
+
+        return {
+            jsonPath: './documents.json',
+            directoryPath: './documents',
+            fileCount: totalFileCount
+        };
+    }
+
+    //#endregion
+
+    //#region Appendices
+
+    #parseAppendices(rawAppendices) {
+        const newAppendices = { ...(rawAppendices ?? {}) };
+
+        return newAppendices;
+    }
+
+    async #writeAppendicesOutput() {
+        const directoryPath = `${this.outputFilePath}/appendices`;
+        const jsonPath = `${this.outputFilePath}/appendices.json`;
+
+        await mkdir(directoryPath, {
+            recursive: true
+        });
+
+        let totalFileCount = 0;
+
+        await writeFile(
+            jsonPath,
+            this.#stringify(this.#appendices) // TODO
+        );
+
+        totalFileCount += 1;
+
+        return {
+            jsonPath: './appendices.json',
+            directoryPath: './appendices',
+            fileCount: totalFileCount
+        };
+    }
+
+    //#endregion
+
+    //#region Glossary
+
+    #createRegExpForGlossaryEntry(glossaryEntry) {
+        const escape = text => text.replace(/[\\\^\$\.\*\+\?\(\)\[\]\{\}\|]/g, (...match) => `\\${match[1]}`);
+
+        return RegExp(
+            `(${this.#glossaryEntryPreviousCharacters.source})(${[
+                escape(glossaryEntry.title),
+                ...(glossaryEntry.aliases?.map(alias => escape(alias)) ?? [])
+            ].join('|')})(${this.#glossaryEntryNextCharacters.source})`,
+            'gi'
+        );
+    }
+
     #parseGlossary(rawGlossary) {
         const newGlossary = {
             entries: [...(rawGlossary.entries ?? [])]
@@ -144,33 +327,52 @@ export class LibraryCompiler {
         return newGlossary;
     }
 
-    #parseDocuments(rawDocuments) {
-        const newDocuments = [...(rawDocuments ?? [])];
+    async #writeGlossaryOutput() {
+        const directoryPath = `${this.outputFilePath}/glossary`;
+        const jsonPath = `${this.outputFilePath}/glossary.json`;
 
-        return newDocuments;
-    }
+        await mkdir(directoryPath, {
+            recursive: true
+        });
 
-    #createRegExpForGlossaryEntry(glossaryEntry) {
-        const escape = text => text.replace(/[\\\^\$\.\*\+\?\(\)\[\]\{\}\|]/g, (...match) => `\\${match[1]}`);
+        let totalFileCount = 0;
+        let entryFileCount = 0;
 
-        return RegExp(
-            `(${this.#glossaryEntryPreviousCharacters.source})(${[
-                escape(glossaryEntry.title),
-                ...(glossaryEntry.aliases?.map(alias => escape(alias)) ?? [])
-            ].join('|')})(${this.#glossaryEntryNextCharacters.source})`,
-            'gi'
+        for (const entry of this.#glossary.entries) {
+            await writeFile(
+                `${directoryPath}/${entry.id}.json`,
+                this.#stringify({
+                    id: entry.id,
+                    title: entry.title,
+                    aliases: entry.aliases,
+                    regExp: entry.regExp
+                })
+            );
+
+            entryFileCount += 1;
+        }
+
+        totalFileCount += entryFileCount;
+
+        await writeFile(
+            jsonPath,
+            this.#stringify({
+                entries: this.#createChildrenIdAndPathArray('glossary', this.#glossary.entries, 'json', entry => {
+                    return {
+                        title: entry.title
+                    };
+                }),
+                fileCount: totalFileCount
+            })
         );
-    }
 
-    #createPathDictionary(parentId, children, extension) {
-        return children === undefined || children.length === 0
-            ? undefined
-            : children.reduce((accumulator, child) => {
-                  return {
-                      ...accumulator,
-                      [child.id]: `./${parentId}/${child.id}.${extension}`
-                  };
-              }, {});
+        totalFileCount += 1;
+
+        return {
+            jsonPath: './glossary.json',
+            directoryPath: './glossary',
+            fileCount: totalFileCount
+        };
     }
 
     #compileGlossaryLinks(text) {
@@ -234,98 +436,21 @@ export class LibraryCompiler {
         }
     }
 
-    #stringify(value) {
-        return JSON.stringify(value, (key, value) => (value instanceof RegExp ? value.toString() : value), 4);
-    }
+    //#endregion
 
-    async #writeLibraryOutput() {
+    async #writeLibraryOutput(documentsDetails, appendicesDetails, glossaryDetails) {
         await writeFile(
             `${this.outputFilePath}/library.json`,
             this.#stringify({
                 title: this.libraryJSON.title,
                 description: this.libraryJSON.description,
-                reference: this.libraryJSON.reference
+                reference: this.libraryJSON.reference,
+                documents: documentsDetails,
+                appendices: appendicesDetails,
+                glossary: glossaryDetails,
+                fileCount: documentsDetails.fileCount + appendicesDetails.fileCount + glossaryDetails.fileCount
             })
         );
-    }
-
-    async #writeGlossaryOutput() {
-        await writeFile(
-            `${this.outputFilePath}/glossary.json`,
-            this.#stringify(this.#createPathDictionary('glossary', this.#glossary.entries, 'json'))
-        );
-
-        await mkdir(`${this.outputFilePath}/glossary`, {
-            recursive: true
-        });
-
-        for (const entry of this.#glossary.entries) {
-            await writeFile(
-                `${this.outputFilePath}/glossary/${entry.id}.json`,
-                this.#stringify({
-                    id: entry.id,
-                    title: entry.title,
-                    aliases: entry.aliases,
-                    regExp: entry.regExp
-                })
-            );
-        }
-    }
-
-    async #writeSectionOutput(section, parentPath) {
-        await writeFile(
-            `${parentPath}/${section.id}.json`,
-            this.#stringify({
-                id: section.id,
-                refereneId: section.referenceId,
-                title: section.title,
-                description: section.description,
-                sections: this.#createPathDictionary(section.id, section.sections, 'json')
-            })
-        );
-
-        await this.#tryWriteSectionsOutput(section, parentPath);
-    }
-
-    async #tryWriteSectionsOutput(idAndSections, parentPath) {
-        const { id, sections } = idAndSections;
-
-        if (id !== undefined && sections !== undefined && sections.length > 0) {
-            const sectionsPath = `${parentPath}/${id}`;
-
-            await mkdir(sectionsPath, {
-                recursive: true
-            });
-
-            for (const section of sections) {
-                await this.#writeSectionOutput(section, sectionsPath);
-            }
-        }
-    }
-
-    async #writeDocumentsOutput() {
-        await writeFile(
-            `${this.outputFilePath}/documents.json`,
-            this.#stringify(this.#createPathDictionary('documents', this.#documents, 'json'))
-        );
-
-        await mkdir(`${this.outputFilePath}/documents`, {
-            recursive: true
-        });
-
-        for (const document of this.#documents) {
-            await writeFile(
-                `${this.outputFilePath}/documents/${document.id}.json`,
-                this.#stringify({
-                    id: document.id,
-                    title: document.title,
-                    description: document.description,
-                    sections: this.#createPathDictionary(document.id, document.sections, 'json')
-                })
-            );
-
-            await this.#tryWriteSectionsOutput(document, `${this.outputFilePath}/documents`);
-        }
     }
 
     async #writeOutput() {
@@ -338,8 +463,10 @@ export class LibraryCompiler {
             recursive: true
         });
 
-        await this.#writeLibraryOutput();
-        await this.#writeGlossaryOutput();
-        await this.#writeDocumentsOutput();
+        const documentsDetails = await this.#writeDocumentsOutput();
+        const appendicesDetails = await this.#writeAppendicesOutput();
+        const glossaryDetails = await this.#writeGlossaryOutput();
+
+        await this.#writeLibraryOutput(documentsDetails, appendicesDetails, glossaryDetails);
     }
 }

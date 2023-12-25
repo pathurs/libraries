@@ -2,11 +2,27 @@
     "id": "game-parameters-and-safety",
     "refereneId": "1",
     "title": "Game Parameters & Safety",
-    "sections": {
-        "timing": "./game-parameters-and-safety/timing.json",
-        "teams": "./game-parameters-and-safety/teams.json",
-        "timeouts": "./game-parameters-and-safety/timeouts.json",
-        "game-information": "./game-parameters-and-safety/game-information.json",
-        "winning": "./game-parameters-and-safety/winning.json"
-    }
+    "sections": [
+        {
+            "id": "timing",
+            "path": "./game-parameters-and-safety/timing.json"
+        },
+        {
+            "id": "teams",
+            "path": "./game-parameters-and-safety/teams.json"
+        },
+        {
+            "id": "timeouts",
+            "path": "./game-parameters-and-safety/timeouts.json"
+        },
+        {
+            "id": "game-information",
+            "path": "./game-parameters-and-safety/game-information.json"
+        },
+        {
+            "id": "winning",
+            "path": "./game-parameters-and-safety/winning.json"
+        }
+    ],
+    "fileCount": 6
 }

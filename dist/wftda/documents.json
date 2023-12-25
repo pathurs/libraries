@@ -1,4 +1,15 @@
 {
-    "rules": "./documents/rules.json",
-    "casebook": "./documents/casebook.json"
+    "documents": [
+        {
+            "id": "rules",
+            "path": "./documents/rules.json",
+            "fileCount": 7
+        },
+        {
+            "id": "casebook",
+            "path": "./documents/casebook.json",
+            "fileCount": 1
+        }
+    ],
+    "fileCount": 10
 }

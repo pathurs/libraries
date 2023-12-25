@@ -2,7 +2,7 @@
     "title": "WFTDA Library",
     "description": "markdown:./library-description.md",
     "reference": "https://static.wftda.com/rules/wftda-rules.pdf",
-    "documents": ["json:./documents/rules/rules.json", "json:./documents/casebook/casebook.json"],
+    "documents": "json:./documents/documents.json",
     "appendices": "json:./appendices/appendices.json",
     "glossary": "json:./glossary/glossary.json"
 }

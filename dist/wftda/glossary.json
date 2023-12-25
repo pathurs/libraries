@@ -1,70 +1,345 @@
 {
-    "trip-through-the-pack": "./glossary/trip-through-the-pack.json",
-    "star-pass": "./glossary/star-pass.json",
-    "re-pass": "./glossary/re-pass.json",
-    "pivot-blocker": "./glossary/pivot-blocker.json",
-    "pack-skater": "./glossary/pack-skater.json",
-    "no-pack": "./glossary/no-pack.json",
-    "lead-jammer": "./glossary/lead-jammer.json",
-    "actively-absorbing": "./glossary/actively-absorbing.json",
-    "ahead": "./glossary/ahead.json",
-    "apex-jump": "./glossary/apex-jump.json",
-    "assist": "./glossary/assist.json",
-    "behind": "./glossary/behind.json",
-    "blocker": "./glossary/blocker.json",
-    "blocking-zones": "./glossary/blocking-zones.json",
-    "captain": "./glossary/captain.json",
-    "counter-block": "./glossary/counter-block.json",
-    "designated-alternate": "./glossary/designated-alternate.json",
-    "down": "./glossary/down.json",
-    "earned-pass": "./glossary/earned-pass.json",
-    "engagement-zone": "./glossary/engagement-zone.json",
-    "engaging": "./glossary/engaging.json",
-    "established-position": "./glossary/established-position.json",
-    "exiting-the-track": "./glossary/exiting-the-track.json",
-    "expulsion": "./glossary/expulsion.json",
-    "falling-small": "./glossary/falling-small.json",
-    "forceful-contact": "./glossary/forceful-contact.json",
-    "fouling-out": "./glossary/fouling-out.json",
-    "governing-body": "./glossary/governing-body.json",
-    "grasping": "./glossary/grasping.json",
-    "head-referee": "./glossary/head-referee.json",
-    "hips": "./glossary/hips.json",
-    "illegal-procedure": "./glossary/illegal-procedure.json",
-    "immediately": "./glossary/immediately.json",
-    "impeding": "./glossary/impeding.json",
-    "impenetrable": "./glossary/impenetrable.json",
-    "in-bounds": "./glossary/in-bounds.json",
-    "in-play": "./glossary/in-play.json",
-    "in-position": "./glossary/in-position.json",
-    "in-queue": "./glossary/in-queue.json",
-    "initiator": "./glossary/initiator.json",
-    "insubordination": "./glossary/insubordination.json",
-    "jam": "./glossary/jam.json",
-    "jammer": "./glossary/jammer.json",
-    "lapping": "./glossary/lapping.json",
-    "linking": "./glossary/linking.json",
-    "no-impact": "./glossary/no-impact.json",
-    "not-on-the-track-point": "./glossary/not-on-the-track-point.json",
-    "out-of-bounds": "./glossary/out-of-bounds.json",
-    "out-of-play": "./glossary/out-of-play.json",
-    "pack": "./glossary/pack.json",
-    "penalty": "./glossary/penalty.json",
-    "points-awarded-in-error": "./glossary/points-awarded-in-error.json",
-    "points-denied-in-error": "./glossary/points-denied-in-error.json",
-    "positional-blocking": "./glossary/positional-blocking.json",
-    "protective-gear": "./glossary/protective-gear.json",
-    "relative-position": "./glossary/relative-position.json",
-    "roster": "./glossary/roster.json",
-    "sitting": "./glossary/sitting.json",
-    "skating-direction-of-travel": "./glossary/skating-direction-of-travel.json",
-    "standing": "./glossary/standing.json",
-    "stopped": "./glossary/stopped.json",
-    "straddling": "./glossary/straddling.json",
-    "substitution": "./glossary/substitution.json",
-    "target-zones": "./glossary/target-zones.json",
-    "the-star": "./glossary/the-star.json",
-    "the-stripe": "./glossary/the-stripe.json",
-    "upright": "./glossary/upright.json",
-    "warning": "./glossary/warning.json"
+    "entries": [
+        {
+            "id": "trip-through-the-pack",
+            "path": "./glossary/trip-through-the-pack.json",
+            "title": "Trip Through the Pack"
+        },
+        {
+            "id": "star-pass",
+            "path": "./glossary/star-pass.json",
+            "title": "Passing the Star / Star Pass"
+        },
+        {
+            "id": "re-pass",
+            "path": "./glossary/re-pass.json",
+            "title": "Re-Pass"
+        },
+        {
+            "id": "pivot-blocker",
+            "path": "./glossary/pivot-blocker.json",
+            "title": "Pivot Blocker (Pivot)"
+        },
+        {
+            "id": "pack-skater",
+            "path": "./glossary/pack-skater.json",
+            "title": "Pack Skater"
+        },
+        {
+            "id": "no-pack",
+            "path": "./glossary/no-pack.json",
+            "title": "No Pack"
+        },
+        {
+            "id": "lead-jammer",
+            "path": "./glossary/lead-jammer.json",
+            "title": "Lead Jammer"
+        },
+        {
+            "id": "actively-absorbing",
+            "path": "./glossary/actively-absorbing.json",
+            "title": "Actively Absorbing"
+        },
+        {
+            "id": "ahead",
+            "path": "./glossary/ahead.json",
+            "title": "Ahead"
+        },
+        {
+            "id": "apex-jump",
+            "path": "./glossary/apex-jump.json",
+            "title": "Apex Jump"
+        },
+        {
+            "id": "assist",
+            "path": "./glossary/assist.json",
+            "title": "Assist"
+        },
+        {
+            "id": "behind",
+            "path": "./glossary/behind.json",
+            "title": "Behind"
+        },
+        {
+            "id": "blocker",
+            "path": "./glossary/blocker.json",
+            "title": "Blocker"
+        },
+        {
+            "id": "blocking-zones",
+            "path": "./glossary/blocking-zones.json",
+            "title": "Blocking Zones"
+        },
+        {
+            "id": "captain",
+            "path": "./glossary/captain.json",
+            "title": "Captain"
+        },
+        {
+            "id": "counter-block",
+            "path": "./glossary/counter-block.json",
+            "title": "Counter-Block"
+        },
+        {
+            "id": "designated-alternate",
+            "path": "./glossary/designated-alternate.json",
+            "title": "Designated Alternate"
+        },
+        {
+            "id": "down",
+            "path": "./glossary/down.json",
+            "title": "Down"
+        },
+        {
+            "id": "earned-pass",
+            "path": "./glossary/earned-pass.json",
+            "title": "Pass/Earned Pass"
+        },
+        {
+            "id": "engagement-zone",
+            "path": "./glossary/engagement-zone.json",
+            "title": "Engagement Zone"
+        },
+        {
+            "id": "engaging",
+            "path": "./glossary/engaging.json",
+            "title": "Engaging"
+        },
+        {
+            "id": "established-position",
+            "path": "./glossary/established-position.json",
+            "title": "Established Position"
+        },
+        {
+            "id": "exiting-the-track",
+            "path": "./glossary/exiting-the-track.json",
+            "title": "Exiting the Track"
+        },
+        {
+            "id": "expulsion",
+            "path": "./glossary/expulsion.json",
+            "title": "Expulsion"
+        },
+        {
+            "id": "falling-small",
+            "path": "./glossary/falling-small.json",
+            "title": "Falling Small"
+        },
+        {
+            "id": "forceful-contact",
+            "path": "./glossary/forceful-contact.json",
+            "title": "Forceful Contact"
+        },
+        {
+            "id": "fouling-out",
+            "path": "./glossary/fouling-out.json",
+            "title": "Fouling Out"
+        },
+        {
+            "id": "governing-body",
+            "path": "./glossary/governing-body.json",
+            "title": "Governing Body"
+        },
+        {
+            "id": "grasping",
+            "path": "./glossary/grasping.json",
+            "title": "Grasping"
+        },
+        {
+            "id": "head-referee",
+            "path": "./glossary/head-referee.json",
+            "title": "Head Referee"
+        },
+        {
+            "id": "hips",
+            "path": "./glossary/hips.json",
+            "title": "Hips"
+        },
+        {
+            "id": "illegal-procedure",
+            "path": "./glossary/illegal-procedure.json",
+            "title": "Illegal Procedure"
+        },
+        {
+            "id": "immediately",
+            "path": "./glossary/immediately.json",
+            "title": "Immediately"
+        },
+        {
+            "id": "impeding",
+            "path": "./glossary/impeding.json",
+            "title": "Impeding"
+        },
+        {
+            "id": "impenetrable",
+            "path": "./glossary/impenetrable.json",
+            "title": "Impenetrable"
+        },
+        {
+            "id": "in-bounds",
+            "path": "./glossary/in-bounds.json",
+            "title": "In Bounds"
+        },
+        {
+            "id": "in-play",
+            "path": "./glossary/in-play.json",
+            "title": "In Play"
+        },
+        {
+            "id": "in-position",
+            "path": "./glossary/in-position.json",
+            "title": "In Position"
+        },
+        {
+            "id": "in-queue",
+            "path": "./glossary/in-queue.json",
+            "title": "In Queue"
+        },
+        {
+            "id": "initiator",
+            "path": "./glossary/initiator.json",
+            "title": "Initiator"
+        },
+        {
+            "id": "insubordination",
+            "path": "./glossary/insubordination.json",
+            "title": "Insubordination"
+        },
+        {
+            "id": "jam",
+            "path": "./glossary/jam.json",
+            "title": "Jam"
+        },
+        {
+            "id": "jammer",
+            "path": "./glossary/jammer.json",
+            "title": "Jammer"
+        },
+        {
+            "id": "lapping",
+            "path": "./glossary/lapping.json",
+            "title": "Lap/Lapping"
+        },
+        {
+            "id": "linking",
+            "path": "./glossary/linking.json",
+            "title": "Linking"
+        },
+        {
+            "id": "no-impact",
+            "path": "./glossary/no-impact.json",
+            "title": "No Impact"
+        },
+        {
+            "id": "not-on-the-track-point",
+            "path": "./glossary/not-on-the-track-point.json",
+            "title": "Not-On-the-Track (NOTT) Point"
+        },
+        {
+            "id": "out-of-bounds",
+            "path": "./glossary/out-of-bounds.json",
+            "title": "Out of Bounds"
+        },
+        {
+            "id": "out-of-play",
+            "path": "./glossary/out-of-play.json",
+            "title": "Out of Play"
+        },
+        {
+            "id": "pack",
+            "path": "./glossary/pack.json",
+            "title": "Pack"
+        },
+        {
+            "id": "penalty",
+            "path": "./glossary/penalty.json",
+            "title": "Penalty"
+        },
+        {
+            "id": "points-awarded-in-error",
+            "path": "./glossary/points-awarded-in-error.json",
+            "title": "Points Awarded in Error"
+        },
+        {
+            "id": "points-denied-in-error",
+            "path": "./glossary/points-denied-in-error.json",
+            "title": "Points Denied in Error"
+        },
+        {
+            "id": "positional-blocking",
+            "path": "./glossary/positional-blocking.json",
+            "title": "Positional Blocking"
+        },
+        {
+            "id": "protective-gear",
+            "path": "./glossary/protective-gear.json",
+            "title": "Protective Gear"
+        },
+        {
+            "id": "relative-position",
+            "path": "./glossary/relative-position.json",
+            "title": "Relative Position"
+        },
+        {
+            "id": "roster",
+            "path": "./glossary/roster.json",
+            "title": "Roster"
+        },
+        {
+            "id": "sitting",
+            "path": "./glossary/sitting.json",
+            "title": "Sitting"
+        },
+        {
+            "id": "skating-direction-of-travel",
+            "path": "./glossary/skating-direction-of-travel.json",
+            "title": "Skating – Direction of Travel"
+        },
+        {
+            "id": "standing",
+            "path": "./glossary/standing.json",
+            "title": "Standing"
+        },
+        {
+            "id": "stopped",
+            "path": "./glossary/stopped.json",
+            "title": "Stopped"
+        },
+        {
+            "id": "straddling",
+            "path": "./glossary/straddling.json",
+            "title": "Straddling"
+        },
+        {
+            "id": "substitution",
+            "path": "./glossary/substitution.json",
+            "title": "Substitution"
+        },
+        {
+            "id": "target-zones",
+            "path": "./glossary/target-zones.json",
+            "title": "Target Zones"
+        },
+        {
+            "id": "the-star",
+            "path": "./glossary/the-star.json",
+            "title": "The Star"
+        },
+        {
+            "id": "the-stripe",
+            "path": "./glossary/the-stripe.json",
+            "title": "The Stripe"
+        },
+        {
+            "id": "upright",
+            "path": "./glossary/upright.json",
+            "title": "Upright"
+        },
+        {
+            "id": "warning",
+            "path": "./glossary/warning.json",
+            "title": "Warning"
+        }
+    ],
+    "fileCount": 68
 }

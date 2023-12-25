@@ -3,7 +3,11 @@
     "refereneId": "1.5",
     "title": "Winning",
     "description": "**The team with the most points at the end of the game wins.**\r\n",
-    "sections": {
-        "overtime": "./winning/overtime.json"
-    }
+    "sections": [
+        {
+            "id": "overtime",
+            "path": "./winning/overtime.json"
+        }
+    ],
+    "fileCount": 1
 }
