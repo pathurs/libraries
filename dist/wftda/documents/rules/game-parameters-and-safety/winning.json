@@ -6,8 +6,10 @@
     "sections": [
         {
             "id": "overtime",
-            "jsonPath": "./winning/overtime.json"
+            "jsonPath": "./winning/overtime.json",
+            "title": "Overtime",
+            "descendantCount": 0
         }
     ],
-    "fileCount": 1
+    "descendantCount": 1
 }

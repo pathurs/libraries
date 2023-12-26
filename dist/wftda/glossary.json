@@ -1,345 +1,415 @@
 {
+    "id": "glossary",
+    "title": "Glossary",
     "entries": [
         {
             "id": "trip-through-the-pack",
             "jsonPath": "./glossary/trip-through-the-pack.json",
-            "title": "Trip Through the Pack"
+            "title": "Trip Through the Pack",
+            "descendantCount": 0
         },
         {
             "id": "star-pass",
             "jsonPath": "./glossary/star-pass.json",
-            "title": "Passing the Star / Star Pass"
+            "title": "Passing the Star / Star Pass",
+            "descendantCount": 0
         },
         {
             "id": "re-pass",
             "jsonPath": "./glossary/re-pass.json",
-            "title": "Re-Pass"
+            "title": "Re-Pass",
+            "descendantCount": 0
         },
         {
             "id": "pivot-blocker",
             "jsonPath": "./glossary/pivot-blocker.json",
-            "title": "Pivot Blocker (Pivot)"
+            "title": "Pivot Blocker (Pivot)",
+            "descendantCount": 0
         },
         {
             "id": "pack-skater",
             "jsonPath": "./glossary/pack-skater.json",
-            "title": "Pack Skater"
+            "title": "Pack Skater",
+            "descendantCount": 0
         },
         {
             "id": "no-pack",
             "jsonPath": "./glossary/no-pack.json",
-            "title": "No Pack"
+            "title": "No Pack",
+            "descendantCount": 0
         },
         {
             "id": "lead-jammer",
             "jsonPath": "./glossary/lead-jammer.json",
-            "title": "Lead Jammer"
+            "title": "Lead Jammer",
+            "descendantCount": 0
         },
         {
             "id": "actively-absorbing",
             "jsonPath": "./glossary/actively-absorbing.json",
-            "title": "Actively Absorbing"
+            "title": "Actively Absorbing",
+            "descendantCount": 0
         },
         {
             "id": "ahead",
             "jsonPath": "./glossary/ahead.json",
-            "title": "Ahead"
+            "title": "Ahead",
+            "descendantCount": 0
         },
         {
             "id": "apex-jump",
             "jsonPath": "./glossary/apex-jump.json",
-            "title": "Apex Jump"
+            "title": "Apex Jump",
+            "descendantCount": 0
         },
         {
             "id": "assist",
             "jsonPath": "./glossary/assist.json",
-            "title": "Assist"
+            "title": "Assist",
+            "descendantCount": 0
         },
         {
             "id": "behind",
             "jsonPath": "./glossary/behind.json",
-            "title": "Behind"
+            "title": "Behind",
+            "descendantCount": 0
         },
         {
             "id": "blocker",
             "jsonPath": "./glossary/blocker.json",
-            "title": "Blocker"
+            "title": "Blocker",
+            "descendantCount": 0
         },
         {
             "id": "blocking-zones",
             "jsonPath": "./glossary/blocking-zones.json",
-            "title": "Blocking Zones"
+            "title": "Blocking Zones",
+            "descendantCount": 0
         },
         {
             "id": "captain",
             "jsonPath": "./glossary/captain.json",
-            "title": "Captain"
+            "title": "Captain",
+            "descendantCount": 0
         },
         {
             "id": "counter-block",
             "jsonPath": "./glossary/counter-block.json",
-            "title": "Counter-Block"
+            "title": "Counter-Block",
+            "descendantCount": 0
         },
         {
             "id": "designated-alternate",
             "jsonPath": "./glossary/designated-alternate.json",
-            "title": "Designated Alternate"
+            "title": "Designated Alternate",
+            "descendantCount": 0
         },
         {
             "id": "down",
             "jsonPath": "./glossary/down.json",
-            "title": "Down"
+            "title": "Down",
+            "descendantCount": 0
         },
         {
             "id": "earned-pass",
             "jsonPath": "./glossary/earned-pass.json",
-            "title": "Pass/Earned Pass"
+            "title": "Pass/Earned Pass",
+            "descendantCount": 0
         },
         {
             "id": "engagement-zone",
             "jsonPath": "./glossary/engagement-zone.json",
-            "title": "Engagement Zone"
+            "title": "Engagement Zone",
+            "descendantCount": 0
         },
         {
             "id": "engaging",
             "jsonPath": "./glossary/engaging.json",
-            "title": "Engaging"
+            "title": "Engaging",
+            "descendantCount": 0
         },
         {
             "id": "established-position",
             "jsonPath": "./glossary/established-position.json",
-            "title": "Established Position"
+            "title": "Established Position",
+            "descendantCount": 0
         },
         {
             "id": "exiting-the-track",
             "jsonPath": "./glossary/exiting-the-track.json",
-            "title": "Exiting the Track"
+            "title": "Exiting the Track",
+            "descendantCount": 0
         },
         {
             "id": "expulsion",
             "jsonPath": "./glossary/expulsion.json",
-            "title": "Expulsion"
+            "title": "Expulsion",
+            "descendantCount": 0
         },
         {
             "id": "falling-small",
             "jsonPath": "./glossary/falling-small.json",
-            "title": "Falling Small"
+            "title": "Falling Small",
+            "descendantCount": 0
         },
         {
             "id": "forceful-contact",
             "jsonPath": "./glossary/forceful-contact.json",
-            "title": "Forceful Contact"
+            "title": "Forceful Contact",
+            "descendantCount": 0
         },
         {
             "id": "fouling-out",
             "jsonPath": "./glossary/fouling-out.json",
-            "title": "Fouling Out"
+            "title": "Fouling Out",
+            "descendantCount": 0
         },
         {
             "id": "governing-body",
             "jsonPath": "./glossary/governing-body.json",
-            "title": "Governing Body"
+            "title": "Governing Body",
+            "descendantCount": 0
         },
         {
             "id": "grasping",
             "jsonPath": "./glossary/grasping.json",
-            "title": "Grasping"
+            "title": "Grasping",
+            "descendantCount": 0
         },
         {
             "id": "head-referee",
             "jsonPath": "./glossary/head-referee.json",
-            "title": "Head Referee"
+            "title": "Head Referee",
+            "descendantCount": 0
         },
         {
             "id": "hips",
             "jsonPath": "./glossary/hips.json",
-            "title": "Hips"
+            "title": "Hips",
+            "descendantCount": 0
         },
         {
             "id": "illegal-procedure",
             "jsonPath": "./glossary/illegal-procedure.json",
-            "title": "Illegal Procedure"
+            "title": "Illegal Procedure",
+            "descendantCount": 0
         },
         {
             "id": "immediately",
             "jsonPath": "./glossary/immediately.json",
-            "title": "Immediately"
+            "title": "Immediately",
+            "descendantCount": 0
         },
         {
             "id": "impeding",
             "jsonPath": "./glossary/impeding.json",
-            "title": "Impeding"
+            "title": "Impeding",
+            "descendantCount": 0
         },
         {
             "id": "impenetrable",
             "jsonPath": "./glossary/impenetrable.json",
-            "title": "Impenetrable"
+            "title": "Impenetrable",
+            "descendantCount": 0
         },
         {
             "id": "in-bounds",
             "jsonPath": "./glossary/in-bounds.json",
-            "title": "In Bounds"
+            "title": "In Bounds",
+            "descendantCount": 0
         },
         {
             "id": "in-play",
             "jsonPath": "./glossary/in-play.json",
-            "title": "In Play"
+            "title": "In Play",
+            "descendantCount": 0
         },
         {
             "id": "in-position",
             "jsonPath": "./glossary/in-position.json",
-            "title": "In Position"
+            "title": "In Position",
+            "descendantCount": 0
         },
         {
             "id": "in-queue",
             "jsonPath": "./glossary/in-queue.json",
-            "title": "In Queue"
+            "title": "In Queue",
+            "descendantCount": 0
         },
         {
             "id": "initiator",
             "jsonPath": "./glossary/initiator.json",
-            "title": "Initiator"
+            "title": "Initiator",
+            "descendantCount": 0
         },
         {
             "id": "insubordination",
             "jsonPath": "./glossary/insubordination.json",
-            "title": "Insubordination"
+            "title": "Insubordination",
+            "descendantCount": 0
         },
         {
             "id": "jam",
             "jsonPath": "./glossary/jam.json",
-            "title": "Jam"
+            "title": "Jam",
+            "descendantCount": 0
         },
         {
             "id": "jammer",
             "jsonPath": "./glossary/jammer.json",
-            "title": "Jammer"
+            "title": "Jammer",
+            "descendantCount": 0
         },
         {
             "id": "lapping",
             "jsonPath": "./glossary/lapping.json",
-            "title": "Lap/Lapping"
+            "title": "Lap/Lapping",
+            "descendantCount": 0
         },
         {
             "id": "linking",
             "jsonPath": "./glossary/linking.json",
-            "title": "Linking"
+            "title": "Linking",
+            "descendantCount": 0
         },
         {
             "id": "no-impact",
             "jsonPath": "./glossary/no-impact.json",
-            "title": "No Impact"
+            "title": "No Impact",
+            "descendantCount": 0
         },
         {
             "id": "not-on-the-track-point",
             "jsonPath": "./glossary/not-on-the-track-point.json",
-            "title": "Not-On-the-Track (NOTT) Point"
+            "title": "Not-On-the-Track (NOTT) Point",
+            "descendantCount": 0
         },
         {
             "id": "out-of-bounds",
             "jsonPath": "./glossary/out-of-bounds.json",
-            "title": "Out of Bounds"
+            "title": "Out of Bounds",
+            "descendantCount": 0
         },
         {
             "id": "out-of-play",
             "jsonPath": "./glossary/out-of-play.json",
-            "title": "Out of Play"
+            "title": "Out of Play",
+            "descendantCount": 0
         },
         {
             "id": "pack",
             "jsonPath": "./glossary/pack.json",
-            "title": "Pack"
+            "title": "Pack",
+            "descendantCount": 0
         },
         {
             "id": "penalty",
             "jsonPath": "./glossary/penalty.json",
-            "title": "Penalty"
+            "title": "Penalty",
+            "descendantCount": 0
         },
         {
             "id": "points-awarded-in-error",
             "jsonPath": "./glossary/points-awarded-in-error.json",
-            "title": "Points Awarded in Error"
+            "title": "Points Awarded in Error",
+            "descendantCount": 0
         },
         {
             "id": "points-denied-in-error",
             "jsonPath": "./glossary/points-denied-in-error.json",
-            "title": "Points Denied in Error"
+            "title": "Points Denied in Error",
+            "descendantCount": 0
         },
         {
             "id": "positional-blocking",
             "jsonPath": "./glossary/positional-blocking.json",
-            "title": "Positional Blocking"
+            "title": "Positional Blocking",
+            "descendantCount": 0
         },
         {
             "id": "protective-gear",
             "jsonPath": "./glossary/protective-gear.json",
-            "title": "Protective Gear"
+            "title": "Protective Gear",
+            "descendantCount": 0
         },
         {
             "id": "relative-position",
             "jsonPath": "./glossary/relative-position.json",
-            "title": "Relative Position"
+            "title": "Relative Position",
+            "descendantCount": 0
         },
         {
             "id": "roster",
             "jsonPath": "./glossary/roster.json",
-            "title": "Roster"
+            "title": "Roster",
+            "descendantCount": 0
         },
         {
             "id": "sitting",
             "jsonPath": "./glossary/sitting.json",
-            "title": "Sitting"
+            "title": "Sitting",
+            "descendantCount": 0
         },
         {
             "id": "skating-direction-of-travel",
             "jsonPath": "./glossary/skating-direction-of-travel.json",
-            "title": "Skating – Direction of Travel"
+            "title": "Skating – Direction of Travel",
+            "descendantCount": 0
         },
         {
             "id": "standing",
             "jsonPath": "./glossary/standing.json",
-            "title": "Standing"
+            "title": "Standing",
+            "descendantCount": 0
         },
         {
             "id": "stopped",
             "jsonPath": "./glossary/stopped.json",
-            "title": "Stopped"
+            "title": "Stopped",
+            "descendantCount": 0
         },
         {
             "id": "straddling",
             "jsonPath": "./glossary/straddling.json",
-            "title": "Straddling"
+            "title": "Straddling",
+            "descendantCount": 0
         },
         {
             "id": "substitution",
             "jsonPath": "./glossary/substitution.json",
-            "title": "Substitution"
+            "title": "Substitution",
+            "descendantCount": 0
         },
         {
             "id": "target-zones",
             "jsonPath": "./glossary/target-zones.json",
-            "title": "Target Zones"
+            "title": "Target Zones",
+            "descendantCount": 0
         },
         {
             "id": "the-star",
             "jsonPath": "./glossary/the-star.json",
-            "title": "The Star"
+            "title": "The Star",
+            "descendantCount": 0
         },
         {
             "id": "the-stripe",
             "jsonPath": "./glossary/the-stripe.json",
-            "title": "The Stripe"
+            "title": "The Stripe",
+            "descendantCount": 0
         },
         {
             "id": "upright",
             "jsonPath": "./glossary/upright.json",
-            "title": "Upright"
+            "title": "Upright",
+            "descendantCount": 0
         },
         {
             "id": "warning",
             "jsonPath": "./glossary/warning.json",
-            "title": "Warning"
+            "title": "Warning",
+            "descendantCount": 0
         }
     ],
-    "fileCount": 68
+    "descendantCount": 68
 }

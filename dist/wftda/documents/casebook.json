@@ -4,8 +4,10 @@
     "sections": [
         {
             "id": "game-parameters-and-safety",
-            "jsonPath": "./casebook/game-parameters-and-safety.json"
+            "jsonPath": "./casebook/game-parameters-and-safety.json",
+            "title": "Game Parameters & Safety",
+            "descendantCount": 0
         }
     ],
-    "fileCount": 1
+    "descendantCount": 1
 }

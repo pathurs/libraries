@@ -3,16 +3,21 @@
     "description": "The game of Flat Track Roller Derby is played on a flat, oval track. Play is broken up into two 30-minute periods, and within those periods, into units of play called “$Jams:jam$,” which last up to two minutes. There are 30 seconds between each $Jam:jam$.\r\n\r\nDuring a $Jam:jam$, each team fields up to five Skaters. Four of these Skaters are called “$Blockers:blocker$” (together, the $Blockers:blocker$ are called the “$Pack:pack$”), and one is called a “$Jammer:jammer$.” The $Jammer:jammer$ wears a helmet cover with a $star:the-star$ on it.\r\n\r\nThe two $Jammers:jammer$ start each $Jam:jam$ $behind:behind$ the $Pack:pack$, and score a point for every opposing $Blocker:blocker$ they $lap:lapping$, each $lap:lapping$. Because they start $behind:behind$ the $Pack:pack$, they must get through the $Pack:pack$, then all the way around the track to be eligible to score points on opposing $Blockers:blocker$.\r\n\r\nRoller derby is a full-contact sport; however, Skaters cannot use their heads, elbows, forearms, hands, knees, lower legs, or feet to make contact to opponents. Skaters cannot make contact to opponents’ heads, backs, knees, lower legs, or feet.\r\n\r\nPlay that is unsafe or illegal may result in a Skater being assessed a $penalty:penalty$, which is served by $sitting:sitting$ in the $Penalty:penalty$ Box for 30 seconds of $Jam:jam$ time.\r\n\r\nThe team with the most points at the end of the game wins.\r\n\r\nA common $Jam:jam$ might go like this:\r\n\r\n1. $Blockers:blocker$ line up $behind:behind$ the $Pivot:pivot-blocker$ Line and in front of the $Jammer:jammer$ Line.\r\n2. $Jammers:jammer$ line up $behind:behind$ the $Jammer:jammer$ Line.\r\n3. At the $Jam:jam$-Starting Whistle, the $Blockers:blocker$ skate forward and compete for superior position. The $Jammers:jammer$ skate forward and try to get through the $Pack:pack$. Each $Blocker:blocker$ simultaneously tries to prevent the opposing $Jammer:jammer$ from getting past, and to help their own $Jammer:jammer$ get through.\r\n4. One $Jammer:jammer$ exits the $Pack:pack$ and is declared $Lead Jammer:lead-jammer$, earning the right to end the $Jam:jam$ when they decide. This $Jammer:jammer$ races around the track to get into scoring position.\r\n5. The same $Jammer:jammer$ begins to work their way through the $Pack:pack$ for the second time, and the opposing $Jammer:jammer$ makes their way out of the $Pack:pack$ for the first time.\r\n6. As the second $Jammer:jammer$ to escape the $Pack:pack$ comes around into scoring position, the first $Jammer:jammer$ calls off the $Jam:jam$.\r\n7. The first $Jammer:jammer$ has scored points (up to four), and held their opponent at zero points. Meanwhile, the opposing $Jammer:jammer$ (by getting into scoring position) held the first $Jammer:jammer$ at only those points, as they could have scored more points on subsequent $passes:earned-pass$.",
     "reference": "https://static.wftda.com/rules/wftda-rules.pdf",
     "documents": {
+        "id": "documents",
         "jsonPath": "./documents.json",
-        "fileCount": 11
+        "title": "Documents",
+        "descendantCount": 10
     },
     "appendices": {
         "jsonPath": "./appendices.json",
-        "fileCount": 1
+        "title": "Appendices",
+        "descendantCount": 0
     },
     "glossary": {
+        "id": "glossary",
         "jsonPath": "./glossary.json",
-        "fileCount": 69
+        "title": "Glossary",
+        "descendantCount": 68
     },
-    "fileCount": 81
+    "descendantCount": 81
 }

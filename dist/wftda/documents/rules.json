@@ -5,8 +5,10 @@
     "sections": [
         {
             "id": "game-parameters-and-safety",
-            "jsonPath": "./rules/game-parameters-and-safety.json"
+            "jsonPath": "./rules/game-parameters-and-safety.json",
+            "title": "Game Parameters & Safety",
+            "descendantCount": 6
         }
     ],
-    "fileCount": 7
+    "descendantCount": 7
 }

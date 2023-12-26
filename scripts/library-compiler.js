@@ -9,7 +9,7 @@ export class LibraryCompiler {
 
     #glossary = {};
     #appendices = {};
-    #documents = [];
+    #documents = {};
 
     constructor(inputFilePath, outputFilePath) {
         this.inputFilePath = inputFilePath;
@@ -118,13 +118,15 @@ export class LibraryCompiler {
         return await this.#resolveFiles(fileJSON, filePath);
     }
 
-    #createChildrenIdAndPathArray(parentId, children, extension, extras) {
+    #createChildrenIdAndJSONPathArray(parentId, children, extension, extras) {
         return children === undefined || children.length === 0
             ? undefined
             : children.map(child => {
                   return {
                       id: child.id,
                       jsonPath: `./${parentId}/${child.id}.${extension}`,
+                      title: child.title,
+                      descendantCount: child.descendantCount,
                       ...(extras?.(child) ?? {})
                   };
               });
@@ -136,22 +138,54 @@ export class LibraryCompiler {
 
     //#region Documents
 
+    #parseSections(rawSections) {
+        const newSections = [];
+
+        for (const rawSection of rawSections) {
+            const newSection = {
+                ...rawSection,
+                sections: this.#parseSections(rawSection.sections ?? [])
+            };
+
+            newSection.descendantCount =
+                newSection.sections.length +
+                newSection.sections.reduce((accumulator, section) => accumulator + section.descendantCount, 0);
+
+            newSections.push(newSection);
+        }
+
+        return newSections;
+    }
+
     #parseDocuments(rawDocuments) {
-        const newDocuments = [...(rawDocuments ?? [])];
+        const newDocuments = {
+            id: 'documents',
+            title: 'Documents',
+            documents: []
+        };
+
+        for (const rawDocument of rawDocuments) {
+            const newDocument = {
+                ...rawDocument,
+                sections: this.#parseSections(rawDocument.sections ?? [])
+            };
+
+            newDocument.descendantCount =
+                newDocument.sections.length +
+                newDocument.sections.reduce((accumulator, section) => accumulator + section.descendantCount, 0);
+
+            newDocuments.documents.push(newDocument);
+        }
+
+        newDocuments.descendantCount =
+            newDocuments.documents.length +
+            newDocuments.documents.reduce((accumulator, document) => accumulator + document.descendantCount, 0);
 
         return newDocuments;
     }
 
-    async #writeDocumentSectionOutput(section, parentPath, previousTotalFileCount = 0) {
-        let totalFileCount = previousTotalFileCount;
-
-        const sectionsFileCount = await this.#tryWriteDocumentSectionsOutput(
-            section,
-            parentPath,
-            previousTotalFileCount
-        );
-
-        totalFileCount += sectionsFileCount;
+    async #writeDocumentSectionOutput(section, parentPath) {
+        await this.#tryWriteDocumentSectionsOutput(section, parentPath);
 
         await writeFile(
             `${parentPath}/${section.id}.json`,
@@ -160,20 +194,14 @@ export class LibraryCompiler {
                 refereneId: section.referenceId,
                 title: section.title,
                 description: section.description,
-                sections: this.#createChildrenIdAndPathArray(section.id, section.sections, 'json'),
-                fileCount: sectionsFileCount
+                sections: this.#createChildrenIdAndJSONPathArray(section.id, section.sections, 'json'),
+                descendantCount: section.descendantCount
             })
         );
-
-        totalFileCount += 1;
-
-        return totalFileCount;
     }
 
-    async #tryWriteDocumentSectionsOutput(idAndSections, parentPath, previousTotalFileCount = 0) {
+    async #tryWriteDocumentSectionsOutput(idAndSections, parentPath) {
         const { id, sections } = idAndSections;
-
-        let totalFileCount = previousTotalFileCount;
 
         if (id !== undefined && sections !== undefined && sections.length > 0) {
             const sectionsPath = `${parentPath}/${id}`;
@@ -183,11 +211,9 @@ export class LibraryCompiler {
             });
 
             for (const section of sections) {
-                totalFileCount += await this.#writeDocumentSectionOutput(section, sectionsPath, previousTotalFileCount);
+                await this.#writeDocumentSectionOutput(section, sectionsPath);
             }
         }
-
-        return totalFileCount;
     }
 
     async #writeDocumentsOutput() {
@@ -198,14 +224,8 @@ export class LibraryCompiler {
             recursive: true
         });
 
-        let totalFileCount = 0;
-        let documentFileCount = 0;
-        let documentSectionFileCountDictionary = {};
-
-        for (const document of this.#documents) {
-            const sectionsFileCount = await this.#tryWriteDocumentSectionsOutput(document, directoryPath);
-
-            totalFileCount += sectionsFileCount;
+        for (const document of this.#documents.documents) {
+            await this.#tryWriteDocumentSectionsOutput(document, directoryPath);
 
             await writeFile(
                 `${directoryPath}/${document.id}.json`,
@@ -213,35 +233,27 @@ export class LibraryCompiler {
                     id: document.id,
                     title: document.title,
                     description: document.description,
-                    sections: this.#createChildrenIdAndPathArray(document.id, document.sections, 'json'),
-                    fileCount: sectionsFileCount
+                    sections: this.#createChildrenIdAndJSONPathArray(document.id, document.sections, 'json'),
+                    descendantCount: document.descendantCount
                 })
             );
-
-            documentSectionFileCountDictionary[document.id] = sectionsFileCount;
-
-            documentFileCount += 1;
         }
-
-        totalFileCount += documentFileCount;
 
         await writeFile(
             jsonPath,
             this.#stringify({
-                documents: this.#createChildrenIdAndPathArray('documents', this.#documents, 'json', document => {
-                    return {
-                        fileCount: documentSectionFileCountDictionary[document.id]
-                    };
-                }),
-                fileCount: totalFileCount
+                id: this.#documents.id,
+                title: this.#documents.title,
+                documents: this.#createChildrenIdAndJSONPathArray('documents', this.#documents.documents, 'json'),
+                descendantCount: this.#documents.descendantCount
             })
         );
 
-        totalFileCount += 1;
-
         return {
+            id: this.#documents.id,
             jsonPath: './documents.json',
-            fileCount: totalFileCount
+            title: this.#documents.title,
+            descendantCount: this.#documents.descendantCount
         };
     }
 
@@ -263,18 +275,16 @@ export class LibraryCompiler {
             recursive: true
         });
 
-        let totalFileCount = 0;
-
         await writeFile(
             jsonPath,
             this.#stringify(this.#appendices) // TODO
         );
 
-        totalFileCount += 1;
-
         return {
+            id: this.#appendices.id,
             jsonPath: './appendices.json',
-            fileCount: totalFileCount
+            title: this.#appendices.title ?? 'Appendices',
+            descendantCount: 0
         };
     }
 
@@ -296,12 +306,23 @@ export class LibraryCompiler {
 
     #parseGlossary(rawGlossary) {
         const newGlossary = {
-            entries: [...(rawGlossary.entries ?? [])]
+            id: rawGlossary.id ?? 'glossary',
+            title: rawGlossary.title ?? 'Glossary',
+            entries: []
         };
 
-        for (const entry of newGlossary.entries) {
+        for (const rawEntry of rawGlossary.entries) {
+            const entry = {
+                ...rawEntry,
+                descendantCount: 0
+            };
+
             entry.regExp = this.#createRegExpForGlossaryEntry(entry);
 
+            newGlossary.entries.push(entry);
+        }
+
+        for (const entry of newGlossary.entries) {
             for (const otherEntry of newGlossary.entries) {
                 if (entry === otherEntry) {
                     continue;
@@ -322,6 +343,8 @@ export class LibraryCompiler {
 
         newGlossary.entries.sort((entryA, entryB) => compareBooleans(entryA.conflicts?.includes(entryB.id)));
 
+        newGlossary.descendantCount = newGlossary.entries.length;
+
         return newGlossary;
     }
 
@@ -333,9 +356,6 @@ export class LibraryCompiler {
             recursive: true
         });
 
-        let totalFileCount = 0;
-        let entryFileCount = 0;
-
         for (const entry of this.#glossary.entries) {
             await writeFile(
                 `${directoryPath}/${entry.id}.json`,
@@ -346,29 +366,23 @@ export class LibraryCompiler {
                     regExp: entry.regExp
                 })
             );
-
-            entryFileCount += 1;
         }
-
-        totalFileCount += entryFileCount;
 
         await writeFile(
             jsonPath,
             this.#stringify({
-                entries: this.#createChildrenIdAndPathArray('glossary', this.#glossary.entries, 'json', entry => {
-                    return {
-                        title: entry.title
-                    };
-                }),
-                fileCount: totalFileCount
+                id: this.#glossary.id,
+                title: this.#glossary.title,
+                entries: this.#createChildrenIdAndJSONPathArray('glossary', this.#glossary.entries, 'json'),
+                descendantCount: this.#glossary.descendantCount
             })
         );
 
-        totalFileCount += 1;
-
         return {
+            id: this.#glossary.id,
             jsonPath: './glossary.json',
-            fileCount: totalFileCount
+            title: this.#glossary.title,
+            descendantCount: this.#glossary.descendantCount
         };
     }
 
@@ -394,7 +408,7 @@ export class LibraryCompiler {
     }
 
     #deepCompileGlossaryLinks() {
-        if (this.#glossary.entries.length === 0 || this.#documents.length === 0) {
+        if (this.#glossary.entries.length === 0 || this.#documents.documents.length === 0) {
             return;
         }
 
@@ -418,7 +432,7 @@ export class LibraryCompiler {
 
         mutate(this.libraryJSON, 'description');
 
-        for (const document of this.#documents) {
+        for (const document of this.#documents.documents) {
             mutate(document, 'description');
 
             if (document.sections == null || document.sections.length === 0) {
@@ -445,7 +459,13 @@ export class LibraryCompiler {
                 documents: documentsDetails,
                 appendices: appendicesDetails,
                 glossary: glossaryDetails,
-                fileCount: documentsDetails.fileCount + appendicesDetails.fileCount + glossaryDetails.fileCount
+                descendantCount:
+                    documentsDetails.descendantCount +
+                    1 +
+                    appendicesDetails.descendantCount +
+                    1 +
+                    glossaryDetails.descendantCount +
+                    1
             })
         );
     }

@@ -1,15 +1,19 @@
 {
+    "id": "documents",
+    "title": "Documents",
     "documents": [
         {
             "id": "rules",
             "jsonPath": "./documents/rules.json",
-            "fileCount": 7
+            "title": "Rules",
+            "descendantCount": 7
         },
         {
             "id": "casebook",
             "jsonPath": "./documents/casebook.json",
-            "fileCount": 1
+            "title": "Casebook",
+            "descendantCount": 1
         }
     ],
-    "fileCount": 10
+    "descendantCount": 10
 }

@@ -3,5 +3,5 @@
     "refereneId": "1.3",
     "title": "Timeouts",
     "description": "**Teams and Officials may {stop} the period clock by calling a timeout.** Timeouts may only be called between $Jams:jam$, though Officials may end a $Jam:jam$ in order to call an Official Timeout. The beginning of a timeout is marked by four short whistle blasts, and the end of a timeout is marked by a long rolling whistle, after which the next $Jam:jam$ begins as soon as possible if there is time remaining on the period clock. At most, 30 seconds may $pass:earned-pass$ before the next $Jam:jam$ begins. The period clock starts again at the $Jam:jam$-Starting Whistle.\r\n\r\nThere are three types of timeouts.\r\n",
-    "fileCount": 0
+    "descendantCount": 0
 }
