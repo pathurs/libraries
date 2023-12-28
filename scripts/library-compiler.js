@@ -362,7 +362,9 @@ export class LibraryCompiler {
                 this.#stringify({
                     id: entry.id,
                     title: entry.title,
+                    description: entry.description,
                     aliases: entry.aliases,
+                    reference: entry.reference,
                     regExp: entry.regExp
                 })
             );

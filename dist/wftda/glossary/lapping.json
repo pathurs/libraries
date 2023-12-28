@@ -1,6 +1,7 @@
 {
     "id": "lapping",
     "title": "Lap/Lapping",
+    "description": "One Skater has $lapped:lapping$ an opponent if the Skater has $passed:earned-pass$ the opponent twice in a row without the opponent having $passed:earned-pass$ the $lapping:lapping$ Skater in between. If a $Jammer:jammer$ $passes:earned-pass$ an opponent for the second time, but the second $pass:earned-pass$ was not “earned,” the $Jammer:jammer$ is still said to have $lapped:lapping$ their opponent, and may earn a “$re-pass:re-pass$” on said opponent to score the missed point.",
     "aliases": [
         "lap",
         "laps",

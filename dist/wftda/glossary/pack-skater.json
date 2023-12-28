@@ -1,6 +1,7 @@
 {
     "id": "pack-skater",
     "title": "Pack Skater",
+    "description": "Any $Blocker:blocker$ who is part of a legally defined $Pack:pack$.",
     "aliases": [
         "pack skaters"
     ],

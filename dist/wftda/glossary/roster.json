@@ -1,6 +1,7 @@
 {
     "id": "roster",
     "title": "Roster",
+    "description": "The list of Skaters for a team, and their identifying numbers, who are eligible to play in the game.",
     "aliases": [
         "rosters",
         "rostered",

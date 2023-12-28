@@ -1,6 +1,7 @@
 {
     "id": "relative-position",
     "title": "Relative Position",
+    "description": "A Skater’s location, when $in bounds:in-bounds$ and $upright:upright$, in relation to other Skaters involved in the action. $Relative position:relative-position$ is said to be “gained” or “lost” if said location changes in a way that gives or loses some advantage (for example, one Skater $passing:earned-pass$ another, or being knocked $down:down$, $out of bounds:out-of-bounds$, or $out of play:out-of-play$). $Relative position:relative-position$ is only measured in the counterclockwise direction.",
     "aliases": [
         "relative positions",
         "relatively position",

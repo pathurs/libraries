@@ -1,6 +1,7 @@
 {
     "id": "jammer",
     "title": "Jammer",
+    "description": "The point scorer for a team.",
     "aliases": [
         "Jammers"
     ],

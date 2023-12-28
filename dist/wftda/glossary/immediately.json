@@ -1,5 +1,6 @@
 {
     "id": "immediately",
     "title": "Immediately",
+    "description": "The first legal opportunity in which someone may complete an action.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Immediately)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

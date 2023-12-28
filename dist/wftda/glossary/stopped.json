@@ -1,6 +1,7 @@
 {
     "id": "stopped",
     "title": "Stopped",
+    "description": "A Skater not making any directional movement with their skates.",
     "aliases": [
         "stop",
         "stops",

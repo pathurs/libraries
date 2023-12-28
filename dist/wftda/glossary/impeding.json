@@ -1,6 +1,7 @@
 {
     "id": "impeding",
     "title": "Impeding",
+    "description": "Actions that restrict an opponent’s speed and/or trajectory in any direction on the track.",
     "aliases": [
         "impede",
         "impedes",

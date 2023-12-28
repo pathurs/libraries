@@ -1,6 +1,7 @@
 {
     "id": "points-denied-in-error",
     "title": "Points Denied in Error",
+    "description": "Similar to $points awarded in error:points-awarded-in-error$, $points denied in error:points-denied-in-error$ are points that have been legally earned by a $Jammer:jammer$ but have not been added to the Official Score due to delay, an error by an Official, or as the result of a technology malfunction.",
     "aliases": [
         "point denied in error",
         "points denied-in-error",

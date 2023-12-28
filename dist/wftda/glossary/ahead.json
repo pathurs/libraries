@@ -1,5 +1,6 @@
 {
     "id": "ahead",
     "title": "Ahead",
+    "description": "One thing (for example, a Skater, a line, the $Pack:pack$) is “$ahead:ahead$” of another thing, in relation to the track, if it is nearer in the counterclockwise direction than the clockwise direction.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Ahead)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

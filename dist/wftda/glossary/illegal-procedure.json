@@ -1,6 +1,7 @@
 {
     "id": "illegal-procedure",
     "title": "Illegal Procedure",
+    "description": "Any technical (non-contact) infraction that violates the rules.",
     "aliases": [
         "illegal procedures"
     ],

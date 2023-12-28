@@ -1,5 +1,6 @@
 {
     "id": "upright",
     "title": "Upright",
+    "description": "Any Skater who is not considered $down:down$.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Upright)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

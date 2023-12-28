@@ -1,6 +1,7 @@
 {
     "id": "out-of-play",
     "title": "Out of Play",
+    "description": "A $Blocker:blocker$ who is $in bounds:in-bounds$, but positioned outside of the $Engagement Zone:engagement-zone$. If $no Pack:no-pack$ is defined, all $Blockers:blocker$ are $out of play:out-of-play$. When a $Jammer:jammer$ is $out of bounds:out-of-bounds$, they are $out of play:out-of-play$.",
     "aliases": [
         "out-of-play"
     ],

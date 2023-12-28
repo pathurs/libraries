@@ -1,6 +1,7 @@
 {
     "id": "warning",
     "title": "Warning",
+    "description": "A formal verbal indication from the Official that play is currently or is about to be improper, so that a Skater can take corrective action.",
     "aliases": [
         "warn"
     ],

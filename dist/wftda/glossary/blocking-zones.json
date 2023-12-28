@@ -1,6 +1,7 @@
 {
     "id": "blocking-zones",
     "title": "Blocking Zones",
+    "description": "Areas of the body that may be used to hit an opponent when performing a block.",
     "aliases": [
         "blocking zone"
     ],

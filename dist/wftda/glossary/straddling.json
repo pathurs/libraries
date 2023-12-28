@@ -1,6 +1,7 @@
 {
     "id": "straddling",
     "title": "Straddling",
+    "description": "A Skater is $straddling:straddling$ when they are simultaneously touching the floor on or between the track boundary lines and beyond the track boundary. Touching the floor beyond the track boundary with only one arm or hand does not render a Skater $straddling:straddling$. $Straddling:straddling$ Skaters are considered $out of bounds:out-of-bounds$, except where otherwise noted (see also $in bounds:in-bounds$).",
     "aliases": [
         "straddle",
         "straddles",

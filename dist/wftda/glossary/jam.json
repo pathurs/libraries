@@ -1,6 +1,7 @@
 {
     "id": "jam",
     "title": "Jam",
+    "description": "The basic unit of play for the game. A $Jam:jam$ can last up to two minutes.",
     "aliases": [
         "jams"
     ],

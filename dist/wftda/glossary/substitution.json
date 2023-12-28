@@ -1,6 +1,7 @@
 {
     "id": "substitution",
     "title": "Substitution",
+    "description": "Replacing a Skater on the track or in the $Penalty:penalty$ Box with a teammate.",
     "aliases": [
         "substitutions",
         "substitute",

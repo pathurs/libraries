@@ -1,6 +1,7 @@
 {
     "id": "assist",
     "title": "Assist",
+    "description": "Physically affecting a teammate. Common examples include a push or a whip.",
     "aliases": [
         "assists",
         "assisted",

@@ -1,5 +1,6 @@
 {
     "id": "impenetrable",
     "title": "Impenetrable",
+    "description": "A wall is considered to be $impenetrable:impenetrable$ from a certain direction when, to achieve a $pass:earned-pass$ on one or more of the Skaters who comprise the wall, an opponent would need to physically break bones or joints. The parts that would need to be physically broken in order to $pass:earned-pass$ are considered the “$impenetrable:impenetrable$” parts. For example, if two teammates are skating forward with their arms around each other’s backs, the arms constitute an $impenetrable:impenetrable$ wall, so that an opponent could not $pass:earned-pass$ between the pair without breaking one of those $Blockers:blocker$’ arms.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Impenetrable)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

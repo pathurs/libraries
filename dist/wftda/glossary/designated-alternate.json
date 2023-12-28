@@ -1,6 +1,7 @@
 {
     "id": "designated-alternate",
     "title": "Designated Alternate",
+    "description": "The $Captain:captain$ designates an additional person to act on their team’s behalf via a visible “A” on their uniform or body; this person is the $Designated Alternate:designated-alternate$. The $Designated Alternate:designated-alternate$ may be a teammate, coach, or manager. A team may only have one $Designated Alternate:designated-alternate$. If one has not been selected or has left the game, the $Captain:captain$ may designate a different Alternate by informing the $Head Referee:head-referee$.",
     "aliases": [
         "designated alternates"
     ],

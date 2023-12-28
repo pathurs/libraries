@@ -1,5 +1,6 @@
 {
     "id": "in-bounds",
     "title": "In Bounds",
+    "description": "A Skater is $in bounds:in-bounds$ if the only points at which they are touching the floor are on or in between the track boundary lines. Once touching beyond the track boundary, a Skater is considered to be $in bounds:in-bounds$ again once all parts of the Skater that are touching the floor are on or between the track boundary lines. A Skater who touches the floor beyond the track boundary with only one arm or hand is still considered $in bounds:in-bounds$ (see also $out of bounds:out-of-bounds$, $straddling:straddling$).",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(In Bounds)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

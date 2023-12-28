@@ -1,6 +1,7 @@
 {
     "id": "grasping",
     "title": "Grasping",
+    "description": "Actively gripping something; for example, grabbing a teammate’s uniform or helmet cover, or holding hands. The $grasping:grasping$ Skater’s arm, from the hand up to (but not including) the shoulder, is considered to be part of the “$grasp:grasping$.” The teammate is not considered part of the $grasp:grasping$, unless the teammate is independently $grasping:grasping$.",
     "aliases": [
         "grasp",
         "grasps",

@@ -1,6 +1,7 @@
 {
     "id": "established-position",
     "title": "Established Position",
+    "description": "Where a Skater is physically; an area of the track where the Skater has secured their place. Examples include up, $in bounds:in-bounds$, $down:down$, $out of bounds:out-of-bounds$, $in play:in-play$, and $out of play:out-of-play$.",
     "aliases": [
         "established positions"
     ],

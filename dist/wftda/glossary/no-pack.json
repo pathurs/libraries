@@ -1,5 +1,6 @@
 {
     "id": "no-pack",
     "title": "No Pack",
+    "description": "When there is not a group of $Blockers:blocker$ (from both teams) skating within 10 ft (3.05 m) of each other, or when there are two or more equally numbered groups of $Blockers:blocker$ not skating within 10 ft (3.05 m) of each other.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(No Pack)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

@@ -1,5 +1,6 @@
 {
     "id": "down",
     "title": "Down",
+    "description": "A Skater is $down:down$ when part of the Skater’s body or equipment (aside from skates) is touching the floor. A Skater whose only contact with the floor (aside from skates) is one hand is not considered $down:down$. Once $down:down$, a Skater is considered $down:down$ until the Skater is $standing:standing$, stepping, or skating.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Down)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

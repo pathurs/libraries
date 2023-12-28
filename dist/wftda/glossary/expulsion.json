@@ -1,6 +1,7 @@
 {
     "id": "expulsion",
     "title": "Expulsion",
+    "description": "Removal by the $Head Referee:head-referee$ of a Skater or Team Staff from the remainder of the game for a serious illegal action, such as physical violence or any action deemed by the Officials to cause an extraordinary physical threat to others.",
     "aliases": [
         "expulsions",
         "expel",

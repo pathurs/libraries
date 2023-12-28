@@ -1,6 +1,7 @@
 {
     "id": "exiting-the-track",
     "title": "Exiting the Track",
+    "description": "($Penalty:penalty$ Enforcement) $Exiting the track:exiting-the-track$ to the outside in order to report to the $Penalty:penalty$ Box.",
     "aliases": [
         "exit the track",
         "exits the track"

@@ -1,6 +1,7 @@
 {
     "id": "re-pass",
     "title": "Re-Pass",
+    "description": "The act of $passing:earned-pass$ an opponent who has already been $passed:earned-pass$ during the current $lap:lapping$. Most relevant to a $Jammer:jammer$ who ends up $ahead:ahead$ of an opponent without “earning” the $pass:earned-pass$. Such a $Jammer:jammer$ would not score a point on that opponent, but could $re-pass:re-pass$ that opponent, earning their second $pass:earned-pass$, in order to score that point.",
     "aliases": [
         "repass"
     ],

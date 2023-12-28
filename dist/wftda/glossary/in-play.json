@@ -1,6 +1,7 @@
 {
     "id": "in-play",
     "title": "In Play",
+    "description": "A $Blocker:blocker$ is $in play:in-play$ when they are $in bounds:in-bounds$ and $upright:upright$ within the $Engagement Zone:engagement-zone$. $Jammers:jammer$ who are $in bounds:in-bounds$ and $upright:upright$ are always $in play:in-play$.",
     "aliases": [
         "in-play"
     ],

@@ -1,5 +1,6 @@
 {
     "id": "protective-gear",
     "title": "Protective Gear",
+    "description": "Skaters must wear helmet, mouthguard, wrist guards, elbow pads, and knee pads so long as they provide additional protection and the Skater is physically able to wear them. Skaters shall not be penalized if the equipment does not provide additional protection for the Skater.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Protective Gear)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

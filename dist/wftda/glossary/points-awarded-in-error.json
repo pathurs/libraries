@@ -1,6 +1,7 @@
 {
     "id": "points-awarded-in-error",
     "title": "Points Awarded in Error",
+    "description": "Points that have not been legally earned by a $Jammer:jammer$ and have been awarded to the team incorrectly and/or erroneously by an Official or as the result of a technology malfunction.",
     "aliases": [
         "point awarded in error",
         "points awarded-in-error",

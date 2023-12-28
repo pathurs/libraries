@@ -1,5 +1,6 @@
 {
     "id": "no-impact",
     "title": "No Impact",
+    "description": "A violation of the rules of the game that has limited impact on safety or gameplay, and does not warrant a $penalty:penalty$.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(No Impact)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

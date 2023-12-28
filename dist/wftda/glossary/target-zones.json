@@ -1,6 +1,7 @@
 {
     "id": "target-zones",
     "title": "Target Zones",
+    "description": "Areas of the body on an opponent that a Skater makes contact to when blocking.",
     "aliases": [
         "target zone"
     ],

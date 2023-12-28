@@ -1,6 +1,7 @@
 {
     "id": "in-queue",
     "title": "In Queue",
+    "description": "Actively skating while having a $penalty:penalty$ pending, usually after having been waved back to the track due to the $Penalty:penalty$ Box being full, or having been assessed a $penalty:penalty$ while being the only $Blocker:blocker$ on the track.",
     "aliases": [
         "in-queue"
     ],

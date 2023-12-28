@@ -1,6 +1,7 @@
 {
     "id": "standing",
     "title": "Standing",
+    "description": "A Skater holding their body weight on their skates, such that they are not $down:down$ and it is obvious to Officials, Skaters, and spectators that they are not $sitting:sitting$.",
     "aliases": [
         "stand",
         "stands",

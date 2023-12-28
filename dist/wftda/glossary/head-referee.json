@@ -1,5 +1,6 @@
 {
     "id": "head-referee",
     "title": "Head Referee",
+    "description": "One Referee will be designated the $Head Referee:head-referee$. The $Head Referee:head-referee$ is the ultimate authority of the game.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Head Referee)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

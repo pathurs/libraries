@@ -1,6 +1,7 @@
 {
     "id": "trip-through-the-pack",
     "title": "Trip Through the Pack",
+    "description": "$Jammers:jammer$ make $trips through the Pack:trip-through-the-pack$. Each $trip:trip-through-the-pack$ represents an opportunity to score points on opponents. (See Section 3).",
     "aliases": [
         "trips through the pack",
         "trip",

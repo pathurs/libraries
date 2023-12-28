@@ -1,6 +1,7 @@
 {
     "id": "pack",
     "title": "Pack",
+    "description": "The largest group of in-bounds $Blockers:blocker$, skating or $standing:standing$ in proximity (within 10 ft [3.05 m]), containing members from both teams. The $Jammers:jammer$ are independent of this definition.",
     "aliases": [
         "packs"
     ],

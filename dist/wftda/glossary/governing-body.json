@@ -1,6 +1,7 @@
 {
     "id": "governing-body",
     "title": "Governing Body",
+    "description": "The organization responsible for the sanctioning of the game; or in an unsanctioned game, the organization responsible for determining the terms of the game, such as a tournament, local league, or other person(s) serving in that role.",
     "aliases": [
         "governing bodies"
     ],

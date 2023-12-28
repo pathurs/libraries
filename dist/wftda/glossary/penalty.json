@@ -1,6 +1,7 @@
 {
     "id": "penalty",
     "title": "Penalty",
+    "description": "A violation of the rules of the game requiring the Skater to serve time in the $Penalty:penalty$ Box, or the specific punishment of serving time in the $Penalty:penalty$ Box due to the commission of such a violation.",
     "aliases": [
         "penalties"
     ],

@@ -1,5 +1,6 @@
 {
     "id": "skating-direction-of-travel",
     "title": "Skating – Direction of Travel",
+    "description": "A Skater’s direction of travel (for example, counterclockwise, lateral, or clockwise) is measured by the skates moving relative to a line perpendicular to the inside track boundary. If the skates are moving in opposite directions, direction of travel is determined by the $hips:hips$.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Skating – Direction of Travel)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

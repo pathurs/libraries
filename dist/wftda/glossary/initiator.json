@@ -1,6 +1,7 @@
 {
     "id": "initiator",
     "title": "Initiator",
+    "description": "The Skater who is responsible for contact happening to an opponent (initiating a block) or teammate (initiating an $assist:assist$). A Skater can also initiate their own $assist:assist$ by taking a whip off of a teammate’s body, or initiate a $counter-block:counter-block$ in response to an opponent’s block. The $initiator:initiator$ of a block or $assist:assist$ is always responsible for the legality of the contact.\n\nAfter a $counter-block:counter-block$, continued engagement by the $counter-blocking:counter-block$ skater should be considered a new action, with the skater responsible for the continued contact considered the $initiator:initiator$. The legality of this action should be judged separately from the initial block and $counter-block:counter-block$.",
     "aliases": [
         "initiators"
     ],

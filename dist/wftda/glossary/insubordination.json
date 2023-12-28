@@ -1,5 +1,6 @@
 {
     "id": "insubordination",
     "title": "Insubordination",
+    "description": "Willfully or neglectfully failing to comply with an Official’s orders. Wrongful or improper behavior motivated by intentional disregard for the rules.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Insubordination)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

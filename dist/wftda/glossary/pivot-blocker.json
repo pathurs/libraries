@@ -1,6 +1,7 @@
 {
     "id": "pivot-blocker",
     "title": "Pivot Blocker (Pivot)",
+    "description": "A $Blocker:blocker$ with extra abilities and responsibilities, commonly referred to as the $Pivot:pivot-blocker$ (see Section 2.2.3).",
     "aliases": [
         "pivot blocker",
         "pivot"

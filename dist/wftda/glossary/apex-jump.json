@@ -1,6 +1,7 @@
 {
     "id": "apex-jump",
     "title": "Apex Jump",
+    "description": "An attempt to legally shorten the distance travelled around the curve of the track by leaping over the track boundary and landing back $in bounds:in-bounds$.",
     "aliases": [
         "apex jumps",
         "apex jumped"

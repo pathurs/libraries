@@ -1,6 +1,7 @@
 {
     "id": "earned-pass",
     "title": "Pass/Earned Pass",
+    "description": "See Section 2.5",
     "aliases": [
         "pass",
         "passes",

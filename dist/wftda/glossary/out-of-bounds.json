@@ -1,6 +1,7 @@
 {
     "id": "out-of-bounds",
     "title": "Out of Bounds",
+    "description": "A Skater is $out of bounds:out-of-bounds$ when part of the Skater’s body or equipment is touching the floor beyond the track boundary. One arm or hand touching the floor beyond the track boundary does not render a Skater $out of bounds:out-of-bounds$ (see also $in bounds:in-bounds$, $straddling:straddling$).",
     "aliases": [
         "out-of-bounds"
     ],

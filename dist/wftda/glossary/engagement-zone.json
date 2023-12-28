@@ -1,5 +1,6 @@
 {
     "id": "engagement-zone",
     "title": "Engagement Zone",
+    "description": "The zone in which $Blockers:blocker$ are $in play:in-play$ and may legally $engage:engaging$ and be $engaged:engaging$. The $Engagement Zone:engagement-zone$ extends from 20 ft (6.10 m) $behind:behind$ the rearmost $Pack Skater:pack-skater$ to 20 ft (6.10 m) in front of the foremost $Pack Skater:pack-skater$, between the inside and outside track boundaries.",
     "regExp": "/([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|^)(Engagement Zone)([\\s\\,\\.\\!\\-\\(\\)\\'\\\"\\“\\”\\’]|$)/gi"
 }

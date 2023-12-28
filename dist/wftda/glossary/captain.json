@@ -1,6 +1,7 @@
 {
     "id": "captain",
     "title": "Captain",
+    "description": "The Skater identified, via a visible “C” on their body or clothing, to speak on the team’s behalf. If one has not been selected or has left the game, the team may determine one at any time by informing the $Head Referee:head-referee$, and must determine one if necessary (for example, if a $penalty:penalty$ is to be assessed to a $Captain:captain$, the team must determine a $Captain:captain$).",
     "aliases": [
         "captains"
     ],

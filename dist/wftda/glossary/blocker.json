@@ -1,6 +1,7 @@
 {
     "id": "blocker",
     "title": "Blocker",
+    "description": "The positional Skaters who form the $Pack:pack$. Up to four $Blockers:blocker$ from each team may skate, per $Jam:jam$. One $Blocker:blocker$ per $Jam:jam$, for each team, may be a $Pivot Blocker:pivot-blocker$.",
     "aliases": [
         "Blockers"
     ],

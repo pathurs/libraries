@@ -1,6 +1,7 @@
 {
     "id": "counter-block",
     "title": "Counter-Block",
+    "description": "Any motion/movement toward an oncoming block by the receiving opponent designed to counteract an opponent’s block. $Counter-blocking:counter-block$ is treated as blocking and held to the same standards and rules (except where specified). Continued engagement which goes beyond countering the initial effect of the opponent’s block should be considered a separate block, and judged separately.",
     "aliases": [
         "counter-blocks",
         "counter-blocked",

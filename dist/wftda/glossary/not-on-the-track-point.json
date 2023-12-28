@@ -1,6 +1,7 @@
 {
     "id": "not-on-the-track-point",
     "title": "Not-On-the-Track (NOTT) Point",
+    "description": "A point given for an opponent who is not on the track (such as Skaters in the $Penalty:penalty$ Box) that the $Jammer:jammer$ earns $immediately:immediately$ upon earning a $pass:earned-pass$ on any opposing $Blocker:blocker$, per $trip through the Pack:trip-through-the-pack$.",
     "aliases": [
         "NOTT point",
         "not-on-the-track point",

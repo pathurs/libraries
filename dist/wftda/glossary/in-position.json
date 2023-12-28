@@ -1,6 +1,7 @@
 {
     "id": "in-position",
     "title": "In Position",
+    "description": "A Skater is $in position:in-position$ when they are on the track, $in bounds:in-bounds$, and in the designated area for their position when the $Jam:jam$-Starting Whistle is blown.",
     "aliases": [
         "in-position"
     ],
