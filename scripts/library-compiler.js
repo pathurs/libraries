@@ -191,7 +191,7 @@ export class LibraryCompiler {
             `${parentPath}/${section.id}.json`,
             this.#stringify({
                 id: section.id,
-                refereneId: section.referenceId,
+                referenceId: section.referenceId,
                 title: section.title,
                 description: section.description,
                 sections: this.#createChildrenIdAndJSONPathArray(section.id, section.sections, 'json'),
