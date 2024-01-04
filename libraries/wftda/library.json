@@ -1,6 +1,5 @@
 {
     "title": "WFTDA Library",
-    "description": "markdown:./library-description.md",
     "reference": "https://static.wftda.com/rules/wftda-rules.pdf",
     "documents": "json:./documents/documents.json",
     "appendices": "json:./appendices/appendices.json",
